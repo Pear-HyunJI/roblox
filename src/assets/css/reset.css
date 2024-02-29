@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: radial-gradient(circle, #1a1a1b 1px, transparent 1px), #121110;
+    background-position: 0 0, 25px 25px;
+    background-size: 2rem 2rem;
+    height: 100vh;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle
+}
+
+button,
+input[type=button],
+input[type=submit],
+input[type=text] {
+    border: none;
+}
+
+button,
+input[type=button],
+input[type=submit] {
+    cursor: pointer
+}
+
+fieldset {
+    border: none
+}
+
+legend {
+    display: none
+}
+
+.row {
+    max-width: 1440px;
+    margin: auto;
+}
