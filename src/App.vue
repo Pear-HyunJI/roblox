@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header></Header>
-    <router-view></router-view>
+    <div id="app__contents">
+      <router-view></router-view>
+    </div>
     <Footer></Footer>
   </div>
 </template>
@@ -18,4 +20,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#app__contents {
+  margin-top: 150px;
+}
+</style>

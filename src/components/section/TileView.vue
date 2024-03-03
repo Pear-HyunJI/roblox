@@ -1,9 +1,19 @@
 <template>
   <section>
     <div class="row">
-      <div class="imgContainer" v-for="(item, idx) in colContainer" :key="idx">
-        <div class="imgBox1" v-for="(val, idx) in item.col" :key="idx">
-          <div class="imgBox2"><img :src="val.image1" alt="123" /></div>
+      <h2>
+        Reimagining the way <br />
+        people come together.
+      </h2>
+      <div class="tileBox">
+        <div
+          class="imgContainer"
+          v-for="(item, idx) in colContainer"
+          :key="idx"
+        >
+          <div class="imgBox1" v-for="(val, idx) in item.col" :key="idx">
+            <div class="imgBox2"><img :src="val.image1" :alt="val.alt" /></div>
+          </div>
         </div>
       </div>
     </div>
@@ -161,23 +171,28 @@ export default {
   z-index: -1;
 }
 .row {
-  position: relative;
-  display: flex;
-  position: relative;
-  height: 720px;
-  // background: linear-gradient(rgba(0, 0, 0, 0.5));
-  align-items: center;
-  overflow: hidden;
-  .imgContainer {
+  h2 {
+    color: #fff;
+    text-align: center;
+  }
+  .tileBox {
     display: flex;
-    flex-direction: column;
-    transform: rotate(15deg);
-    .imgBox1 {
-      margin: 0 7px;
-      .imgBox2 {
-        margin: 7px 0;
-        img {
-          border-radius: 10px;
+    position: relative;
+    height: 720px;
+    // background: linear-gradient(rgba(0, 0, 0, 0.5));
+    align-items: center;
+    overflow: hidden;
+    .imgContainer {
+      display: flex;
+      flex-direction: column;
+      transform: rotate(15deg);
+      .imgBox1 {
+        margin: 0 7px;
+        .imgBox2 {
+          margin: 7px 0;
+          img {
+            border-radius: 10px;
+          }
         }
       }
     }
