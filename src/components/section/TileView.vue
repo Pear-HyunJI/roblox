@@ -16,6 +16,8 @@
           </div>
         </div>
       </div>
+      <div></div>
+      <div></div>
     </div>
   </section>
 </template>
@@ -161,41 +163,87 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.imgContainer::before {
-  position: absolute;
-  filter: blur(10px);
-  top: 10;
-  bottom: 10;
-  right: 0;
-  left: 0;
-  z-index: -1;
-}
+// .imgContainer::before {
+//   position: absolute;
+//   filter: blur(10px);
+//   top: 10;
+//   bottom: 10;
+//   right: 0;
+//   left: 0;
+//   z-index: -1;
+// }
 .row {
   h2 {
     color: #fff;
     text-align: center;
   }
+
   .tileBox {
     display: flex;
     position: relative;
     height: 720px;
-    // background: linear-gradient(rgba(0, 0, 0, 0.5));
     align-items: center;
     overflow: hidden;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 15%;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      top: -2px;
+      background: linear-gradient(
+        180deg,
+        #121110 0%,
+        #121110 5%,
+        rgba(18, 17, 16, 0) 100%
+      );
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      height: 15%;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      bottom: -2px;
+      background: linear-gradient(
+        0deg,
+        #121110 0%,
+        #121110 5%,
+        rgba(18, 17, 16, 0) 100%
+      );
+    }
+
     .imgContainer {
       display: flex;
       flex-direction: column;
       transform: rotate(15deg);
+
+      animation: fadeInUp 3s;
       .imgBox1 {
         margin: 0 7px;
         .imgBox2 {
           margin: 7px 0;
           img {
             border-radius: 10px;
+            transition: all 0.3s;
+          }
+          img:hover {
+            transform: scale(1.05);
           }
         }
       }
     }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(175%); /* Combine translate and rotate */
+  }
+  to {
+    transform: translateY(0%) rotate(15deg); /* Combine translateZ and rotate */
   }
 }
 </style>

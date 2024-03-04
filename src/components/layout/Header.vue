@@ -119,7 +119,7 @@ export default {
             left: 0;
             background: linear-gradient(
               to left,
-              rgba(255, 0, 0, 1),
+              rgba(99, 71, 255, 1),
               rgba(255, 0, 0, 0)
             );
           }
@@ -128,7 +128,7 @@ export default {
             right: 0;
             background: linear-gradient(
               to right,
-              rgba(255, 0, 0, 1),
+              rgba(99, 71, 255, 1),
               rgba(255, 0, 0, 0)
             );
           }
@@ -156,7 +156,7 @@ export default {
     padding: 0px;
     line-height: 50px;
     &:hover {
-      color: #f00;
+      color: #6347ff;
     }
   }
 }
