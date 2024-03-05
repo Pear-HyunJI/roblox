@@ -71,29 +71,47 @@ export default {
       //       ? Math.max(0, 1 - window.scrollY / this.infoData[1].scrollValue)
       //       : Math.max(0, 1 - window.scrollY / this.infoData[2].scrollValue);
 
-      if (window.scrollY < 1000) {
-        this.infoData[0].opacityValue = Math.max(
-          0,
-          1 - window.scrollY / this.scrollValue
-        );
-        this.infoData[1].opacityValue = 0;
-        this.infoData[2].opacityValue = 0;
-      } else if (window.scrollY < 1500) {
-        this.scrollValue = 3000;
-        this.infoData[1].opacityValue = Math.max(
-          0,
-          1 - window.scrollY / this.scrollValue
-        );
-        this.infoData[0].opacityValue = 0;
-        this.infoData[2].opacityValue = 0;
+      // if (window.scrollY < 1000) {
+      //   this.infoData[0].opacityValue = Math.max(
+      //     0,
+      //     1 - window.scrollY / this.scrollValue
+      //   );
+      //   this.infoData[1].opacityValue = 0;
+      //   this.infoData[2].opacityValue = 0;
+      // } else if (window.scrollY < 1500) {
+      //   this.scrollValue = 3000;
+      //   this.infoData[1].opacityValue = Math.max(
+      //     0,
+      //     1 - window.scrollY / this.scrollValue
+      //   );
+      //   this.infoData[0].opacityValue = 0;
+      //   this.infoData[2].opacityValue = 0;
+      // } else {
+      //   this.scrollValue = 5000;
+      //   this.infoData[2].opacityValue = Math.max(
+      //     0,
+      //     1 - window.scrollY / this.scrollValue
+      //   );
+      //   this.infoData[0].opacityValue = 0;
+      //   this.infoData[1].opacityValue = 0;
+      // }
+      let data = this.infoData;
+      if (window.scrollY >= 800 && window.scrollY < 1200) {
+        data[0].opacityValue = 1;
+        data[1].opacityValue = 0;
+        data[2].opacityValue = 0;
+      } else if (window.scrollY >= 1400 && window.scrollY < 1800) {
+        data[0].opacityValue = 0;
+        data[1].opacityValue = 1;
+        data[2].opacityValue = 0;
+      } else if (window.scrollY >= 2300 && window.scrollY < 2700) {
+        data[0].opacityValue = 0;
+        data[1].opacityValue = 0;
+        data[2].opacityValue = 1;
       } else {
-        this.scrollValue = 5000;
-        this.infoData[2].opacityValue = Math.max(
-          0,
-          1 - window.scrollY / this.scrollValue
-        );
-        this.infoData[0].opacityValue = 0;
-        this.infoData[1].opacityValue = 0;
+        data[0].opacityValue = 0;
+        data[1].opacityValue = 0;
+        data[2].opacityValue = 0;
       }
     },
   },
@@ -113,7 +131,7 @@ export default {
   margin-top: 300px;
 }
 #info__wrapper {
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
   //   position: relative;
   display: flex;
   height: 800px;
@@ -130,7 +148,7 @@ export default {
   }
   .sticky__img {
     flex: 40%;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.5s ease;
     img {
       position: sticky;
       top: 50vh;
