@@ -99,7 +99,7 @@ export default {
       //   this.infoData[1].opacityValue = 0;
       // }
       let data = this.infoData;
-      if (window.scrollY >= 2300 && window.scrollY < 2600) {
+      if (window.scrollY >= 2200 && window.scrollY < 2600) {
         data[0].imgOpacityValue = 1;
         data[1].imgOpacityValue = 0;
         data[2].imgOpacityValue = 0;
@@ -175,6 +175,7 @@ export default {
     img {
       position: sticky;
       top: 40vh;
+      border-radius: 5px;
     }
   }
 }
