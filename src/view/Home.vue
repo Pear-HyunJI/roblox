@@ -5,6 +5,7 @@
     <sticky-info />
     <main-stats />
     <video-2 />
+    <latest-news />
     <job-posting />
     <go-to-download />
   </div>
@@ -18,6 +19,7 @@ import MainStats from "@/components/section/MainStats.vue";
 import Video2 from "@/components/section/Video2.vue";
 import JobPosting from "@/components/section/JobPosting.vue";
 import GoToDownload from "@/components/section/GoToDownload.vue";
+import LatestNews from "@/components/section/LatestNews.vue";
 export default {
   name: "Home",
   components: {
@@ -28,6 +30,7 @@ export default {
     Video2,
     JobPosting,
     GoToDownload,
+    LatestNews,
   },
 };
 </script>
