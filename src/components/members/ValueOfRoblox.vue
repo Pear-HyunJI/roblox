@@ -1,5 +1,5 @@
 <template>
-  <section id="#ValueOfRoblox">
+  <section id="valueOfRoblox">
     <div class="slide__outer">
       <div class="slide__inner">
         <h2>Roblox의 가치</h2>
@@ -79,36 +79,47 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  font-size: 40px;
+  color: #dee2e6;
+  padding-bottom: 48px;
+  font-weight: 500;
+}
+
+#valueOfRoblox {
+  padding: 80px 0;
+  border: 1px solid green;
+}
 .slide__outer {
   overflow: hidden;
   width: 1200px;
   margin: 0 auto;
+  height: 400px;
 }
 
 .slide__inner {
   width: 1600px;
-  border: 1px solid aqua;
 }
 
 .slideBox1.swiper-slide {
   max-width: 560px;
-  border: 1px solid yellow;
 }
 .slideBox1 {
   border-radius: 8px 8px 8px 0;
   color: #dee2e6;
   background-color: #343a40;
-  height: 187px;
+  height: 220px;
   width: 100%;
   // border: 1px solid red;
 
   .slideBox2 {
     padding: 2rem;
     height: 100%;
-    border: 1px solid green;
+
     h3 {
       font-size: 24px;
       font-weight: 500;
+      margin-bottom: 36px;
     }
     p {
       font-size: 16px;

@@ -108,7 +108,7 @@ export default {
   .textBox {
     word-break: keep-all;
     flex: 50%;
-    color: #fff;
+    color: #dee2e6;
     font-weight: normal;
     padding: 100px 0;
     margin: 64px 80px 64px 176px;

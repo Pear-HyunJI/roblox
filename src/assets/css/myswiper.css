@@ -17,6 +17,7 @@
   font-style: normal;
 }
 
+
 :root {
   --swiper-theme-color: #007aff;
 }
@@ -63,6 +64,7 @@
 .swiper-container-free-mode>.swiper-wrapper {
   transition-timing-function: ease-out;
   margin: 0 auto;
+  /* position: relative; */
 }
 
 .swiper-slide {
@@ -157,11 +159,12 @@
   scroll-snap-type: y mandatory;
 }
 
-:root {
-  --swiper-navigation-size: 44px;
-  /*
-  --swiper-navigation-color: var(--swiper-theme-color);
-  */
+/* valueOfRoblox 화살표 색 */
+:root #valueOfRoblox {
+  --swiper-navigation-size: 30px;
+
+  --swiper-navigation-color: #dee2e6;
+
 }
 
 .swiper-button-prev,
@@ -169,7 +172,7 @@
   position: absolute;
   top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
+  /* height: var(--swiper-navigation-size); */
   margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
   z-index: 10;
   cursor: pointer;
@@ -198,10 +201,12 @@
 }
 
 /* ValueOfRoblox 왼쪽 화살표 위치 */
-#ValueOfRoblox .swiper-button-prev,
-#ValueOfRoblox .swiper-container-rtl .swiper-button-next {
-  left: 60px;
+#valueOfRoblox .swiper-button-prev,
+#valueOfRoblox .swiper-container-rtl .swiper-button-next {
+  left: 10px;
   right: auto;
+  bottom: -190px;
+  margin: 20px;
 }
 
 .swiper-button-prev:after,
@@ -209,10 +214,13 @@
   content: 'prev';
 }
 
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  right: 10px;
-  left: auto;
+/* ValueOfRoblox 오른쪽 화살표 위치 */
+#valueOfRoblox .swiper-button-next,
+#valueOfRoblox .swiper-container-rtl .swiper-button-prev {
+  left: 260px;
+  right: auto;
+  bottom: -190px;
+  margin: 20px;
 }
 
 .swiper-button-next:after,
@@ -261,6 +269,16 @@
   width: 100%;
 }
 
+/* 도트버튼 위치 */
+#valueOfRoblox .swiper-pagination-fraction,
+#valueOfRoblox .swiper-pagination-custom,
+#valueOfRoblox .swiper-container-horizontal>.swiper-pagination-bullets {
+  bottom: -50px;
+  left: 50px;
+  /* width: 100%; */
+  width: auto;
+}
+
 /* Bullets */
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
@@ -305,6 +323,17 @@
   opacity: 0.2;
 }
 
+/* #valueOfRoblox 도트버튼 비활성 스타일 */
+#valueOfRoblox .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 0%;
+  background: #fff;
+  opacity: 0.2;
+  margin-left: 35px;
+}
+
 button.swiper-pagination-bullet {
   border: none;
   margin: 0;
@@ -319,9 +348,11 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 
-.swiper-pagination-bullet-active {
+/* #valueOfRoblox 도트버튼 활성 스타일 */
+#valueOfRoblox .swiper-pagination-bullet-active {
   opacity: 1;
-  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  background: #fff;
+  transform: rotate(45deg);
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
