@@ -105,7 +105,8 @@ export default {
         color: #f2f3f4;
         border-bottom: 3px solid transparent;
 
-        &:hover {
+        &:hover,
+        &.router-link-exact-active {
           &::before,
           &::after {
             content: "";
