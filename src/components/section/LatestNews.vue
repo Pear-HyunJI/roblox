@@ -23,7 +23,7 @@
 
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
-import "@/assets/css/swiper.css";
+import "@/assets/css/myswiper.css";
 export default {
   name: "LatestNews",
   components: {
