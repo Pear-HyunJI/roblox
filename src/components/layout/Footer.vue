@@ -1,7 +1,9 @@
 <template>
   <footer>
     <div class="row">
-      <h2><img src="../../assets/images/roblox_logo_white_new.svg" alt="1"></h2>
+      <h2>
+        <img src="../../assets/images/roblox_logo_white_new.svg" alt="1" />
+      </h2>
       <div class="info__wrapper">
         <nav>
           <h4>회사</h4>
@@ -29,10 +31,10 @@
       </div>
       <div>
         <div class="info__sns">
-            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-twitch"></i></a>
         </div>
       </div>
     </div>
@@ -46,10 +48,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  * {
-    color: white;
-    footer {
-      padding: 7rem 0;
+* {
+  color: white;
+  footer {
+    padding: 7rem 0;
+    .row {
+      max-width: calc(1280px - 9rem);
       h2 img {
         width: 120px;
       }
@@ -95,7 +99,12 @@ export default {
         left: 0;
         right: 0;
         bottom: 8rem;
-        background: linear-gradient(90deg, rgba(99, 71, 255, 0) 0%, #6347ff 52.99%, rgba(99, 71, 255, 0) 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(99, 71, 255, 0) 0%,
+          #6347ff 52.99%,
+          rgba(99, 71, 255, 0) 100%
+        );
         height: 1px;
       }
       .info__sns {
@@ -120,21 +129,17 @@ export default {
       }
     }
   }
-  
-  li {
-    padding: 1rem 0;
-  }
+}
 
-  li:not(:last-child) {
-    padding-right: 2.25rem;
-  }
+li {
+  padding: 1rem 0;
+}
 
-  a:hover {
-    color: #6347ff;
-  }
+li:not(:last-child) {
+  padding-right: 2.25rem;
+}
 
-
-
-
-
+a:hover {
+  color: #6347ff;
+}
 </style>

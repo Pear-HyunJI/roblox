@@ -9,7 +9,7 @@
           <h5>채용 공고 둘러보기</h5>
         </div>
         <div class="inner__btn">
-          <button>VIEW ALL JOBS</button>
+          <router-link to="/careers">VIEW ALL JOBS</router-link>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ export default {
         font-size: 2.5rem;
       }
       .inner__btn {
-        button {
+        a {
           background: #6347ff;
           padding: 1rem;
           border-radius: 8px;

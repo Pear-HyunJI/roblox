@@ -26,6 +26,11 @@ export default {
       ],
     };
   },
+  // created() {
+  //   for (let item in this.statsData) {
+  //     console.log(item, this.statsData[item].num);
+  //   }
+  // },
 };
 </script>
 

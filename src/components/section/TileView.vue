@@ -2,8 +2,9 @@
   <section>
     <div class="row">
       <h2>
-        Reimagining the way <br />
-        people come together.
+        사람들을 한자리에 모으는
+        <br />
+        새로운 방법
       </h2>
       <div class="tileBox">
         <div
@@ -174,8 +175,10 @@ export default {
 // }
 .row {
   h2 {
-    color: #fff;
+    color: #dee2e6;
     text-align: center;
+    font-size: 4rem;
+    margin: 5.5rem 0;
   }
 
   .tileBox {

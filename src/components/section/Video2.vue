@@ -3,9 +3,14 @@
     <div class="row">
       <div class="img__box">
         <img src="@/assets/images/video2/anthem_poster.jpg" alt="비디오2" />
-        <button class="play__btn" type="button">
+        <a
+          href="https://www.youtube.com/watch?v=U5DsnsLqTm4&embeds_referring_euri=https%3A%2F%2Fcorp.roblox.com%2F&feature=emb_title"
+          target="_blank"
+          class="play__btn"
+          type="button"
+        >
           <i class="fa-solid fa-play"></i>
-        </button>
+        </a>
       </div>
     </div>
   </section>
