@@ -11,7 +11,7 @@
             <img :src="item.img" :alt="item.title" />
             <h4>{{ item.title }}</h4>
             <p>{{ item.contents }}</p>
-            <router-link to="/news">계속 읽기</router-link>
+            <a :href="item.newsPage" target="_blank">계속 읽기</a>
           </div>
         </swiper-slide>
         <div class="swiper-button-prev" slot="button-prev"></div>
@@ -38,24 +38,32 @@ export default {
           title: "사람들을 한자리에 모으는 새로운 방법",
           contents:
             "사람들이 서로 연결되어 소통하고, 자신을 원하는 방식으로 표현할 수 있도록 하려는 Roblox의 비전에 대해 자세히 알아보세요.",
+          newsPage:
+            "https://blog.roblox.com/2023/10/reimagining-bringing-people-together-communication-connection-expression/",
         },
         {
           img: "src/assets/images/cardnews-1/avatar_tech.png",
           title: "Roblox 아바타 기술의 진화 양상",
           contents:
             "Roblox는 각 사용자가 아바타를 통해 자신의 모습을 표현함은 물론, 실시간으로 다른 사람에게 자신을 표현하는 방식까지 자신을 대표하는 아바타를 가질 수 있기를 원합니다. 다음에서 자세히 알아보세요.",
+          newsPage:
+            "https://blog.roblox.com/2023/10/how-roblox-avatar-tech-is-evolving/",
         },
         {
           img: "src/assets/images/cardnews-1/ai_creation.png",
           title: "생성형 AI를 통한 Roblox 작품 제작 혁신",
           contents:
             "업계 전반에 걸친 AI 툴의 발전에 따라 Roblox가 이룬 진전, 생성형 AI 제작 과정을 민주화하기 위해 앞으로 나아갈 길, 생성형 AI가 Roblox의 향후 방향성에 있어 중요한 요소가 되는 이유에 대해 알아보세요.",
+          newsPage:
+            "https://blog.roblox.com/2023/09/revolutionizing-creation-roblox/",
         },
         {
           img: "src/assets/images/cardnews-1/rdc_2023.png",
           title: "RDC 2023: Roblox의 다음 행로",
           contents:
             "RDC에서는 매년 글로벌 커뮤니티의 가장 혁신적인 크리에이터들이 모여 서로 소통하며 최신 기능과 제품에 대한 정보를 교환합니다. 올해 회의에서 Roblox가 공유한 내용은 다음과 같습니다.",
+          newsPage:
+            "https://blog.roblox.com/2023/09/rdc-2023-roblox-going-next/",
         },
       ],
       swiperOption: {
@@ -99,6 +107,22 @@ export default {
         border: 2px solid #dee2e6;
         border-radius: 8px;
         padding: 1rem;
+        transition: all 0.5s;
+        &:hover {
+          border-color: rgba(99, 71, 255, 0.25);
+          box-shadow: 0 0 1rem rgba(99, 71, 255, 0.25);
+          background: conic-gradient(
+            from 95.27deg at 51.3% 51.96%,
+            #150d44 -0.95deg,
+            #121110 62.41deg,
+            #0f0c1c 134.15deg,
+            #0a042e 181.84deg,
+            #0f0d1a 237.07deg,
+            #121110 317.05deg,
+            #150d44 359.05deg,
+            #121110 422.41deg
+          );
+        }
       }
     }
     .card__wrapper {
@@ -144,6 +168,20 @@ export default {
         a {
           position: absolute;
           bottom: 2rem;
+          &::before {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: -10px;
+            transition: 0.25s all ease-out;
+            background-color: currentColor;
+            max-width: 3rem;
+          }
+          &:hover::before {
+            background-color: #6347ff;
+            max-width: 100%;
+          }
         }
         p {
           opacity: 0;
