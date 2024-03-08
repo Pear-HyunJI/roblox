@@ -16,6 +16,8 @@
             <p>{{ detailItem.detail2 }}</p>
           </div>
           <button>창닫기</button>
+          <button @click="goPrev">이전</button>
+          <button @click="goNext">다음</button>
         </div>
       </div>
     </div>
@@ -163,6 +165,7 @@ export default {
       ],
     };
   },
+  methods: {},
 };
 </script>
 

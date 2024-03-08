@@ -6,7 +6,6 @@
       v-if="showManager"
       class="manager"
       @showDetailManager="showDetailManager"
-      :clickedCard="clickedCard"
     />
     <DetailManager
       v-if="showDetail"
@@ -38,7 +37,7 @@ export default {
   },
   methods: {
     showDetailManager(name) {
-      this.showManager = false;
+      // this.showManager = false;
       this.showDetail = true;
       this.clickedCard = name;
       // this.zIndex1 = 0;
