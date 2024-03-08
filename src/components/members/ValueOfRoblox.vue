@@ -88,7 +88,6 @@ h2 {
 
 #valueOfRoblox {
   padding: 80px 0;
-  border: 1px solid green;
 }
 .slide__outer {
   overflow: hidden;

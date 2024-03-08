@@ -30,7 +30,21 @@ export default {
 .ceo__wrap {
   display: flex;
   .textBox {
+    padding: 50px;
     flex: 50%;
+    color: #dee2e6;
+    word-break: keep-all;
+    span {
+    }
+    font-size: 20px;
+    h3 {
+      font-size: 50px;
+      font-weight: 500;
+      padding: 10px 0 42px 0;
+    }
+    p {
+      font-size: 20px;
+    }
   }
   .ceoImg {
     flex: 50%;
