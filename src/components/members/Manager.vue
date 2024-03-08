@@ -112,9 +112,9 @@ export default {
   },
   methods: {
     showDetailManager(name) {
-      this.$emit("showDetailManager");
+      this.$emit("showDetailManager", name);
       // this.clickedCard = name;
-      this.$emit("update", "데이비드 바주키(David Baszucki)");
+      // this.$emit("update: clickedCard", name);
       console.log(name);
     },
   },
