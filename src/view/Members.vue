@@ -6,14 +6,15 @@
       v-if="showManager"
       class="manager"
       @showDetailManager="showDetailManager"
+      :class="{ active: showDetail }"
     />
     <DetailManager
-      v-if="showDetail"
       class="detailManager"
       :clickedCard="clickedCard"
+      :class="{ active: showDetail }"
+      @closeDetail="closeDetail"
     />
     <ceo />
-    <button @click="abc">123</button>
   </div>
 </template>
 
@@ -40,25 +41,34 @@ export default {
       // this.showManager = false;
       this.showDetail = true;
       this.clickedCard = name;
+
       // this.zIndex1 = 0;
       // this.zIndex2 = 1;
     },
-    abc() {
-      console.log(this.clickedCard);
+    closeDetail() {
+      this.showDetail = false;
     },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-// .manager {
-//   position: relative;
-// }
-// .detailManager {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-// }
+#detailView {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  color: #121110;
+  transform: translateX(700px);
+  transition: all 0.5s;
+  &.active {
+    transform: translateX(0px);
+  }
+}
+
+.manager {
+  &.active {
+    opacity: 0.5;
+  }
+}
 </style>
