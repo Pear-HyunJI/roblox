@@ -3,10 +3,10 @@
     <h2>경영진</h2>
     <div class="card__wrapper">
       <div class="card" v-for="(item, index) in cardData" :key="index">
-        <div class="span__wrap">
-          <span>{{ item.position }}</span>
+        <div class="image" :data-category="item.position">
+          <img :src="item.img" :alt="item.name" />
         </div>
-        <img :src="item.img" :alt="item.name" />
+
         <h3>{{ item.name }}</h3>
 
         <p>{{ item.content }}</p>
@@ -156,26 +156,28 @@ h2 {
       transform: scale(1.1);
     }
 
-    .span__wrap {
-      width: 100%;
-      // height: 100%;
+    .image::before {
+      content: attr(data-category);
       position: absolute;
-      // transform: translateY(50%);
-      top: 200px;
-      left: -160px;
-      display: flex;
-      flex-direction: column;
-      align-items: left;
+      bottom: 0;
+      width: calc(100% - 2rem);
       text-align: right;
       transform: rotate(-90deg);
-    }
-    h3 {
-      font-size: 24px;
-      padding: 36px 0 36px;
+      transform-origin: bottom left;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
     }
     img {
       border-radius: 8px 8px 8px 0;
       padding: 0 0 0 10px;
+    }
+
+    h3 {
+      font-size: 24px;
+      padding: 36px 0 36px;
     }
 
     p {

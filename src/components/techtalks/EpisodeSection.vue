@@ -2,10 +2,10 @@
   <section class="row">
     <div class="card__wrapper">
       <div class="card" v-for="(item, index) in onSearch" :key="index">
-        <div class="span__wrap">
-          <span>EPISODE {{ item.num }}</span>
-        </div>
         <div class="flexBox">
+          <div class="span__wrap">
+            <span v-if="item.num">EPISODE {{ item.num }}</span>
+          </div>
           <div class="image">
             <img
               src="../../assets/images/techtalks/ep1.jpg"
@@ -249,27 +249,16 @@ export default {
     border-radius: 8px 8px 8px 0;
     padding: 50px;
     position: relative;
-    // transition: all 250ms ease-in;
-    // &:hover {
-    //   transform: scale(1.1);
-    // }
 
     .span__wrap {
-      width: 100%;
-      // height: 100%;
-      position: absolute;
-      // transform: translateY(50%);
-      top: 610px;
-      left: -540px;
-      display: flex;
-      flex-direction: column;
-      align-items: left;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
       text-align: right;
-      transform: rotate(-90deg);
-      span {
-        font-weight: 600;
-        font-size: 20px;
-      }
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.08em;
+      padding-left: 1rem;
     }
   }
 
@@ -277,6 +266,7 @@ export default {
     display: flex;
 
     .image {
+      position: relative;
       flex: 23%;
       img {
         border-radius: 8px 8px 8px 0;
@@ -305,7 +295,7 @@ export default {
         overflow: hidden;
         transition: all 250ms ease-in;
         text-overflow: ellipsis;
-        -webkit-line-clamp: 5;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         white-space: normal;
         display: -webkit-box !important;
