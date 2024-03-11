@@ -15,7 +15,7 @@
             <br />
             <p>{{ detailItem.detail2 }}</p>
           </div>
-          <button @click="closeDetail">창닫기</button>
+          <button @click="closeDetail">닫기</button>
         </div>
       </div>
     </div>
@@ -187,15 +187,16 @@ export default {
     overflow: hidden;
     .detail__card {
       overflow-y: scroll;
-      max-width: 693px;
+      max-width: 800px;
       height: calc(100vh - 2rem);
       padding: 4rem 0.5rem 6rem 4rem;
       background: #c5c7c6;
-      border: 1px solid yellowgreen;
       border-radius: 8px 8px 8px 0;
       img {
         border-radius: 8px 8px 8px 0;
         margin-bottom: 3rem;
+        width: 245px;
+        height: 245px;
       }
       h3 {
         font-size: 2rem;
@@ -209,6 +210,30 @@ export default {
       .all__content {
         p {
           font-size: 1rem;
+        }
+      }
+      button {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        font-size: 18px;
+        padding-bottom: 12px;
+        background: none;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 3px;
+          background-color: #162227;
+          transition: width 250ms ease-in;
+        }
+
+        &:hover {
+          &::after {
+            background-color: #6347ff;
+          }
         }
       }
     }

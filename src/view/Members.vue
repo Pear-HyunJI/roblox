@@ -56,10 +56,10 @@ export default {
 #detailView {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 15px;
   z-index: 9999;
   color: #121110;
-  transform: translateX(700px);
+  transform: translateX(800px);
   transition: all 0.5s;
   &.active {
     transform: translateX(0px);
