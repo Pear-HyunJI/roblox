@@ -19,7 +19,7 @@
 <script>
 export default {
   name: "Manager",
-  props: ["clickedCard"],
+
   data() {
     return {
       cardData: [
@@ -116,6 +116,8 @@ export default {
       // this.clickedCard = name;
       // this.$emit("update: clickedCard", name);
       console.log(name);
+
+      // console.log(this.clickedCard);
     },
   },
 };
