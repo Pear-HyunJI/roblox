@@ -23,7 +23,7 @@ export default {
     return {
       newsData: [],
       totalItems: 2,
-      currentPage: 2,
+      currentPage: 1,
       itemPerPage: 10,
       headerNews: [],
       pageNews: [],
