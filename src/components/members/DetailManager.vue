@@ -1,5 +1,5 @@
 <template>
-  <section class="row">
+  <section class="row" id="detailView">
     <div class="detail__wrapper">
       <div v-for="(detailItem, index) in detailCardData" :key="index">
         <div class="detail__card" v-if="clickedCard === detailItem.name">
@@ -15,7 +15,7 @@
             <br />
             <p>{{ detailItem.detail2 }}</p>
           </div>
-          <button>창닫기</button>
+          <button @click="closeDetail">창닫기</button>
         </div>
       </div>
     </div>
@@ -163,14 +163,30 @@ export default {
       ],
     };
   },
+  methods: {
+    closeDetail() {
+      this.$emit("closeDetail");
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.row {
-  color: #121110;
+#detailView {
+  // position: fixed;
+  // right: 0;
+  // top: 0;
+  // z-index: 9999;
+  // color: #121110;
+  // // transform: translateX(700px);
+  // transition: all 0.5s;
+  // &.active {
+  //   transform: translateX(0px);
+  // }
   .detail__wrapper {
+    overflow: hidden;
     .detail__card {
+      overflow-y: scroll;
       max-width: 693px;
       height: calc(100vh - 2rem);
       padding: 4rem 0.5rem 6rem 4rem;
