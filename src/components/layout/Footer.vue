@@ -23,8 +23,8 @@
             <li><a href="#" target="_blank">개인정보</a></li>
           </ul>
           <ul class="notice">
-            <li><a href="#">구직자 개인정보 처리방침</a></li>
-            <li><a href="#">접근성</a></li>
+            <li><a href="#" target="_blank">구직자 개인정보 처리방침</a></li>
+            <li><a href="#" target="_blank">접근성</a></li>
           </ul>
         </nav>
         <span>© & ™ 2024 Roblox Corporation. All Rights Reserved.</span>

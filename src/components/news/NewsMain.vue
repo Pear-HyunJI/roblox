@@ -23,11 +23,7 @@
             :key="idx"
           >
             <div class="card__img">
-              <img
-                :src="item.urlToImage"
-                :alt="item.source.name"
-                onerror="this.src='./images/p_cravity.jpg'"
-              />
+              <img :src="item.urlToImage" :alt="item.source.name" />
             </div>
             <h3>{{ item.title }}</h3>
             <a :href="item.url" target="_blank">계속 읽기</a>

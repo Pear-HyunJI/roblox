@@ -6,11 +6,12 @@
       v-if="showManager"
       class="manager"
       @showDetailManager="showDetailManager"
+      :clickedCard.sync="clickedCard"
       :class="{ active: showDetail }"
     />
     <DetailManager
       class="detailManager"
-      :clickedCard="clickedCard"
+      :clickedCard.sync="clickedCard"
       :class="{ active: showDetail }"
       @closeDetail="closeDetail"
     />
@@ -41,6 +42,7 @@ export default {
       // this.showManager = false;
       this.showDetail = true;
       this.clickedCard = name;
+      console.log(name);
 
       // this.zIndex1 = 0;
       // this.zIndex2 = 1;

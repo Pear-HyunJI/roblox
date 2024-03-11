@@ -113,6 +113,9 @@ export default {
   methods: {
     showDetailManager(name) {
       this.$emit("showDetailManager", name);
+      // this.clickedCard = name;
+      // this.$emit("update: clickedCard", name);
+      console.log(name);
 
       // console.log(this.clickedCard);
     },
