@@ -228,7 +228,8 @@ export default {
         (item) =>
           item.topic.indexOf(this.keyword) > -1 ||
           item.content.indexOf(this.keyword) > -1 ||
-          item.guest.indexOf(this.keyword) > -1
+          item.guest.indexOf(this.keyword) > -1 ||
+          item.iconClass.indexOf(this.keyword) > -1
       );
     },
   },
@@ -289,6 +290,7 @@ export default {
         justify-content: space-between;
         font-size: 25px;
         a {
+          padding-left: 50px;
           font-size: 35px;
           &:hover {
             color: #6347ff;

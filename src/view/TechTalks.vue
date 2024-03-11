@@ -2,8 +2,8 @@
   <div>
     <host />
     <episode-search @onSearch="onSearch" />
-    <episode-tag />
-    <episode-section :keyword="epKeyword" :media="epMedia" />
+    <episode-tag @onSearch="onSearch" />
+    <episode-section :keyword="epKeyword" />
     <blog />
   </div>
 </template>
@@ -26,7 +26,6 @@ export default {
   data() {
     return {
       epKeyword: "",
-      epMedia: "",
     };
   },
   methods: {
