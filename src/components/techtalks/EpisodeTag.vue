@@ -30,6 +30,7 @@ export default {
     onClick(value) {
       this.activeName = value;
       this.$emit("onSearch", value);
+      this.$store.commit("on__UpdateCurrent", 1);
     },
   },
 };

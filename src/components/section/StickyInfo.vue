@@ -6,7 +6,7 @@
       v-for="(item, idx) in infoData"
       :key="idx"
     >
-      <div class="abc" :style="{ opacity: item.textOpacityValue }">
+      <div class="abc">
         <h3>{{ item.title }}</h3>
         <p>{{ item.content }}</p>
       </div>
@@ -33,7 +33,7 @@ export default {
           textOpacityValue: 0.1,
         },
         {
-          image: "src/assets/images/sticky-1/RBLX_Carousel_2_centered.jpg",
+          image: "src/assets/images/sticky-1/Edu_Hub_Home_Desktop_06.jpg",
           title: "Roblox를 만드는 건 저희가 아닙니다. 바로 여러분이죠.",
           content:
             "수천만 명의 개발자 및 크리에이터가 활동 중인 Roblox의 글로벌 커뮤니티는 지금 이 시간에도 끊임없이 사용자를 위한 새로운 체험을 제작하고 있습니다. 이들은 Roblox가 제공하는 툴 및 기술을 사용해 사람들이 매일 소통할 수 있는 새로운 방법을 창조해 나가고 있습니다.",
@@ -58,75 +58,35 @@ export default {
   },
   methods: {
     handleScroll() {
-      // 최소값이 0이 되도록 설정
-      //   this.opacityValue = Math.max(
-      //     0,
-      //     1 - window.scrollY / window.scrollY < 650
-      //       ? this.infoData[0].scrollValue
-      //       : window.scrollY < 1250
-      //       ? this.infoData[1].scrollValue
-      //       : this.infoData[2].scrollValue
-      //   );
-      //   this.opacityValue =
-      //     window.scrollY < 50
-      //       ? Math.max(0, 1 - window.scrollY / this.infoData[0].scrollValue)
-      //       : window.scrollY < 1500
-      //       ? Math.max(0, 1 - window.scrollY / this.infoData[1].scrollValue)
-      //       : Math.max(0, 1 - window.scrollY / this.infoData[2].scrollValue);
-
-      // if (window.scrollY < 1000) {
-      //   this.infoData[0].opacityValue = Math.max(
-      //     0,
-      //     1 - window.scrollY / this.scrollValue
-      //   );
-      //   this.infoData[1].opacityValue = 0;
-      //   this.infoData[2].opacityValue = 0;
-      // } else if (window.scrollY < 1500) {
-      //   this.scrollValue = 3000;
-      //   this.infoData[1].opacityValue = Math.max(
-      //     0,
-      //     1 - window.scrollY / this.scrollValue
-      //   );
-      //   this.infoData[0].opacityValue = 0;
-      //   this.infoData[2].opacityValue = 0;
-      // } else {
-      //   this.scrollValue = 5000;
-      //   this.infoData[2].opacityValue = Math.max(
-      //     0,
-      //     1 - window.scrollY / this.scrollValue
-      //   );
-      //   this.infoData[0].opacityValue = 0;
-      //   this.infoData[1].opacityValue = 0;
-      // }
       let data = this.infoData;
-      if (window.scrollY >= 2200 && window.scrollY < 2600) {
+      if (window.scrollY >= 1800 && window.scrollY < 2600) {
         data[0].imgOpacityValue = 1;
         data[1].imgOpacityValue = 0;
         data[2].imgOpacityValue = 0;
-        data[0].textOpacityValue = 1;
-        data[1].textOpacityValue = 0.1;
-        data[2].textOpacityValue = 0.1;
-      } else if (window.scrollY >= 3100 && window.scrollY < 3400) {
+        // data[0].textOpacityValue = 1;
+        // data[1].textOpacityValue = 0.1;
+        // data[2].textOpacityValue = 0.1;
+      } else if (window.scrollY >= 2700 && window.scrollY < 3600) {
         data[0].imgOpacityValue = 0;
         data[1].imgOpacityValue = 1;
         data[2].imgOpacityValue = 0;
-        data[0].textOpacityValue = 0.1;
-        data[1].textOpacityValue = 1;
-        data[2].textOpacityValue = 0.1;
-      } else if (window.scrollY >= 3900 && window.scrollY < 4200) {
+        // data[0].textOpacityValue = 0.1;
+        // data[1].textOpacityValue = 1;
+        // data[2].textOpacityValue = 0.1;
+      } else if (window.scrollY >= 4000 && window.scrollY < 4900) {
         data[0].imgOpacityValue = 0;
         data[1].imgOpacityValue = 0;
         data[2].imgOpacityValue = 1;
-        data[0].textOpacityValue = 0.1;
-        data[1].textOpacityValue = 0.1;
-        data[2].textOpacityValue = 1;
+        // data[0].textOpacityValue = 0.1;
+        // data[1].textOpacityValue = 0.1;
+        // data[2].textOpacityValue = 1;
       } else {
         data[0].imgOpacityValue = 0;
         data[1].imgOpacityValue = 0;
         data[2].imgOpacityValue = 0;
-        data[0].textOpacityValue = 0.1;
-        data[1].textOpacityValue = 0.1;
-        data[2].textOpacityValue = 0.1;
+        // data[0].textOpacityValue = 0.1;
+        // data[1].textOpacityValue = 0.1;
+        // data[2].textOpacityValue = 0.1;
       }
     },
   },
@@ -143,30 +103,36 @@ export default {
 
 <style lang="scss" scoped>
 #section {
-  margin: 500px 0 200px;
+  margin: 200px 0 200px;
 }
 #info__wrapper {
   // border: 1px solid yellow;
   //   position: relative;
   display: flex;
   padding: 50px 0;
-  color: white;
+  margin: 300px auto;
+  color: rgba(255, 255, 255, 0.8);
   height: 842px;
   .abc {
     display: flex;
-    flex: 60%;
+    flex: 40%;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10rem;
+    align-items: end;
+    margin: 0 2rem 0 0;
+    // padding-left: 10rem;
+    text-align: right;
     transition: all 0.3s;
     word-break: keep-all;
     h3 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 2rem;
+      word-break: keep-all;
     }
     p {
-      max-width: 700px;
-      font-size: 1.2rem;
+      max-width: 400px;
+      font-size: 1rem;
+      word-break: keep-all;
     }
   }
   .sticky__img {
@@ -175,6 +141,8 @@ export default {
     img {
       position: sticky;
       top: 40vh;
+      // width: 700px;
+      height: 350px;
       border-radius: 5px;
     }
   }
