@@ -24,6 +24,7 @@
           </div>
         </div>
       </div>
+      <button @click="onClick">123</button>
     </div>
   </section>
 </template>
@@ -219,9 +220,14 @@ export default {
           href: "https://www.youtube.com/watch?v=Uq0UlIw8B8M",
         },
       ],
+      data: [],
+      searchData: [],
     };
   },
   props: ["keyword"],
+  created() {
+    return this.data.push(...this.episodes.splice(0, 4));
+  },
   computed: {
     onSearch() {
       return this.episodes.filter(
@@ -231,6 +237,12 @@ export default {
           item.guest.indexOf(this.keyword) > -1 ||
           item.iconClass.indexOf(this.keyword) > -1
       );
+    },
+  },
+  methods: {
+    onClick() {
+      this.data.push(...this.episodes.splice(0, 4));
+      console.log(this.data);
     },
   },
 };

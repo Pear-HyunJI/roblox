@@ -3,8 +3,10 @@
     <h2>경영진</h2>
     <div class="card__wrapper">
       <div class="card" v-for="(item, index) in cardData" :key="index">
-        <div class="image" :data-category="item.position">
-          <img :src="item.img" :alt="item.name" />
+        <div class="card__media__wrapper">
+          <div class="image" :data-category="item.position">
+            <img :src="item.img" :alt="item.name" />
+          </div>
         </div>
 
         <h3>{{ item.name }}</h3>
@@ -150,29 +152,33 @@ h2 {
     background: #dee2e6;
     border-radius: 8px 8px 8px 0;
     padding: 32px 32px 96px;
-    position: relative;
+    // position: relative;
     transition: all 250ms ease-in;
     &:hover {
       transform: scale(1.1);
     }
 
-    .image::before {
-      content: attr(data-category);
-      position: absolute;
-      bottom: 0;
-      width: calc(100% - 2rem);
-      text-align: right;
-      transform: rotate(-90deg);
-      transform-origin: bottom left;
-      line-height: 1;
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-    }
-    img {
-      border-radius: 8px 8px 8px 0;
-      padding: 0 0 0 10px;
+    .card__media__wrapper {
+      position: relative;
+      .image::before {
+        // border: 1px solid red;
+        content: attr(data-category);
+        position: absolute;
+        bottom: 0;
+        width: calc(100% - 1rem);
+        text-align: right;
+        transform: rotate(-90deg);
+        transform-origin: bottom left;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+      }
+      img {
+        border-radius: 8px 8px 8px 0;
+        padding: 0 0 0 10px;
+      }
     }
 
     h3 {
