@@ -1,7 +1,7 @@
 <template>
   <section class="row">
     <div class="card__wrapper">
-      <div class="card" v-for="(item, index) in data" :key="index">
+      <div class="card" v-for="(item, index) in loadItem" :key="index">
         <div class="flexBox">
           <div class="span__wrap">
             <span v-if="item.num">EPISODE {{ item.num }}</span>
@@ -24,7 +24,7 @@
           </div>
         </div>
       </div>
-      <button @click="onClick">123</button>
+      <button class="loadMore" @click="loadMore">loadMore</button>
     </div>
   </section>
 </template>
@@ -220,29 +220,43 @@ export default {
           href: "https://www.youtube.com/watch?v=Uq0UlIw8B8M",
         },
       ],
-      data: [],
-      searchData: [],
+
+      itemsPerPage: 4,
+      currentPage: 1,
+      loadItemPage: [],
     };
   },
   props: ["keyword"],
-  created() {
-    return this.data.push(...this.episodes.slice(0, 4));
-  },
+
   computed: {
-    onSearch() {
-      return this.episodes.filter(
-        (item) =>
-          item.topic.indexOf(this.keyword) > -1 ||
-          item.content.indexOf(this.keyword) > -1 ||
-          item.guest.indexOf(this.keyword) > -1 ||
-          item.iconClass.indexOf(this.keyword) > -1
-      );
+    loadItem() {
+      this.currentPage = this.$store.getters.fnGetCurrent;
+
+      if (!this.keyword) {
+        this.loadItemPage = this.episodes.filter(
+          (item, index) => index < this.itemsPerPage * this.currentPage
+        );
+      } else {
+        let items = this.episodes.filter(
+          (item) =>
+            item.topic.indexOf(this.keyword) > -1 ||
+            item.content.indexOf(this.keyword) > -1 ||
+            item.guest.indexOf(this.keyword) > -1 ||
+            item.iconClass.indexOf(this.keyword) > -1
+        );
+        this.loadItemPage = items.filter(
+          (item, index) => index < this.itemsPerPage * this.currentPage
+        );
+      }
+
+      return this.loadItemPage;
     },
   },
+
   methods: {
-    onClick() {
-      this.data.push(...this.onSearch.splice(0, 4));
-      console.log(this.data);
+    loadMore() {
+      this.currentPage = this.$store.getters.fnGetCurrent;
+      this.$store.commit("on__UpdateCurrent", ++this.currentPage);
     },
   },
 };
@@ -251,11 +265,14 @@ export default {
 <style lang="scss" scoped>
 .card__wrapper {
   color: #162227;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   margin: 20px 150px;
 
   .card {
-    margin: 30px 0;
+    margin: 10px 0;
     height: 344px;
     background: #dee2e6;
     border-radius: 8px 8px 8px 0;
@@ -317,6 +334,34 @@ export default {
       //   -webkit-line-clamp: unset;
       //   text-overflow: unset;
       // }
+    }
+  }
+
+  .loadMore {
+    margin-top: 30px;
+    font-size: 16px;
+    width: 180px;
+    height: 50px;
+    color: #dee2e6;
+    background: #0f0d1a;
+    border: 2px solid rgba(242, 244, 243, 0.75);
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: all 250ms linear;
+    &:hover {
+      border-color: rgba(99, 71, 255, 0.25);
+      box-shadow: 0 0 1rem rgba(99, 71, 255, 0.25);
+      background: conic-gradient(
+        from 95.27deg at 51.3% 51.96%,
+        #150d44 -0.95deg,
+        #121110 62.41deg,
+        #0f0c1c 134.15deg,
+        #0a042e 181.84deg,
+        #0f0d1a 237.07deg,
+        #121110 317.05deg,
+        #150d44 359.05deg,
+        #121110 422.41deg
+      );
     }
   }
 }
