@@ -1,7 +1,7 @@
 <template>
   <section class="row">
     <div class="card__wrapper">
-      <div class="card" v-for="(item, index) in onSearch" :key="index">
+      <div class="card" v-for="(item, index) in data" :key="index">
         <div class="flexBox">
           <div class="span__wrap">
             <span v-if="item.num">EPISODE {{ item.num }}</span>
@@ -226,7 +226,7 @@ export default {
   },
   props: ["keyword"],
   created() {
-    return this.data.push(...this.episodes.splice(0, 4));
+    return this.data.push(...this.episodes.slice(0, 4));
   },
   computed: {
     onSearch() {
@@ -241,7 +241,7 @@ export default {
   },
   methods: {
     onClick() {
-      this.data.push(...this.episodes.splice(0, 4));
+      this.data.push(...this.onSearch.splice(0, 4));
       console.log(this.data);
     },
   },

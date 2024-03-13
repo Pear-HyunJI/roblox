@@ -36,15 +36,17 @@ export default {
   async created() {
     try {
       let response = await fetch(
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=bc66937ca43749cebbeddf8b4ce04df2"
+        "https://newsapi.org/v2/top-headlines?country=us&pageSize=100&apiKey=bc66937ca43749cebbeddf8b4ce04df2"
       );
       let result = await response.json();
+      !result ? console.log(result) : console.log(result);
       this.newsData = result.articles;
-      this.totalItems = this.newsData.length;
+      this.totalItems = result.totalResults;
       for (let i = 0; i < Math.ceil(this.totalItems / this.itemPerPage); i++) {
         this.pageNews.push(this.newsData.splice(0, 10));
-        this.headerNews = this.pageNews[i].splice(0, 1);
+        this.headerNews.push(this.pageNews[i].splice(0, 1));
       }
+      console.log(this.newsData);
       console.log(this.totalItems);
       console.log(this.pageNews);
       console.log(this.headerNews);

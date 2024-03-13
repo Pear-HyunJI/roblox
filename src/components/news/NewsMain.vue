@@ -5,14 +5,14 @@
         <h3>최신 뉴스</h3>
         <div class="header__news">
           <div class="header__news__left">
-            <h3>{{ headerNews[0]?.title }}</h3>
-            <p>{{ headerNews[0]?.description }}</p>
+            <h3>{{ headerNews[currentPage - 1][0]?.title }}</h3>
+            <p>{{ headerNews[currentPage - 1][0]?.description }}</p>
             <a href="#" target="_blank">계속 읽기</a>
           </div>
           <div class="header__news__right">
             <img
-              :src="headerNews[0]?.urlToImage"
-              :alt="headerNews[0]?.source.name"
+              :src="headerNews[currentPage - 1][0]?.urlToImage"
+              :alt="headerNews[currentPage - 1][0]?.source.name"
             />
           </div>
         </div>
