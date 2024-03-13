@@ -92,9 +92,10 @@ export default {
   .row {
     .title {
       text-align: center;
+      margin-bottom: 60px;
       h2 {
         font-size: 55px;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
       }
       p {
         font-size: 14px;
@@ -102,20 +103,42 @@ export default {
     }
     .card__wrapper {
       .card {
+        display: flex;
+        flex-wrap: wrap;
+        background: #000;
+        height: 350px;
         .card__left {
+          flex: 0 0 35%;
+          display: flex;
+          align-items: center;
+          height: 100%;
           .text {
+            text-align: center;
+            font-size: 28px;
+            padding: 0 5px;
+            word-break: keep-all;
           }
         }
         .card__right {
+          flex: 1 1 50%;
+          height: 100%;
           .img1 {
             position: relative;
-            width: 100%;
+            // width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            img {
+              height: 100%;
+            }
             .img2 {
               position: absolute;
               width: 100%;
               top: 0;
               text-align: right;
               img {
+                height: 100%;
                 padding: 10px;
               }
             }
