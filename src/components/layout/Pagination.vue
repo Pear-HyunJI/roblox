@@ -77,7 +77,8 @@ export default {
   .goend {
     background: #000;
     color: #fff;
-    padding: 5px 10px;
+    padding: 6px 10px;
+    border-radius: 2px;
     margin: 0 5px;
     &:disabled {
       background: #999;
@@ -89,7 +90,7 @@ export default {
       width: 30px;
       height: 30px;
       background: #ddd;
-      margin: 0 2px;
+      margin: 0 5px;
       border-radius: 2px;
       &.active {
         background: #f00;

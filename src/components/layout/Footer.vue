@@ -8,22 +8,58 @@
         <nav>
           <h4>회사</h4>
           <ul class="info__wrapper__company">
-            <li><a href="#" target="_blank">인재 채용</a></li>
-            <li><a href="#" target="_blank">투자 정보</a></li>
-            <li><a href="#" target="_blank">블로그</a></li>
+            <li><router-link to="/careers">인재 채용</router-link></li>
+            <li>
+              <a
+                href="https://ir.roblox.com/overview/default.aspx"
+                target="_blank"
+                >투자 정보</a
+              >
+            </li>
+            <li>
+              <a href="https://blog.roblox.com/" target="_blank">블로그</a>
+            </li>
           </ul>
         </nav>
         <nav>
           <h4>리소스</h4>
           <ul class="info__wrapper__resources">
-            <li><a href="#" target="_blank">에듀케이션</a></li>
-            <li><a href="#" target="_blank">자주 묻는 질문</a></li>
-            <li><a href="#" target="_blank">문의</a></li>
-            <li><a href="#" target="_blank">약관</a></li>
-            <li><a href="#" target="_blank">개인정보</a></li>
+            <li>
+              <router-link to="/education">에듀케이션</router-link>
+            </li>
+            <li>
+              <a href="https://corporate.roblox.com/faq/" target="_blank"
+                >자주 묻는 질문</a
+              >
+            </li>
+            <li>
+              <a href="https://corporate.roblox.com/contact/" target="_blank"
+                >문의</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use"
+                target="_blank"
+                >약관</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy"
+                target="_blank"
+                >개인정보</a
+              >
+            </li>
           </ul>
           <ul class="notice">
-            <li><a href="#" target="_blank">구직자 개인정보 처리방침</a></li>
+            <li>
+              <a
+                href="https://corporate.roblox.com/job-applicant-privacy-notice/"
+                target="_blank"
+                >구직자 개인정보 처리방침</a
+              >
+            </li>
             <li><a href="#" target="_blank">접근성</a></li>
           </ul>
         </nav>

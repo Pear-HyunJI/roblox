@@ -11,7 +11,7 @@
           </div>
           <div class="header__news__right">
             <img
-              :src="headerNews[currentPage - 1][0]?.urlToImage"
+              :src="getImg(headerNews[currentPage - 1][0]?.urlToImage)"
               :alt="headerNews[currentPage - 1][0]?.source.name"
             />
           </div>
@@ -23,7 +23,7 @@
             :key="idx"
           >
             <div class="card__img">
-              <img :src="item.urlToImage" :alt="item.source.name" />
+              <img :src="getImg(item.urlToImage)" :alt="item.source.name" />
             </div>
             <h3>{{ item.title }}</h3>
             <a :href="item.url" target="_blank">계속 읽기</a>
@@ -38,6 +38,16 @@
 export default {
   name: "NewsMain",
   props: ["newsData", "headerNews", "pageNews", "currentPage"],
+  data() {
+    return {
+      placeholder: "src/assets/images/cardnews-1/TechTalks_evergreen_2x.jpg",
+    };
+  },
+  methods: {
+    getImg(src) {
+      return src ? src : this.placeholder;
+    },
+  },
 };
 </script>
 
