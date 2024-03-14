@@ -19,4 +19,9 @@ export default new Router({
     { path: "/news", name: "news", component: News },
     { path: "/techtalks", name: "techtalks", component: TechTalks },
   ],
+  scrollBehavior() {
+    return {
+      y: 0,
+    };
+  },
 });
