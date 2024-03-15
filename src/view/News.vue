@@ -1,4 +1,4 @@
-<template color-mode="dark">
+<template>
   <div id="news">
     <news-main
       :newsData="newsData"
