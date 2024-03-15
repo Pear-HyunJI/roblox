@@ -85,9 +85,13 @@ export default {
   .header__logo {
     // aspect-ratio: 200/37;
     width: 15%;
-    img {
-      height: 16px;
-      padding-left: 30px;
+    a {
+      display: flex;
+      align-items: center;
+      img {
+        height: 16px;
+        padding-left: 30px;
+      }
     }
   }
   .header__menuBar {
