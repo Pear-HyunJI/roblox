@@ -3,7 +3,10 @@
     <div class="row">
       <div class="exp__title">
         <h3>추천 교육 체험</h3>
-        <a href="#" target="_blank">
+        <a
+          href="https://www.roblox.com/discover#/sortName/Curated_67"
+          target="_blank"
+        >
           <span>전체 보기</span>
           <i class="fa-solid fa-arrow-right-long"></i>
         </a>

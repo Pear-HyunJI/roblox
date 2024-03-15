@@ -94,6 +94,7 @@ export default {
 
 <style lang="scss" scoped>
 .about__us {
+  margin: 50px 0 150px 0;
   .row {
     .card__wrapper {
       display: flex;

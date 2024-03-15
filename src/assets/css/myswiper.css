@@ -316,7 +316,7 @@
 /* career__story 오른쪽 화살표 위치 */
 #career__story .swiper-button-next,
 #career__story .swiper-container-rtl .swiper-button-prev {
-  left: 405px;
+  left: 355px;
   right: auto;
   bottom: -325px;
   margin: 20px;

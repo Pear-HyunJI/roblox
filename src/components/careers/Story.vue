@@ -12,7 +12,7 @@
             <div class="slideBox2">
               <img :src="slider.image" alt="" />
               <h3>{{ slider.h3 }}</h3>
-              <button>더 읽어보기</button>
+              <a :href="slider.link" target="_blank">더 읽어보기</a>
             </div>
           </Swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
@@ -41,32 +41,33 @@ export default {
           image:
             "src/assets/images/career-story/RBLX_EOY_BlogHeader_Final-1024x576.webp",
           h3: "2023년 돌아보기 - CEO가 보내는 편지",
+          link: "https://blog.roblox.com/2023/12/2023-year-review-letter-ceo/",
         },
         {
           image: "src/assets/images/career-story/RBLX_RDC-Banner_-Blog-1.webp",
           h3: "RDC 2023 : Roblox가 다음에 갈 곳",
+          link: "https://blog.roblox.com/2023/09/rdc-2023-roblox-going-next/",
         },
         {
           image: "src/assets/images/career-story/AI-Blog-Header.webp",
           h3: "제너레이티브 AI를 통해 Roblox창작에 혁명을 일으키다",
+          link: "https://blog.roblox.com/2023/09/revolutionizing-creation-roblox/",
         },
         {
           image:
             "src/assets/images/career-story/_Roblox-Career-Center-Header._001-1.webp",
           h3: "Roblox 취업센터를 소개합니다",
+          link: "https://blog.roblox.com/2023/08/introducing-roblox-career-center/",
         },
         {
           image: "src/assets/images/career-story/image 1.webp",
           h3: "Roblox는 성장한다",
+          link: "https://www.fastcompany.com/90878692/roblox-grows-up",
         },
         {
           image: "src/assets/images/career-story/image 2.webp",
           h3: "모든 연령대를 위한 우리의 비전",
-        },
-        {
-          image:
-            "src/assets/images/career-story/RBLX_EOY_BlogHeader_Final-1024x576.webp",
-          h3: "2023년 돌아보기 - CEO가 보내는 편지",
+          link: "https://blog.roblox.com/2023/05/our-vision-for-all-ages/",
         },
       ],
       swiperOption: {
@@ -101,9 +102,6 @@ h2 {
   font-weight: 500;
 }
 
-#valueOfRoblox {
-  padding: 80px 0;
-}
 .slide__outer {
   overflow: hidden;
   width: 1200px;
@@ -143,7 +141,7 @@ h2 {
       font-size: 16px;
     }
 
-    button {
+    a {
       position: absolute;
       bottom: 40px;
       background: none;

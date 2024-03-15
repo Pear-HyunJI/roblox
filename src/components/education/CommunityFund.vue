@@ -10,7 +10,10 @@
           2030년까지 1억 명의 학생에게 Roblox에서의 학습 기회를 제공하는 것을
           목표로 하고 있습니다.
         </p>
-        <a href="#" target="_blank">
+        <a
+          href="https://blog.roblox.com/2021/11/introducing-roblox-community-fund/"
+          target="_blank"
+        >
           <span>자세히 보기</span>
           <i class="fa-solid fa-arrow-right-long"></i>
         </a>

@@ -6,7 +6,7 @@
       있습니다.s
     </p>
     <p>인간관계와 소통의 미래를 건설하는 데 동참해 주세요.</p>
-    <button>채용정보 보기</button>
+    <a href="https://careers.roblox.com/jobs" target="_blank">채용정보 보기</a>
   </div>
 </template>
 
@@ -39,11 +39,12 @@ export default {
   p {
     font-size: 18px;
   }
-  button {
+  a {
     margin-top: 80px;
     font-size: 16px;
     width: 180px;
     height: 50px;
+    line-height: 45px;
     color: #dee2e6;
     background: #6347ff;
     border: 2px solid #6347ff;

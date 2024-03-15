@@ -9,7 +9,7 @@
         <div class="text">
           <h4>{{ item.text1 }}</h4>
           <p>{{ item.text2 }}</p>
-          <a href="#" target="_blank">
+          <a :href="item.link" target="_blank">
             <span>자세히 보기</span>
             <i class="fa-solid fa-arrow-right-long"></i>
           </a>
@@ -30,12 +30,14 @@ export default {
             "src/assets/images/education-with-us/Edu_Hub_Home_Desktop_02.jpg",
           text1: "함께 개발해요",
           text2: "탐구, 조사, 실험의 기회를 제공하는 학습 체험을 구축하세요.",
+          link: "https://education.roblox.com/ko/%ED%8C%8C%ED%8A%B8%EB%84%88/",
         },
         {
           imgUrl:
             "src/assets/images/education-with-us/Edu_Hub_Home_Mobile_03.jpg",
           text1: "함께 가르쳐요",
           text2: "무료 학습 계획안 및 교육 자료를 둘러보세요.",
+          link: "https://education.roblox.com/ko/%EA%B5%90%EC%9C%A1%EC%9E%90/",
         },
         {
           imgUrl:
@@ -43,6 +45,7 @@ export default {
           text1: "함께 배워요",
           text2:
             "안전하고 학생 친화적인 학습을 위한 툴 및 설정에 대해 알아보세요.",
+          link: "https://education.roblox.com/ko/%ED%95%99%EC%83%9D-%EB%B0%8F-%EA%B0%80%EC%A1%B1/",
         },
       ],
     };
