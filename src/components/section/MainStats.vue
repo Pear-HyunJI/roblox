@@ -24,12 +24,46 @@ export default {
         { num: 2.4, text1: "백만", text2: "개발자*" },
         { num: 4.4, text1: "백만", text2: "활성 체험*" },
       ],
+      maxNum: [{ num: 71.5 }, { num: 15.5 }, { num: 2.4 }, { num: 4.4 }],
     };
   },
-  // created() {
-  //   for (let item in this.statsData) {
-  //     console.log(item, this.statsData[item].num);
-  //   }
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    /* 33번으로 나눠서 카운트 업 */
+
+    handleScroll() {
+      let scrollY = window.scrollY;
+      // console.log(scrollY);
+      if (scrollY === 4900) {
+        for (let i in this.statsData) {
+          // console.log(this.statsData[i].num);
+          if (this.statsData[i].num == 0) {
+            this.statsData[i].num = 0;
+          } else {
+            /* 입력한 숫자를 33번에 걸쳐 0부터 올림. */
+            let time = 0;
+
+            for (let j = 0; j <= this.statsData[i].num; j += 1) {
+              setTimeout(() => {
+                this.statsData[i].num = j;
+              }, 50 * time);
+              /* 딱 떨어지지 않는 숫자를 마지막에 그 숫자로 만들어주기 위함 */
+              if (j + 1 > this.statsData[i].num) {
+                setTimeout(() => {
+                  this.statsData[i].num = this.maxNum[i].num;
+                }, 50 * (time + 1));
+              }
+              time++;
+            }
+          }
+        }
+      }
+    },
+  },
+  // beforeDestroy() {
+  //   window.removeEventListener("scroll", this.handleScroll);
   // },
 };
 </script>
