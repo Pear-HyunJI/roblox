@@ -21,8 +21,12 @@
           </p>
 
           <ul v-if="activeMenu === index" class="globeLanguage">
-            <li v-for="(submenu, subIndex) in menu.submenus" :key="subIndex">
-              {{ submenu }}
+            <li
+              v-for="(submenu, subIndex) in menu.submenus"
+              :key="subIndex"
+              @click="changeLanguage(submenu.en)"
+            >
+              {{ submenu.ko }}
             </li>
           </ul>
         </li>
@@ -44,7 +48,10 @@ export default {
         { name: "인재채용", to: "careers" },
         {
           name: "globe",
-          submenus: ["한국어", "English"],
+          submenus: [
+            { ko: "한국어", en: "ko" },
+            { ko: "English", en: "en" },
+          ],
         },
       ],
       activeMenu: null,
@@ -57,6 +64,9 @@ export default {
       } else {
         this.activeMenu = index;
       }
+    },
+    changeLanguage(locale) {
+      this.$i18n.locale = locale; // 언어 변경
     },
   },
 };

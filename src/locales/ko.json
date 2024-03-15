@@ -1,0 +1,31 @@
+{
+  "home": [
+    {
+      "goToDownload": [
+        { "h2": "다양한 기기로 Roblox를 즐기세요! " },
+        { "h5": "ROBLOX는 모드 기기를 지원합니다." },
+        {
+          "p": "PC, Mac, ios, Android, Amazon 기기, Xbox 콘솔, playStation 콘솔, MetaQuest, HTC Vive"
+        }
+      ],
+      "jobPosting": [{ "p": "인재 채용" }, { "h5": "채용 공고 둘러보기" }],
+      "latesNews": [
+        { "h2": "Roblox 관련 최신 뉴스" },
+        { "a": "전체 뉴스" },
+        { "a2": "계속 읽기" },
+        {
+          "s-title1": "사람들을 한자리에 모으는 새로운 방법",
+          "s-title2": "Roblox 아바타 기술의 진화 양상",
+          "s-title3": "생성형 AI를 통한 Roblox 작품 제작 혁신",
+          "s-title4": "RDC 2023: Roblox의 다음 행로"
+        },
+        {
+          "s-contents1": "사람들이 서로 연결되어 소통하고, 자신을 원하는 방식으로 표현할 수 있도록 하려는 Roblox의 비전에 대해 자세히 알아보세요."
+        }
+      ],
+      "mainStats": [],
+      "stickyInfo": [],
+      "tileView": []
+    }
+  ]
+}
