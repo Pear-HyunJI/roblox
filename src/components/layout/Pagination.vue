@@ -53,7 +53,6 @@ export default {
   methods: {
     goToPage(page) {
       this.$emit("update:currentPage", page);
-      this.$emit("onClick", page);
       window.scrollTo({
         top: 0,
         behavior: "smooth", // 부드러운 스크롤 적용
