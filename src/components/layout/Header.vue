@@ -101,43 +101,56 @@ export default {
     display: flex;
     justify-content: space-around;
     li {
-      a,
-      p {
+      a {
         position: relative;
         padding: 0px 12px;
         line-height: 80px;
         color: #f2f3f4;
         border-bottom: 3px solid transparent;
 
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 3px;
+          width: 50%;
+          transition: all 0.5s;
+          opacity: 0;
+        }
+        &::before {
+          left: 0;
+          background: linear-gradient(
+            to left,
+            rgba(99, 71, 255, 1),
+            rgba(255, 0, 0, 0)
+          );
+        }
+
+        &::after {
+          right: 0;
+          background: linear-gradient(
+            to right,
+            rgba(99, 71, 255, 1),
+            rgba(255, 0, 0, 0)
+          );
+        }
+
         &:hover,
         &.router-link-exact-active {
           &::before,
           &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            height: 3px;
-            width: 50%;
-          }
-
-          &::before {
-            left: 0;
-            background: linear-gradient(
-              to left,
-              rgba(99, 71, 255, 1),
-              rgba(255, 0, 0, 0)
-            );
-          }
-
-          &::after {
-            right: 0;
-            background: linear-gradient(
-              to right,
-              rgba(99, 71, 255, 1),
-              rgba(255, 0, 0, 0)
-            );
+            opacity: 1;
           }
         }
+      }
+      p {
+        position: relative;
+        padding: 0px 12px;
+        line-height: 80px;
+        color: #f2f3f4;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
       }
     }
   }

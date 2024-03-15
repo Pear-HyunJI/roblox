@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       newsData: [],
-      totalItems: 2,
+      totalItems: 1,
       currentPage: 1,
       itemPerPage: 10,
       headerNews: [],

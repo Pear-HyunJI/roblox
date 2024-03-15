@@ -53,7 +53,7 @@ export default {
   methods: {
     goToPage(page) {
       this.$emit("update:currentPage", page);
-      this.$emit("onClick", page);
+      // this.$emit("onClick", page);
     },
     prevPage() {
       if (this.currentPage > 1) {
