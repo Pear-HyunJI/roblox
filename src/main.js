@@ -5,7 +5,7 @@ import store from "./store";
 import router from "./router";
 import "./assets/css/reset.css";
 
-import { i18n } from "@/locales/i18n";
+import { i18n } from "@/i18n";
 
 import VueMarqueeSlider from "vue-marquee-slider";
 Vue.use(VueMarqueeSlider);

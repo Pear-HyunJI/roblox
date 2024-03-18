@@ -70,6 +70,7 @@ export default {
         this.activeMenu = index;
       }
     },
+
     changeLanguage(locale) {
       this.$i18n.locale = locale; // 언어 변경
     },
