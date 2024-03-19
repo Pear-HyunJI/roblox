@@ -173,16 +173,6 @@ export default {
 
 <style lang="scss" scoped>
 #detailView {
-  // position: fixed;
-  // right: 0;
-  // top: 0;
-  // z-index: 9999;
-  // color: #121110;
-  // // transform: translateX(700px);
-  // transition: all 0.5s;
-  // &.active {
-  //   transform: translateX(0px);
-  // }
   .detail__wrapper {
     overflow: hidden;
     .detail__card {

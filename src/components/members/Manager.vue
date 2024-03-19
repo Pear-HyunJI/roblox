@@ -125,11 +125,6 @@ export default {
   methods: {
     showDetailManager(name) {
       this.$emit("showDetailManager", name);
-      // this.clickedCard = name;
-      // this.$emit("update: clickedCard", name);
-      console.log(name);
-
-      // console.log(this.clickedCard);
     },
   },
 };
@@ -165,7 +160,6 @@ h2 {
     background: #dee2e6;
     border-radius: 8px 8px 8px 0;
     padding: 32px 32px 96px;
-    // position: relative;
     transition: all 250ms ease-in;
     &:hover {
       transform: scale(1.1);
@@ -178,7 +172,6 @@ h2 {
     .card__media__wrapper {
       position: relative;
       .image::before {
-        // border: 1px solid red;
         content: attr(data-category);
         position: absolute;
         bottom: 0;
@@ -226,14 +219,12 @@ h2 {
       opacity: 0;
       overflow: hidden;
       max-height: 0px;
-      // transition: all 250ms ease-in;
       text-overflow: ellipsis;
       white-space: nowrap;
       position: absolute;
       bottom: 20px;
       background: none;
       padding-bottom: 20px;
-      // border-bottom: 1px solid #162227;
       border: none;
 
       &::after {
@@ -258,7 +249,6 @@ h2 {
     &:hover button {
       opacity: 1;
       max-height: 2em;
-      // border-bottom: 1px solid black;
     }
   }
 }

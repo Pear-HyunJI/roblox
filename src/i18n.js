@@ -1,15 +1,8 @@
-// src/locales/i18n.js
-
 import Vue from "vue";
 import VueI18n from "vue-i18n";
 import axios from "axios";
 
 Vue.use(VueI18n);
-
-// const messages = {
-//   ko: {},
-//   en: {},
-// };
 
 const messages = {
   ko: [],
@@ -20,18 +13,10 @@ let fileNames = ["Home", "Careers"];
 
 let loadTranslation = async () => {
   for (let lang of languages) {
-    console.log(`src/locales/${lang}`);
-
-    // try {
-    //   let files = await axios.get(`src/locales/${lang}`);
-    //   let fileNames = files.data;
-    //   console.log(files);
-    //   console.log(fileNames);
     for (let fileName of fileNames) {
       await axios
         .get(`src/locales/${lang}/${fileName}.json`)
         .then((res) => {
-          console.log(res);
           if (lang === "ko") {
             messages.ko.push(res.data);
           } else {
@@ -41,15 +26,8 @@ let loadTranslation = async () => {
         .catch((err) => {
           console.log(err);
         });
-      // let key = fileName.replace(/\.[^/.]+$/, ""); // 확장자 제게해서 파일 이름 저장
-
-      // messages[lang][key] = response.data;
     }
   }
-  console.log(messages);
-  // } catch (err) {
-  //   console.log(err);
-  // }
 };
 
 loadTranslation().then(() => {

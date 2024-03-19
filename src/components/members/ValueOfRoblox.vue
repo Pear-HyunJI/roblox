@@ -117,7 +117,6 @@ h2 {
   background-color: #343a40;
   height: 220px;
   width: 100%;
-  // border: 1px solid red;
 
   .slideBox2 {
     padding: 2rem;

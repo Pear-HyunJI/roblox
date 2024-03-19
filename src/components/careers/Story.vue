@@ -131,7 +131,6 @@ h2 {
   background-color: #343a40;
   height: 480px;
   width: 100%;
-  // border: 1px solid red;
   &.dark {
     color: #121110;
     background-color: #bdbdbd;
@@ -182,17 +181,4 @@ h2 {
     }
   }
 }
-
-// .slideBox1:nth-child(1) {
-//   background-color: #162227;
-// }
-// .slideBox1:nth-child(2) {
-//   background-color: #343a40;
-// }
-// .slideBox1:nth-child(3) {
-//   background-color: #4d5257;
-// }
-// .slideBox1:nth-child(4) {
-//   background-color: #6f7274;
-// }
 </style>

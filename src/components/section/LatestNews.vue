@@ -98,9 +98,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// img {
-//   width: 100px;
-// }
 #latest__news {
   color: #dee2e6;
   height: 700px;
@@ -158,13 +155,8 @@ export default {
       }
     }
     .card__wrapper {
-      // overflow: hidden;
       max-width: 1200px;
-      // width: 100%;
-      // height: 100%;
-      // border: 1px solid violet;
       .card {
-        // margin: auto 0;
         top: 75px;
         padding: 2rem 2rem 6rem;
         background: #162227;
@@ -172,19 +164,6 @@ export default {
         height: 450px;
         transition: all 0.5s;
         opacity: 0.3;
-        // max-width: 80%;
-        // width: 100%;
-        // max-width: 30%;
-        // transform: translateX(100%);
-        // &:nth-child(1) {
-        //   opacity: 0.5;
-        // }
-        // &:hover {
-        //   height: 700px;
-        // }
-        // &:hover p {
-        //   opacity: 1;
-        // }
         &.dark {
           background: #dfdfdf;
           color: #121110;
@@ -235,7 +214,4 @@ img {
   display: flex;
   flex-direction: column;
 }
-// .card__container {
-//   width: 100px;
-// }
 </style>

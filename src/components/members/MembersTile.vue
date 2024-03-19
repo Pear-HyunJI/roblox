@@ -203,12 +203,10 @@ export default {
       }
     }
     .tileBoxHidden {
-      //   flex: 50%;
       position: absolute;
       top: -150px;
       right: -100px;
       display: flex;
-      //   position: relative;
 
       align-items: center;
       overflow: hidden;
@@ -224,7 +222,6 @@ export default {
           margin: 0 7px;
           .imgBox2 {
             margin: 7px 0;
-            //   overflow: hidden;
             img {
               border-radius: 10px;
               transition: all 0.3s;

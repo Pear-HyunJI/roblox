@@ -329,11 +329,6 @@ export default {
         white-space: normal;
         display: -webkit-box !important;
       }
-
-      // &:hover p {
-      //   -webkit-line-clamp: unset;
-      //   text-overflow: unset;
-      // }
     }
   }
 

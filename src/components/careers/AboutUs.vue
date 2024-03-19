@@ -164,7 +164,6 @@ export default {
         padding: 0 2.5rem;
         .photo__card__img {
           width: 500px;
-          // height: 600px;
           img {
             border-radius: 1rem 1rem 0 0;
           }

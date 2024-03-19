@@ -171,7 +171,4 @@ export default {
     }
   }
 }
-
-a:hover {
-}
 </style>

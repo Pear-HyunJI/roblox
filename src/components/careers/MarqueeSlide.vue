@@ -78,11 +78,7 @@ export default {
       handlePlay: false,
     };
   },
-  // computed: {
-  //   handleSlideEvent() {
-  //     return this.stopSlider();
-  //   },
-  // },
+
   methods: {
     stopSlider() {
       this.handlePlay = true;
@@ -99,17 +95,13 @@ export default {
   display: flex;
   overflow: hidden;
   padding: 2rem 0;
-  // width: 1920px;
   margin: 80px auto;
-  // border: 1px solid blue;
   justify-content: center;
   align-items: center;
 }
 
 .marqueeImage {
-  // display: flex;
   flex: 0 0 200px;
-  // width: 300px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -117,16 +109,10 @@ export default {
   border-radius: 8px 8px 8px 0;
   transition: 0.5s all ease-in-out;
 
-  // position: relative;
-  // height: 300px;
-
   &:nth-child(2n) {
-    // max-width: 100%;
     height: 300px;
   }
   &:nth-child(2n + 1) {
-    // border: 1px solid aqua;
-    // max-width: 100%;
     height: 200px;
     margin-top: 50px;
   }

@@ -63,7 +63,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 50px;
     flex: 50%;
     color: #dee2e6;
