@@ -169,15 +169,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .imgContainer::before {
-//   position: absolute;
-//   filter: blur(10px);
-//   top: 10;
-//   bottom: 10;
-//   right: 0;
-//   left: 0;
-//   z-index: -1;
-// }
 .row {
   h2 {
     color: #dee2e6;
@@ -248,7 +239,6 @@ export default {
       display: flex;
       flex-direction: column;
       transform: rotate(15deg);
-
       animation: fadeInUp 3s;
       .imgBox1 {
         margin: 0 7px;

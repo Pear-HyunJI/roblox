@@ -1,11 +1,12 @@
 <template>
-  <section id="career__story">
+  <section id="career__story" :class="{ dark: changeDarkMode }">
     <div class="slide__outer">
       <div class="slide__inner">
-        <h2>Roblox 전반의 이야기</h2>
+        <h2 :class="{ dark: changeDarkMode }">Roblox 전반의 이야기</h2>
         <swiper class="swiper" :options="swiperOption">
           <Swiper-slide
             class="slideBox1"
+            :class="{ dark: changeDarkMode }"
             v-for="(slider, index) in sliders"
             :key="index"
           >
@@ -91,6 +92,11 @@ export default {
       },
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -100,6 +106,9 @@ h2 {
   color: #dee2e6;
   padding-bottom: 48px;
   font-weight: 500;
+  &.dark {
+    color: #121110;
+  }
 }
 
 .slide__outer {
@@ -122,8 +131,10 @@ h2 {
   background-color: #343a40;
   height: 480px;
   width: 100%;
-  // border: 1px solid red;
-
+  &.dark {
+    color: #121110;
+    background-color: #bdbdbd;
+  }
   .slideBox2 {
     padding: 3rem;
     height: 100%;
@@ -147,7 +158,6 @@ h2 {
       background: none;
       border: none;
       font-size: 18px;
-      color: #dee2e6;
 
       padding-bottom: 10px;
 
@@ -171,17 +181,4 @@ h2 {
     }
   }
 }
-
-// .slideBox1:nth-child(1) {
-//   background-color: #162227;
-// }
-// .slideBox1:nth-child(2) {
-//   background-color: #343a40;
-// }
-// .slideBox1:nth-child(3) {
-//   background-color: #4d5257;
-// }
-// .slideBox1:nth-child(4) {
-//   background-color: #6f7274;
-// }
 </style>

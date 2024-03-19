@@ -1,5 +1,5 @@
 <template>
-  <div class="community__fund">
+  <div class="community__fund" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="text">
         <h2>Roblox 커뮤니티 펀드</h2>
@@ -13,6 +13,7 @@
         <a
           href="https://blog.roblox.com/2021/11/introducing-roblox-community-fund/"
           target="_blank"
+          :class="{ dark: changeDarkMode }"
         >
           <span>자세히 보기</span>
           <i class="fa-solid fa-arrow-right-long"></i>
@@ -31,6 +32,11 @@
 <script>
 export default {
   name: "CommunityFund",
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -38,6 +44,9 @@ export default {
 .community__fund {
   margin-top: 200px;
   color: #dee2e6;
+  &.dark {
+    color: #121110;
+  }
   .row {
     display: flex;
     align-items: center;
@@ -59,6 +68,9 @@ export default {
         border-radius: 8px;
         font-size: 14px;
         transition: all 0.3s;
+        &.dark {
+          border-color: #121110;
+        }
         &:hover {
           transform: translateY(-3px);
         }

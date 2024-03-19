@@ -1,6 +1,6 @@
 <template>
   <section class="episode__search">
-    <h2>에피소드</h2>
+    <h2 :class="{ dark: changeDarkMode }">에피소드</h2>
     <div class="tech__search">
       <input
         ref="inputRef"
@@ -16,6 +16,11 @@
 <script>
 export default {
   name: "EpisodeSearch",
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
   methods: {
     onKeyPress(event) {
       if (event.key === "Enter") {
@@ -47,6 +52,9 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   padding-bottom: 30px;
+  &.dark {
+    color: #121110;
+  }
 }
 .tech__search {
   text-align: center;

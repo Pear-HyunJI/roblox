@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="row">
-      <div class="textBox">
+      <div class="textBox" :class="{ dark: changeDarkMode }">
         <h3>Roblox 사람들</h3>
         <h4>함께 만드는 미래</h4>
         <p>
@@ -9,7 +9,7 @@
           모이는 방식을 재창조하는 데 전념하고 있습니다.
         </p>
       </div>
-      <div class="tileBox">
+      <div class="tileBox" :class="{ dark: changeDarkMode }">
         <div class="tileBoxHidden">
           <div
             class="imgContainer"
@@ -99,6 +99,11 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -111,8 +116,15 @@ export default {
     color: #dee2e6;
     font-weight: normal;
     padding: 100px 0;
+<<<<<<< HEAD
     // margin: 64px 80px 64px 176px;
     margin: 64px 5% 64px 15%;
+=======
+    margin: 64px 80px 64px 176px;
+    &.dark {
+      color: #121110;
+    }
+>>>>>>> afb6e3be42c0caf53c827918dbe85ce08fd778bf
     h3 {
       font-size: 15px;
       font-weight: 400;
@@ -163,13 +175,43 @@ export default {
         rgba(18, 17, 16, 0) 100%
       );
     }
+    &.dark {
+      &::before {
+        position: absolute;
+        content: "";
+        height: 15%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        top: -2px;
+        background: linear-gradient(
+          180deg,
+          white 0%,
+          white 5%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        height: 15%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        bottom: -2px;
+        background: linear-gradient(
+          0deg,
+          white 0%,
+          white 5%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+    }
     .tileBoxHidden {
-      //   flex: 50%;
       position: absolute;
       top: -150px;
       right: -100px;
       display: flex;
-      //   position: relative;
 
       align-items: center;
       overflow: hidden;
@@ -185,9 +227,13 @@ export default {
           // margin: 0 7px;
           margin: 0 4%;
           .imgBox2 {
+<<<<<<< HEAD
             // margin: 7px 0;
             margin: 4% 0;
             //   overflow: hidden;
+=======
+            margin: 7px 0;
+>>>>>>> afb6e3be42c0caf53c827918dbe85ce08fd778bf
             img {
               border-radius: 10px;
               transition: all 0.3s;

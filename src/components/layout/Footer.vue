@@ -63,7 +63,10 @@
             <li><a href="#" target="_blank">접근성</a></li>
           </ul>
         </nav>
-        <span>© & ™ 2024 Roblox Corporation. All Rights Reserved.</span>
+        <span
+          >&#169; &#38; &#8482; 2024 Roblox Corporation. All Rights
+          Reserved.</span
+        >
       </div>
       <div>
         <div class="info__sns">

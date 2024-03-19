@@ -2,7 +2,7 @@
   <div class="news__main">
     <div class="row">
       <div class="news__main__wrapper">
-        <h3>최신 뉴스</h3>
+        <h3 :class="{ dark: changeDarkMode }">최신 뉴스</h3>
         <div class="header__news">
           <div class="header__news__left">
             <h3>{{ headerNews[currentPage - 1][0]?.title }}</h3>
@@ -43,6 +43,11 @@ export default {
       placeholder: "src/assets/images/cardnews-1/TechTalks_evergreen_2x.jpg",
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
   methods: {
     getImg(src) {
       return src ? src : this.placeholder;
@@ -60,6 +65,9 @@ export default {
       margin: 0 auto;
       h3 {
         font-size: 2.5rem;
+        &.dark {
+          color: #121110;
+        }
       }
       .header__news {
         display: flex;

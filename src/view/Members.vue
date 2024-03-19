@@ -9,7 +9,7 @@
       :clickedCard.sync="clickedCard"
       :class="{ active: showDetail }"
     />
-    <DetailManager
+    <detail-manager
       class="detailManager"
       :clickedCard.sync="clickedCard"
       :class="{ active: showDetail }"
@@ -32,20 +32,13 @@ export default {
     return {
       showManager: true,
       showDetail: false,
-      // zIndex1: 1,
-      // zIndex2: 0,
       clickedCard: "",
     };
   },
   methods: {
     showDetailManager(name) {
-      // this.showManager = false;
       this.showDetail = true;
       this.clickedCard = name;
-      console.log(name);
-
-      // this.zIndex1 = 0;
-      // this.zIndex2 = 1;
     },
     closeDetail() {
       this.showDetail = false;

@@ -1,5 +1,5 @@
 <template>
-  <div class="recruit__wrap">
+  <div class="recruit__wrap" :class="{ dark: changeDarkMode }">
     <h2>사람들이 함께 모이는 방식을 재구성해보세요</h2>
     <p>
       Roblox 직원들은 매일 복잡한 질문에 답하고 놀라운 혁신을 주도하고
@@ -13,6 +13,11 @@
 <script>
 export default {
   name: "RecruitInfo",
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -22,6 +27,9 @@ export default {
   margin: 0 auto;
   color: #dee2de;
   text-align: center;
+  &.dark {
+    color: #121110;
+  }
 
   h2 {
     font-size: 54px;

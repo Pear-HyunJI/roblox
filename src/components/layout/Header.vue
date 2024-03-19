@@ -103,11 +103,9 @@ export default {
   align-items: center;
   background: #30303099;
   border-radius: 15px;
-  // justify-content: left;
   position: relative;
 
   .header__logo {
-    // aspect-ratio: 200/37;
     width: 15%;
     a {
       display: flex;
@@ -211,7 +209,6 @@ export default {
       align-items: center;
       cursor: pointer;
       border-radius: 20px;
-      // box-shadow: 0 0 1rem rgba(242, 243, 244, 0.2);
       height: 50px;
       i {
         display: flex;
@@ -234,11 +231,7 @@ export default {
   }
 }
 
-.globe {
-  // position: relative;
-}
 .globeLanguage {
-  // display: none;
   position: absolute;
   top: 110%;
   right: 10%;

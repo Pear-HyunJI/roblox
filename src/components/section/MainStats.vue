@@ -71,9 +71,6 @@ export default {
       }
     },
   },
-  // beforeDestroy() {
-  //   window.removeEventListener("scroll", this.handleScroll);
-  // },
 };
 </script>
 
