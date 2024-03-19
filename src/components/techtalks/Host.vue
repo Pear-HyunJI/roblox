@@ -7,7 +7,7 @@
           alt="CEO image"
         />
       </div>
-      <div class="textBox">
+      <div class="textBox" :class="{ dark: changeDarkMode }">
         <div class="text__wrapper">
           <span>데이비드 바주키(DAVID BAZUCKI) 진행</span>
           <h3>Tech Talks 팟캐스트</h3>
@@ -48,6 +48,11 @@
 <script>
 export default {
   name: "Host",
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -63,6 +68,9 @@ export default {
     flex: 50%;
     color: #dee2e6;
     word-break: keep-all;
+    &.dark {
+      color: #121110;
+    }
     .text__wrapper {
       max-width: calc(640px - 11rem);
       font-size: 20px;

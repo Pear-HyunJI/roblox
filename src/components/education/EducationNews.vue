@@ -1,12 +1,17 @@
 <template>
-  <div class="education__news">
+  <div class="education__news" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="title">
         <h2>Roblox 에듀케이션 관련 뉴스</h2>
         <p>교육 이니셔티브에 대한 최신 뉴스를 읽어 보세요.</p>
       </div>
       <swiper class="card__wrapper" :options="swiperOption">
-        <swiper-slide class="card" v-for="(item, idx) in data" :key="idx">
+        <swiper-slide
+          class="card"
+          :class="{ dark: changeDarkMode }"
+          v-for="(item, idx) in data"
+          :key="idx"
+        >
           <div class="card__left">
             <div class="text">
               <a :href="item.link" target="_blank">{{ item.text }}</a>
@@ -86,6 +91,11 @@ export default {
       },
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -93,6 +103,9 @@ export default {
 .education__news {
   margin-top: 200px;
   color: #dee2e6;
+  &.dark {
+    color: #121110;
+  }
   .row {
     .title {
       text-align: center;
@@ -111,6 +124,9 @@ export default {
         flex-wrap: wrap;
         background: #000;
         height: 350px;
+        &.dark {
+          background: #bdbdbd;
+        }
         .card__left {
           flex: 0 0 35%;
           display: flex;

@@ -2,7 +2,7 @@
   <div class="about__us">
     <div class="row">
       <div class="card__wrapper" v-for="(item, idx) in data" :key="idx">
-        <div class="text">
+        <div class="text" :class="{ dark: changeDarkMode }">
           <h3>{{ item.h3Text }}</h3>
           <p>{{ item.pText }}</p>
           <a :href="item.aRink" v-if="item.aText">{{ item.aText }}</a>
@@ -11,7 +11,11 @@
           <div class="photo__card__img">
             <img :src="item.img" :alt="item.h3Text" />
           </div>
-          <div class="photo__card__text" v-if="item.cardP1">
+          <div
+            class="photo__card__text"
+            :class="{ dark: changeDarkMode }"
+            v-if="item.cardP1"
+          >
             <p class="p1">{{ item.cardP1 }}</p>
             <p class="p2">{{ item.cardP2 }}</p>
             <p class="p3">{{ item.cardP3 }}</p>
@@ -89,6 +93,11 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -114,6 +123,9 @@ export default {
         color: #f2f4f3;
         word-break: keep-all;
         gap: 1.5rem;
+        &.dark {
+          color: #121110;
+        }
         h3 {
           font-size: 2.5rem;
           line-height: 3rem;
@@ -154,7 +166,7 @@ export default {
           width: 500px;
           // height: 600px;
           img {
-            border-radius: 1rem 1rem 1rem 0;
+            border-radius: 1rem 1rem 0 0;
           }
         }
         .photo__card__text {
@@ -164,6 +176,10 @@ export default {
           padding: 1.5rem;
           background: #222;
           border-radius: 0 0 1rem 0;
+          &.dark {
+            color: #121110;
+            background: #bdbdbd;
+          }
           .p1 {
             font-size: 1.125rem;
           }

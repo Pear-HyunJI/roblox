@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="row">
-      <div class="textBox">
+      <div class="textBox" :class="{ dark: changeDarkMode }">
         <h3>Roblox 사람들</h3>
         <h4>함께 만드는 미래</h4>
         <p>
@@ -9,7 +9,7 @@
           모이는 방식을 재창조하는 데 전념하고 있습니다.
         </p>
       </div>
-      <div class="tileBox">
+      <div class="tileBox" :class="{ dark: changeDarkMode }">
         <div class="tileBoxHidden">
           <div
             class="imgContainer"
@@ -99,6 +99,11 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -112,6 +117,9 @@ export default {
     font-weight: normal;
     padding: 100px 0;
     margin: 64px 80px 64px 176px;
+    &.dark {
+      color: #121110;
+    }
     h3 {
       font-size: 15px;
       font-weight: 400;
@@ -161,6 +169,38 @@ export default {
         #121110 5%,
         rgba(18, 17, 16, 0) 100%
       );
+    }
+    &.dark {
+      &::before {
+        position: absolute;
+        content: "";
+        height: 15%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        top: -2px;
+        background: linear-gradient(
+          180deg,
+          white 0%,
+          white 5%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        height: 15%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        bottom: -2px;
+        background: linear-gradient(
+          0deg,
+          white 0%,
+          white 5%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
     }
     .tileBoxHidden {
       //   flex: 50%;

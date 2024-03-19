@@ -1,5 +1,5 @@
 <template>
-  <div class="home" :class="{ dark: changeDarkMode }">
+  <div>
     <tile-view />
     <video-1 />
     <sticky-info />
@@ -32,18 +32,7 @@ export default {
     GoToDownload,
     LatestNews,
   },
-  computed: {
-    changeDarkMode() {
-      return this.$store.getters.fnGetDark;
-    },
-  },
 };
 </script>
 
-<style lang="scss" scoped>
-.dark {
-  background: radial-gradient(circle, #dfdfdf 1px, transparent 1px), white;
-  background-position: 0 0, 25px 25px;
-  background-size: 2rem 2rem;
-}
-</style>
+<style lang="scss" scoped></style>

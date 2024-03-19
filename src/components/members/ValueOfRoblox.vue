@@ -1,8 +1,8 @@
 <template>
-  <section id="valueOfRoblox">
+  <section id="valueOfRoblox" :class="{ dark: changeDarkMode }">
     <div class="slide__outer">
       <div class="slide__inner">
-        <h2>Roblox의 가치</h2>
+        <h2 :class="{ dark: changeDarkMode }">Roblox의 가치</h2>
         <swiper class="swiper" :options="swiperOption">
           <Swiper-slide
             class="slideBox1"
@@ -75,6 +75,11 @@ export default {
       },
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -84,6 +89,9 @@ h2 {
   color: #dee2e6;
   padding-bottom: 48px;
   font-weight: 500;
+  &.dark {
+    color: #121110;
+  }
 }
 
 #valueOfRoblox {
@@ -124,5 +132,8 @@ h2 {
       font-size: 16px;
     }
   }
+}
+.swiper-button-prev {
+  color: #121110;
 }
 </style>

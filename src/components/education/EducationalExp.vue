@@ -1,9 +1,10 @@
 <template>
-  <div class="educational__exp">
+  <div class="educational__exp" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="exp__title">
         <h3>추천 교육 체험</h3>
         <a
+          :class="{ dark: changeDarkMode }"
           href="https://www.roblox.com/discover#/sortName/Curated_67"
           target="_blank"
         >
@@ -12,7 +13,12 @@
         </a>
       </div>
       <div class="card__wrapper">
-        <div class="card" v-for="(item, idx) in data" :key="idx">
+        <div
+          class="card"
+          :class="{ dark: changeDarkMode }"
+          v-for="(item, idx) in data"
+          :key="idx"
+        >
           <div class="img">
             <img :src="item.imgUrl" alt="image" />
           </div>
@@ -57,12 +63,20 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .educational__exp {
   color: #dee2e6;
+  &.dark {
+    color: #121110;
+  }
   .row {
     .exp__title {
       display: flex;
@@ -76,6 +90,9 @@ export default {
         border-radius: 8px;
         padding: 13px 20px;
         transition: all 0.3s;
+        &.dark {
+          border-color: #121110;
+        }
         span {
           margin-right: 15px;
         }
@@ -92,6 +109,9 @@ export default {
         flex: 0 0 30%;
         margin: 0 20px;
         background: #000;
+        &.dark {
+          background: #bdbdbd;
+        }
         .img {
           margin-bottom: 1.5em;
         }

@@ -1,5 +1,5 @@
 <template>
-  <div class="latest__news">
+  <div id="latest__news" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="text__wrapper" :class="{ dark: changeDarkMode }">
         <h2>Roblox 관련 최신 뉴스</h2>
@@ -101,7 +101,7 @@ export default {
 // img {
 //   width: 100px;
 // }
-.latest__news {
+#latest__news {
   color: #dee2e6;
   height: 700px;
   margin-bottom: 30px;

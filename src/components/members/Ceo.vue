@@ -1,7 +1,7 @@
 <template>
   <section id="ceo" class="row">
     <div class="ceo__wrap">
-      <div class="textBox">
+      <div class="textBox" :class="{ dark: changeDarkMode }">
         <span>창업자 겸 최고 경영자</span>
         <h3>데이비드 바주키 <br />(DAVID BAZUCKI)</h3>
         <p>
@@ -23,6 +23,11 @@
 <script>
 export default {
   name: "Ceo",
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -34,7 +39,8 @@ export default {
     flex: 50%;
     color: #dee2e6;
     word-break: keep-all;
-    span {
+    &.dark {
+      color: #121110;
     }
     font-size: 20px;
     h3 {

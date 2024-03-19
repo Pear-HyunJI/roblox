@@ -1,5 +1,5 @@
 <template>
-  <div class="with__us">
+  <div class="with__us" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="card__wrapper" v-for="(item, idx) in data" :key="idx">
         <div class="img">
@@ -50,6 +50,11 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -57,6 +62,9 @@ export default {
 .with__us {
   margin: 100px 0;
   color: #fff;
+  &.dark {
+    color: #121110;
+  }
   .row {
     .card__wrapper {
       display: flex;

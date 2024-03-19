@@ -1,8 +1,13 @@
 <template>
   <section class="row">
-    <h2>경영진</h2>
+    <h2 :class="{ dark: changeDarkMode }">경영진</h2>
     <div class="card__wrapper">
-      <div class="card" v-for="(item, index) in cardData" :key="index">
+      <div
+        class="card"
+        :class="{ dark: changeDarkMode }"
+        v-for="(item, index) in cardData"
+        :key="index"
+      >
         <div class="card__media__wrapper">
           <div class="image" :data-category="item.position">
             <img :src="item.img" :alt="item.name" />
@@ -112,6 +117,11 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
   methods: {
     showDetailManager(name) {
       this.$emit("showDetailManager", name);
@@ -135,6 +145,9 @@ h2 {
   font-size: 40px;
   font-weight: 500;
   padding-bottom: 15px;
+  &.dark {
+    color: #121110;
+  }
 }
 .card__wrapper {
   color: #162227;
@@ -156,6 +169,10 @@ h2 {
     transition: all 250ms ease-in;
     &:hover {
       transform: scale(1.1);
+    }
+    &.dark {
+      background: #bdbdbd;
+      color: #3b4447;
     }
 
     .card__media__wrapper {
