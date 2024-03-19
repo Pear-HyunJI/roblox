@@ -6,49 +6,55 @@
       </h2>
       <div class="info__wrapper">
         <nav>
-          <h4>회사</h4>
+          <h4>{{ $t("[2].company") }}</h4>
           <ul class="info__wrapper__company">
-            <li><router-link to="/careers">인재 채용</router-link></li>
+            <li>
+              <router-link to="/careers">{{ $t("[2].careers") }}</router-link>
+            </li>
             <li>
               <a
                 href="https://ir.roblox.com/overview/default.aspx"
                 target="_blank"
-                >투자 정보</a
+                >{{ $t("[2].investor relations") }}</a
               >
             </li>
             <li>
-              <a href="https://blog.roblox.com/" target="_blank">블로그</a>
+              <a href="https://blog.roblox.com/" target="_blank">{{
+                $t("[2].blog")
+              }}</a>
             </li>
           </ul>
         </nav>
         <nav>
-          <h4>리소스</h4>
+          <h4>{{ $t("[2].resources") }}</h4>
           <ul class="info__wrapper__resources">
             <li>
-              <router-link to="/education">에듀케이션</router-link>
+              <router-link to="/education">{{
+                $t("[2].education")
+              }}</router-link>
             </li>
             <li>
-              <a href="https://corporate.roblox.com/faq/" target="_blank"
-                >자주 묻는 질문</a
-              >
+              <a href="https://corporate.roblox.com/faq/" target="_blank">{{
+                $t("[2].faq")
+              }}</a>
             </li>
             <li>
-              <a href="https://corporate.roblox.com/contact/" target="_blank"
-                >문의</a
-              >
+              <a href="https://corporate.roblox.com/contact/" target="_blank">{{
+                $t("[2].contact")
+              }}</a>
             </li>
             <li>
               <a
                 href="https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use"
                 target="_blank"
-                >약관</a
+                >{{ $t("[2].Terms") }}</a
               >
             </li>
             <li>
               <a
                 href="https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy"
                 target="_blank"
-                >개인정보</a
+                >{{ $t("[2].Privacy") }}</a
               >
             </li>
           </ul>
@@ -57,10 +63,12 @@
               <a
                 href="https://corporate.roblox.com/job-applicant-privacy-notice/"
                 target="_blank"
-                >구직자 개인정보 처리방침</a
+                >{{ $t("[2].applications") }}</a
               >
             </li>
-            <li><a href="#" target="_blank">접근성</a></li>
+            <li>
+              <a href="#" target="_blank">{{ $t("[2].accessibility") }}</a>
+            </li>
           </ul>
         </nav>
         <span

@@ -1,5 +1,8 @@
 {
-  "blog": {
-    "h1": "1"
-  }
+  "name1": "PEOPLE",
+  "name2": "NEWS",
+  "name3": "TECH TALKS",
+  "name4": "EDUCATION",
+  "name5": "CAREERS",
+  "darkmode": "Dark Mode"
 }

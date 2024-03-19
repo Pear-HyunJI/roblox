@@ -116,15 +116,10 @@ export default {
     color: #dee2e6;
     font-weight: normal;
     padding: 100px 0;
-<<<<<<< HEAD
-    // margin: 64px 80px 64px 176px;
-    margin: 64px 5% 64px 15%;
-=======
     margin: 64px 80px 64px 176px;
     &.dark {
       color: #121110;
     }
->>>>>>> afb6e3be42c0caf53c827918dbe85ce08fd778bf
     h3 {
       font-size: 15px;
       font-weight: 400;
@@ -227,13 +222,7 @@ export default {
           // margin: 0 7px;
           margin: 0 4%;
           .imgBox2 {
-<<<<<<< HEAD
-            // margin: 7px 0;
-            margin: 4% 0;
-            //   overflow: hidden;
-=======
             margin: 7px 0;
->>>>>>> afb6e3be42c0caf53c827918dbe85ce08fd778bf
             img {
               border-radius: 10px;
               transition: all 0.3s;

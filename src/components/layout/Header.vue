@@ -13,7 +13,7 @@
             v-if="!menu.submenus"
             @click="toggleSubMenu(index)"
           >
-            {{ menu.name }}
+            {{ $t(menu.name) }}
           </router-link>
 
           <p v-else @click="toggleSubMenu(index)" class="globe">
@@ -27,13 +27,13 @@
               @click="changeLanguage(submenu.en)"
               style="cursor: pointer"
             >
-              {{ submenu.ko }}
+              {{ $t(submenu.ko) }}
             </li>
           </ul>
         </li>
         <p class="dark" :class="{ light: changeDarkMode }" @click="onOff">
           <i class="fa-solid fa-moon"></i>
-          <span>다크 모드</span>
+          <span>{{ $t("[3].darkmode") }}</span>
         </p>
       </ul>
     </nav>
@@ -46,11 +46,11 @@ export default {
   data() {
     return {
       menus: [
-        { name: "구성원소개", to: "/members" },
-        { name: "뉴스", to: "/news" },
-        { name: "TECH TALKS", to: "/techtalks" },
-        { name: "에듀케이션", to: "education" },
-        { name: "인재채용", to: "careers" },
+        { name: "[3].name1", to: "/members" },
+        { name: "[3].name2", to: "/news" },
+        { name: "[3].name3", to: "/techtalks" },
+        { name: "[3].name4", to: "education" },
+        { name: "[3].name5", to: "careers" },
         {
           name: "globe",
           submenus: [
