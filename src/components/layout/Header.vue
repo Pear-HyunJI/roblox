@@ -25,6 +25,7 @@
               v-for="(submenu, subIndex) in menu.submenus"
               :key="subIndex"
               @click="changeLanguage(submenu.en)"
+              style="cursor: pointer"
             >
               {{ submenu.ko }}
             </li>
@@ -73,13 +74,13 @@ export default {
     onOff() {
       this.$store.commit("on__ChangeDark");
     },
+    changeLanguage(locale) {
+      this.$i18n.locale = locale; // 언어 변경
+    },
   },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;
-    },
-    changeLanguage(locale) {
-      this.$i18n.locale = locale; // 언어 변경
     },
   },
 };

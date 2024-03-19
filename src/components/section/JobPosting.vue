@@ -3,10 +3,10 @@
     <div class="job__posting__wrapper">
       <div class="wrapper__inner">
         <div class="inner__p">
-          <p>인재 채용</p>
+          <p>{{ $t("[4].jobposting.p") }}</p>
         </div>
         <div class="inner__h5">
-          <h5>채용 공고 둘러보기</h5>
+          <h5>{{ $t("[4].jobposting.h5") }}</h5>
         </div>
         <div class="inner__btn">
           <router-link to="/careers">VIEW ALL JOBS</router-link>

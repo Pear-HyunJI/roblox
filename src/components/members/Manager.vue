@@ -145,8 +145,8 @@ h2 {
   justify-content: space-between;
 
   .card {
-    margin: 30px 0;
-    flex: 33%;
+    margin: 30px 1%;
+    flex: 0 0 29%;
     max-width: 360px;
     height: 592px;
     background: #dee2e6;

@@ -111,7 +111,8 @@ export default {
     color: #dee2e6;
     font-weight: normal;
     padding: 100px 0;
-    margin: 64px 80px 64px 176px;
+    // margin: 64px 80px 64px 176px;
+    margin: 64px 5% 64px 15%;
     h3 {
       font-size: 15px;
       font-weight: 400;
@@ -181,9 +182,11 @@ export default {
         height: 100%;
 
         .imgBox1 {
-          margin: 0 7px;
+          // margin: 0 7px;
+          margin: 0 4%;
           .imgBox2 {
-            margin: 7px 0;
+            // margin: 7px 0;
+            margin: 4% 0;
             //   overflow: hidden;
             img {
               border-radius: 10px;

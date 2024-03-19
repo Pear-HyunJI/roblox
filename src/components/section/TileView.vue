@@ -2,9 +2,9 @@
   <section>
     <div class="row">
       <h2 :class="{ dark: changeDarkMode }">
-        사람들을 한자리에 모으는
+        {{ $t("[4].tileview.h2-1") }}
         <br />
-        새로운 방법
+        {{ $t("[4].tileview.h2-2") }}
       </h2>
       <div class="tileBox" :class="{ dark: changeDarkMode }">
         <div

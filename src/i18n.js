@@ -16,7 +16,16 @@ const messages = {
   en: [],
 };
 const languages = ["ko", "en"];
-let fileNames = ["Home", "Careers"];
+let fileNames = [
+  "Careers",
+  "Education",
+  "Footer",
+  "Header",
+  "Home",
+  "Members",
+  "News",
+  "TechTalks",
+];
 
 let loadTranslation = async () => {
   for (let lang of languages) {
@@ -31,7 +40,7 @@ let loadTranslation = async () => {
       await axios
         .get(`src/locales/${lang}/${fileName}.json`)
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           if (lang === "ko") {
             messages.ko.push(res.data);
           } else {

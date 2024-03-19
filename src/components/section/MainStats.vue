@@ -6,8 +6,8 @@
     <div class="main__stats__wrapper">
       <div class="main__stats__stat" v-for="(val, idx) in statsData" :key="idx">
         <h5>{{ val.num }}</h5>
-        <p>{{ val.text1 }}</p>
-        <p>{{ val.text2 }}</p>
+        <p>{{ $t(val.text1) }}</p>
+        <p>{{ $t(val.text2) }}</p>
       </div>
     </div>
   </div>
@@ -19,10 +19,26 @@ export default {
   data() {
     return {
       statsData: [
-        { num: 71.5, text1: "백만", text2: "일일 활성 사용자*" },
-        { num: 15.5, text1: "십억", text2: "참여 시간*" },
-        { num: 2.4, text1: "백만", text2: "개발자*" },
-        { num: 4.4, text1: "백만", text2: "활성 체험*" },
+        {
+          num: 71.5,
+          text1: "[4].mainstats.script-text1",
+          text2: "[4].mainstats.script-text11",
+        },
+        {
+          num: 15.5,
+          text1: "[4].mainstats.script-text2",
+          text2: "[4].mainstats.script-text22",
+        },
+        {
+          num: 2.4,
+          text1: "[4].mainstats.script-text3",
+          text2: "[4].mainstats.script-text33",
+        },
+        {
+          num: 4.4,
+          text1: "[4].mainstats.script-text4",
+          text2: "[4].mainstats.script-text44",
+        },
       ],
       maxNum: [{ num: 71.5 }, { num: 15.5 }, { num: 2.4 }, { num: 4.4 }],
     };

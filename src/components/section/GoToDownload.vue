@@ -2,11 +2,10 @@
   <div class="go__to__download" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="row__wrapper">
-        <h2>{{ $t("[0].abc.h2") }}</h2>
-        <h5>ROBLOX는 모드 기기를 지원합니다.</h5>
+        <h2>{{ $t("[4].gotodownload.h2") }}</h2>
+        <h5>{{ $t("[4].gotodownload.h5") }}</h5>
         <p>
-          PC, Mac, iOS, Android, Amazon 기기, Xbox 콘솔, PlayStation 콘솔, Meta
-          Quest, HTC Vive
+          {{ $t("[4].gotodownload.p") }}
         </p>
         <div class="row__wrapper__link1">
           <a
