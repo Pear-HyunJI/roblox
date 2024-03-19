@@ -1,12 +1,12 @@
 <template>
   <section>
     <div class="row">
-      <h2>
+      <h2 :class="{ dark: changeDarkMode }">
         사람들을 한자리에 모으는
         <br />
         새로운 방법
       </h2>
-      <div class="tileBox">
+      <div class="tileBox" :class="{ dark: changeDarkMode }">
         <div
           class="imgContainer"
           v-for="(item, idx) in colContainer"
@@ -160,6 +160,11 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -179,6 +184,9 @@ export default {
     text-align: center;
     font-size: 4rem;
     margin: 5.5rem 0;
+    &.dark {
+      color: #121110;
+    }
   }
 
   .tileBox {
@@ -216,6 +224,24 @@ export default {
         #121110 5%,
         rgba(18, 17, 16, 0) 100%
       );
+    }
+    &.dark {
+      &::before {
+        background: linear-gradient(
+          180deg,
+          white 0%,
+          white 5%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+      &::after {
+        background: linear-gradient(
+          0deg,
+          white 0%,
+          white 5%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
     }
 
     .imgContainer {

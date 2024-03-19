@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :class="{ dark: changeDarkMode }">
     <Header></Header>
     <div id="app__contents">
       <router-view></router-view>
@@ -17,11 +17,21 @@ export default {
     Header,
     Footer,
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 #app__contents {
-  margin-top: 150px;
+  padding-top: 165px;
+}
+.dark {
+  background: radial-gradient(circle, #dfdfdf 1px, transparent 1px), white;
+  background-position: 0 0, 25px 25px;
+  background-size: 2rem 2rem;
 }
 </style>

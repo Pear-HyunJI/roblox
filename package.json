@@ -16,6 +16,7 @@
     "vue-awesome-swiper": "^4.1.1",
     "vue-marquee-slider": "^1.0.6",
     "vue-router": "^3.5.4",
+    "vuetify": "^2.7.2",
     "vuex": "^3.6.2"
   },
   "devDependencies": {

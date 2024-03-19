@@ -1,12 +1,17 @@
 <template>
   <div class="latest__news">
     <div class="row">
-      <div class="text__wrapper">
+      <div class="text__wrapper" :class="{ dark: changeDarkMode }">
         <h2>Roblox 관련 최신 뉴스</h2>
         <router-link to="/news">전체 뉴스</router-link>
       </div>
       <swiper class="card__wrapper" :options="swiperOption">
-        <swiper-slide class="card" v-for="(item, idx) in cardData" :key="idx">
+        <swiper-slide
+          class="card"
+          :class="{ dark: changeDarkMode }"
+          v-for="(item, idx) in cardData"
+          :key="idx"
+        >
           <div class="card__container">
             <img :src="item.img" :alt="item.title" />
             <h4>{{ item.title }}</h4>
@@ -84,6 +89,11 @@ export default {
       },
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -124,6 +134,28 @@ export default {
           );
         }
       }
+      &.dark {
+        color: #121110;
+        a {
+          border-color: #121110;
+          &:hover {
+            border-color: rgba(99, 71, 255, 0.25);
+            box-shadow: 0 0 1rem rgba(99, 71, 255, 0.25);
+            background: conic-gradient(
+              from 95.27deg at 51.3% 51.96%,
+              #150d44 -0.95deg,
+              #121110 62.41deg,
+              #0f0c1c 134.15deg,
+              #0a042e 181.84deg,
+              #0f0d1a 237.07deg,
+              #121110 317.05deg,
+              #150d44 359.05deg,
+              #121110 422.41deg
+            );
+            color: #fff;
+          }
+        }
+      }
     }
     .card__wrapper {
       // overflow: hidden;
@@ -153,6 +185,10 @@ export default {
         // &:hover p {
         //   opacity: 1;
         // }
+        &.dark {
+          background: #dfdfdf;
+          color: #121110;
+        }
         &.swiper-slide-active {
           top: 0;
           height: 600px;

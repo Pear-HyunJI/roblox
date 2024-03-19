@@ -60,3 +60,8 @@ legend {
   max-width: 1440px;
   margin: auto;
 }
+
+.light {
+  background: #dee2e6;
+  color: #121110;
+}

@@ -6,7 +6,7 @@
       v-for="(item, idx) in infoData"
       :key="idx"
     >
-      <div class="abc">
+      <div class="text" :class="{ dark: changeDarkMode }">
         <h3>{{ item.title }}</h3>
         <p>{{ item.content }}</p>
       </div>
@@ -55,6 +55,11 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
+  },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
   },
   methods: {
     handleScroll() {
@@ -113,7 +118,7 @@ export default {
   margin: 300px auto;
   color: rgba(255, 255, 255, 0.8);
   height: 842px;
-  .abc {
+  .text {
     display: flex;
     flex: 40%;
     flex-direction: column;
@@ -124,6 +129,9 @@ export default {
     text-align: right;
     transition: all 0.3s;
     word-break: keep-all;
+    &.dark {
+      color: #121110;
+    }
     h3 {
       font-size: 2rem;
       margin-bottom: 2rem;

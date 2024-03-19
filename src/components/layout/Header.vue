@@ -26,7 +26,7 @@
             </li>
           </ul>
         </li>
-        <p :class="a ? 'dark__mode' : 'light__mode'" @click="onOff">
+        <p class="dark" :class="{ light: changeDarkMode }" @click="onOff">
           <i class="fa-solid fa-moon"></i>
           <span>다크 모드</span>
         </p>
@@ -64,7 +64,12 @@ export default {
       }
     },
     onOff() {
-      this.a = !this.a;
+      this.$store.commit("on__ChangeDark");
+    },
+  },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
     },
   },
 };
@@ -159,7 +164,7 @@ export default {
         cursor: pointer;
       }
     }
-    .dark__mode {
+    .dark {
       padding: 0px 12px;
       line-height: 80px;
       color: rgb(242, 243, 244);
@@ -187,10 +192,10 @@ export default {
         color: #f2f3f4;
       }
     }
-    .light__mode {
+    .light {
       padding: 0px 12px;
       line-height: 80px;
-      color: #fff;
+      color: #000;
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -212,6 +217,7 @@ export default {
       span {
         font-size: 14px;
         font-weight: bold;
+        color: #121110;
       }
     }
   }

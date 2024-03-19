@@ -1,5 +1,5 @@
 <template>
-  <div class="go__to__download">
+  <div class="go__to__download" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="row__wrapper">
         <h2>다양한 기기로 Roblox를 즐기세요!</h2>
@@ -72,6 +72,11 @@ export default {
       ],
     };
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -80,6 +85,9 @@ export default {
   padding: 5rem 0;
   color: #dee2e6;
   text-align: center;
+  &.dark {
+    background: #162227;
+  }
   .row {
     max-width: calc(1280px - 9rem);
     .row__wrapper {

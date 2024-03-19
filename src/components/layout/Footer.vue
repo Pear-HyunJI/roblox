@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer :class="{ dark: changeDarkMode }">
     <div class="row">
       <h2>
         <img src="../../assets/images/roblox_logo_white_new.svg" alt="1" />
@@ -80,18 +80,34 @@
 <script>
 export default {
   name: "Footer",
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 * {
-  color: white;
   footer {
+    color: white;
     padding: 7rem 0;
+    &.dark {
+      background: radial-gradient(circle, #dfdfdf 1px, transparent 1px), white;
+      background-position: 0 0, 25px 25px;
+      background-size: 2rem 2rem;
+      color: #121110;
+    }
     .row {
       max-width: calc(1280px - 9rem);
-      h2 img {
-        width: 120px;
+      h2 {
+        img {
+          background: #121110;
+          padding: 10px;
+          border-radius: 8px;
+          width: 120px;
+        }
       }
       .info__wrapper {
         position: relative;
@@ -152,6 +168,7 @@ export default {
         margin-top: 1rem;
         padding: 0 24px;
         min-height: 5rem;
+        color: white;
         a {
           cursor: default;
         }
