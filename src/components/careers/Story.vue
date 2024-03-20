@@ -2,7 +2,7 @@
   <section id="career__story" :class="{ dark: changeDarkMode }">
     <div class="slide__outer">
       <div class="slide__inner">
-        <h2 :class="{ dark: changeDarkMode }">Roblox 전반의 이야기</h2>
+        <h2 :class="{ dark: changeDarkMode }">{{ $t("[0].story.h2") }}</h2>
         <swiper class="swiper" :options="swiperOption">
           <Swiper-slide
             class="slideBox1"
@@ -12,8 +12,8 @@
           >
             <div class="slideBox2">
               <img :src="slider.image" alt="" />
-              <h3>{{ slider.h3 }}</h3>
-              <a :href="slider.link" target="_blank">더 읽어보기</a>
+              <h3>{{ $t(slider.h3) }}</h3>
+              <a :href="slider.link" target="_blank">{{ $t("[0].story.a") }}</a>
             </div>
           </Swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
@@ -41,33 +41,33 @@ export default {
         {
           image:
             "src/assets/images/career-story/RBLX_EOY_BlogHeader_Final-1024x576.webp",
-          h3: "2023년 돌아보기 - CEO가 보내는 편지",
+          h3: "[0].story.first-h3",
           link: "https://blog.roblox.com/2023/12/2023-year-review-letter-ceo/",
         },
         {
           image: "src/assets/images/career-story/RBLX_RDC-Banner_-Blog-1.webp",
-          h3: "RDC 2023 : Roblox가 다음에 갈 곳",
+          h3: "[0].story.second-h3",
           link: "https://blog.roblox.com/2023/09/rdc-2023-roblox-going-next/",
         },
         {
           image: "src/assets/images/career-story/AI-Blog-Header.webp",
-          h3: "제너레이티브 AI를 통해 Roblox창작에 혁명을 일으키다",
+          h3: "[0].story.third-h3",
           link: "https://blog.roblox.com/2023/09/revolutionizing-creation-roblox/",
         },
         {
           image:
             "src/assets/images/career-story/_Roblox-Career-Center-Header._001-1.webp",
-          h3: "Roblox 취업센터를 소개합니다",
+          h3: "[0].story.fourth-h3",
           link: "https://blog.roblox.com/2023/08/introducing-roblox-career-center/",
         },
         {
           image: "src/assets/images/career-story/image 1.webp",
-          h3: "Roblox는 성장한다",
+          h3: "[0].story.fifth-h3",
           link: "https://www.fastcompany.com/90878692/roblox-grows-up",
         },
         {
           image: "src/assets/images/career-story/image 2.webp",
-          h3: "모든 연령대를 위한 우리의 비전",
+          h3: "[0].story.sixth-h3",
           link: "https://blog.roblox.com/2023/05/our-vision-for-all-ages/",
         },
       ],

@@ -2,7 +2,9 @@
   <section id="valueOfRoblox" :class="{ dark: changeDarkMode }">
     <div class="slide__outer">
       <div class="slide__inner">
-        <h2 :class="{ dark: changeDarkMode }">Roblox의 가치</h2>
+        <h2 :class="{ dark: changeDarkMode }">
+          {{ $t("[5].valueofroblox.h2") }}
+        </h2>
         <swiper class="swiper" :options="swiperOption">
           <Swiper-slide
             class="slideBox1"
@@ -10,8 +12,8 @@
             :key="index"
           >
             <div class="slideBox2">
-              <h3>{{ slider.h3 }}</h3>
-              <p>{{ slider.p }}</p>
+              <h3>{{ $t(slider.h3) }}</h3>
+              <p>{{ $t(slider.p) }}</p>
             </div>
           </Swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
@@ -37,21 +39,21 @@ export default {
     return {
       sliders: [
         {
-          h3: "커뮤니티 존중하기",
-          p: "Roblox는 우리의 행위가 세상에 미치는 영향을 고려하고, 모두의 최선을 존중하기 위해 노력하며, 진정성 있게 소통합니다. 회사보다는 커뮤니티, 팀보다는 회사, 개인보다는 팀을 우선순위에 둡니다.",
+          h3: "[5].valueofroblox.first-h3",
+          p: "[5].valueofroblox.first-p",
         },
 
         {
-          h3: "책임지기",
-          p: "Roblox는 각 행위의 의도한 결과 및 의도하지 않은 결과 모두에 대해 책임을 집니다.",
+          h3: "[5].valueofroblox.second-h3",
+          p: "[5].valueofroblox.second-p",
         },
         {
-          h3: "멀리보기",
-          p: "Roblox는 단기적인 결정을 내릴 때도 언제나 장기적인 비전을 설정합니다. 현재 상태에 도전하고, 넓게 생각하며, 모든 업무에서 혁신을 추구합니다.",
+          h3: "[5].valueofroblox.third-h3",
+          p: "[5].valueofroblox.third-p",
         },
         {
-          h3: "맡은 일 완수하기",
-          p: "Roblox는 주도권을 잡고 장기 목표를 향한 끈질긴 반복 개선을 수행하며 실행력을 확보합니다.",
+          h3: "[5].valueofroblox.fourth-h3",
+          p: "[5].valueofroblox.fourth-p",
         },
       ],
       swiperOption: {

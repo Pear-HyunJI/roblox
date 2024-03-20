@@ -1,5 +1,43 @@
 {
-  "blog": {
-    "h1": "1"
+  "community": {
+    "h2": "Roblox 커뮤니티 펀드",
+    "p": "Roblox 커뮤니티 펀드(RCF)는 Roblox에 대한 영향력 있는 이니셔티브를 지원하기 위해 1000만 달러의 초기 자금을 지원하는 공익 유한 책임 회사입니다. 주요 교육 기관 및 개발자에 대한 자금 지원을 통해, 2030년까지 1억 명의 학생에게 Roblox에서의 학습 기회를 제공하는 것을 목표로 하고 있습니다.",
+    "span": "자세히 보기"
+  },
+  "educationalexp": {
+    "h3": "추천 교육 체험",
+    "span": "전체 보기",
+    "p": "사진 제공",
+    "first-imgsource": "FIRST® Robotics",
+    "first-text1": "FIRST® Robotics",
+    "first-text2": "학생들은 Roblox에서 가상 로봇을 만들고 실력을 겨룰 수 있습니다.",
+    "second-imgsource": "Project Lead The Way",
+    "second-text1": "Project Lead the Way",
+    "second-text2": "Project Lead The Way가 Roblox와 함께 STEM 교육 콘텐츠를 제공합니다.",
+    "third-imgsource": "보스턴 과학 박물관",
+    "third-text1": "보스턴 과학 박물관",
+    "third-text2": "학생들은 ‘데스티네이션 마스: 뉴 프런티어’에서 아이디어를 얻고 화성에서의 삶에 필요한 인프라를 기획하고 구축합니다."
+  },
+  "educationnews": {
+    "h2": "Roblox 에듀케이션 관련 뉴스",
+    "p": "교육 이니셔티브에 대한 최신 뉴스를 읽어 보세요.",
+    "text1": "Roblox 커뮤니티 펀드 소개",
+    "text2": "Roblox 교수 학습의 새로운 도약",
+    "text3": "Roblox, 학교에 교육용 비디오 게임 도입",
+    "text4": "STEM 관련 기관을 대상으로 한 수백만 달러의 새로운 자금으로..."
+  },
+  "educationtop": {
+    "p": "교수학습의 새로운 시대",
+    "span": "교육자들이 Roblox의 뛰어난 툴을 활용해 창의성, 협동정신, 비판적 사고를 촉진하는 몰입형 체험을 창조할 수 있도록 돕고자 합니다."
+  },
+  "withus": {
+    "p": "사진 제공: 보스턴 과학 박물관",
+    "span": "자세히 보기",
+    "first-text1": "함께 개발해요",
+    "first-text2": "탐구, 조사, 실험의 기회를 제공하는 학습 체험을 구축하세요.",
+    "second-text1": "함께 가르쳐요",
+    "second-text2": "무료 학습 계획안 및 교육 자료를 둘러보세요.",
+    "third-text1": "함께 배워요",
+    "third-text2": "안전하고 학생 친화적인 학습을 위한 툴 및 설정에 대해 알아보세요."
   }
 }

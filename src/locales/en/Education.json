@@ -1,5 +1,43 @@
 {
-  "blog": {
-    "h1": "1"
+  "community": {
+    "h2": "The Roblox Community Fund",
+    "p": "The Roblox Community Fund (RCF) is a public benefit LLC with an initial $10 million in funding earmarked for supporting impact initiatives at Roblox. By making grants to leading education organizations and developers, the RCF aspires to help 100 million students learn with Roblox by 2030.",
+    "span": "LEARN MORE"
+  },
+  "educationalexp": {
+    "h3": " Recommended Training Experience",
+    "span": "FULL VIEW",
+    "p": "Photo courtesy",
+    "first-imgsource": "FIRST® Robotics",
+    "first-text1": "FIRST® Robotics",
+    "first-text2": "Students can create virtual robots and compete against their skills in Roblox.",
+    "second-imgsource": "Project Lead The Way",
+    "second-text1": "Project Lead the Way",
+    "second-text2": "Project Lead the Way provides STEM educational content with Roblox.",
+    "third-imgsource": "Boston Science Museum",
+    "third-text1": "Boston Science Museum",
+    "third-text2": "Students are planning and build infrastructure and build infrastructure in Mars."
+  },
+  "educationnews": {
+    "h2": "Roblox Education in the News",
+    "p": "Read the latest news about our education initiatives.",
+    "text1": "Introducing the Roblox Community Fund",
+    "text2": "The Next Chapter of Teaching and Learning on Roblox",
+    "text3": "Roblox Looks to Bring Educational Videogames to Schools",
+    "text4": "With millions in new grants to STEM organizations..."
+  },
+  "educationtop": {
+    "p": "A New Era of Teaching and Learning",
+    "span": "Our team is dedicated to helping educators harness the power of Roblox to create immersive learning experiences that inspire creativity, collaboration, and critical thinking."
+  },
+  "withus": {
+    "p": "Photo courtesy : oston Science Museum",
+    "span": "LEARN MORE",
+    "first-text1": "Develop with Us",
+    "first-text2": "Build learning experiences that offer opportunities for exploration, research, and experimentation.",
+    "second-text1": "Teach with Us",
+    "second-text2": "Take a look at the free study plan and educational materials.",
+    "third-text1": "Learn with Us",
+    "third-text2": "Learn about tools and settings for safe and student-friendly learning."
   }
 }

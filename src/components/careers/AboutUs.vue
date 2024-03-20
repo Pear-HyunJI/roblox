@@ -3,9 +3,9 @@
     <div class="row">
       <div class="card__wrapper" v-for="(item, idx) in data" :key="idx">
         <div class="text" :class="{ dark: changeDarkMode }">
-          <h3>{{ item.h3Text }}</h3>
-          <p>{{ item.pText }}</p>
-          <a :href="item.aRink" v-if="item.aText">{{ item.aText }}</a>
+          <h3>{{ $t(item.h3Text) }}</h3>
+          <p>{{ $t(item.pText) }}</p>
+          <a :href="item.aRink" v-if="item.aText">{{ $t(item.aText) }}</a>
         </div>
         <div class="photo__card">
           <div class="photo__card__img">
@@ -16,9 +16,9 @@
             :class="{ dark: changeDarkMode }"
             v-if="item.cardP1"
           >
-            <p class="p1">{{ item.cardP1 }}</p>
-            <p class="p2">{{ item.cardP2 }}</p>
-            <p class="p3">{{ item.cardP3 }}</p>
+            <p class="p1">{{ $t(item.cardP1) }}</p>
+            <p class="p2">{{ $t(item.cardP2) }}</p>
+            <p class="p3">{{ $t(item.cardP3) }}</p>
           </div>
         </div>
       </div>
@@ -34,10 +34,9 @@ export default {
       data: [
         {
           img: "src/assets/images/careers-about-us/com_ (2).jpg",
-          h3Text: "Work at Roblox",
-          pText:
-            "We organize ourselves into groups that align with the different areas of innovation on the platform. Each group tackles unique technical challenges that require out-of-the-box thinking. Regardless of where you sit, you’ll have the opportunity to make an outsized impact.",
-          aText: "LEARN MORE",
+          h3Text: "[0].aboutus.h3text1",
+          pText: "[0].aboutus.ptext1",
+          aText: "[0].aboutus.atext",
           aRink: "https://careers.roblox.com/work-at-roblox",
           cardP1: "",
           cardP2: "",
@@ -45,45 +44,38 @@ export default {
         },
         {
           img: "src/assets/images/careers-about-us/com_.jpg",
-          h3Text: "Be part of a values-driven company",
-          pText:
-            "Our values are critical to how we operate day-to-day, how we find and grow our people, how we work together, and what success looks like at Roblox. We empower our people to respect the community, take the long view, be responsible, and get stuff done.",
+          h3Text: "[0].aboutus.h3text2",
+          pText: "[0].aboutus.ptext2",
           aText: "",
           aRink: "",
-          cardP1:
-            "“If you use our Roblox values as a decision-making algorithm, it’s very rare that you don’t know what to do. As a leader here, the values constrain how I think about solving problems and have helped me guide my teams to innovate in the right ways.”",
-          cardP2: "Claus Moberg",
-          cardP3: "VP, ENGINEERING",
+          cardP1: "[0].aboutus.second-cardp1",
+          cardP2: "[0].aboutus.second-cardp2",
+          cardP3: "[0].aboutus.second-cardp3",
         },
         {
           img: "src/assets/images/careers-about-us/com_ (4).jpg",
-          h3Text: "Join our culture of continuous learning",
-          pText:
-            "We believe a culture where people are open to feedback and always looking to learn enables us to accelerate innovation.",
+          h3Text: "[0].aboutus.h3text3",
+          pText: "[0].aboutus.ptext3",
           aText: "",
           aRink: "",
-          cardP1:
-            "“Every employee at Roblox drives innovation, including our interns. Each year, hundreds of students in our program tackle some of the greatest challenges in technology. ”",
-          cardP2: "The Roblox Intern Experience",
-          cardP3: "THREE PART DOCUSERIES",
+          cardP1: "[0].aboutus.third-cardp1",
+          cardP2: "[0].aboutus.third-cardp2",
+          cardP3: "[0].aboutus.third-cardp3",
         },
         {
           img: "src/assets/images/careers-about-us/com_ (1).jpg",
-          h3Text: "Do career-defining work",
-          pText:
-            "From real-time communication to massive data processing to generative AI – the breadth of opportunities to work on will ensure that you are constantly making an impact and accelerating your career.",
+          h3Text: "[0].aboutus.h3text4",
+          pText: "[0].aboutus.ptext4",
           aText: "",
           aRink: "",
-          cardP1:
-            "“What excites me most is our rapid growth. We continue to support a community of millions of players, developers, and creators. I’m part of the beginning phase and it’s just really exciting.”",
-          cardP2: "Ying Dai",
-          cardP3: "PRINCIPAL SOFTWARE ENGINEER, OBSERVABILITY",
+          cardP1: "[0].aboutus.fourth-cardp1",
+          cardP2: "[0].aboutus.fourth-cardp2",
+          cardP3: "[0].aboutus.fourth-cardp3",
         },
         {
           img: "src/assets/images/careers-about-us/com_ (3).jpg",
-          h3Text: "Focus on your well-being",
-          pText:
-            "The well-being of our people is our top priority. To provide our people with the resources they need to thrive in every aspect of their lives, we offer a robust and comprehensive program of healthcare, mental health, financial, and lifestyle benefits. In addition, we have flexible time-off and a generous donation matching program.",
+          h3Text: "[0].aboutus.h3text5",
+          pText: "[0].aboutus.ptext5",
           aText: "",
           aRink: "",
           cardP1: "",

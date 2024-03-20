@@ -1,12 +1,13 @@
 <template>
   <div class="recruit__wrap" :class="{ dark: changeDarkMode }">
-    <h2>사람들이 함께 모이는 방식을 재구성해보세요</h2>
+    <h2>{{ $t("[0].recruitinfo.h2") }}</h2>
     <p>
-      Roblox 직원들은 매일 복잡한 질문에 답하고 놀라운 혁신을 주도하고
-      있습니다.s
+      {{ $t("[0].recruitinfo.p1") }}
     </p>
-    <p>인간관계와 소통의 미래를 건설하는 데 동참해 주세요.</p>
-    <a href="https://careers.roblox.com/jobs" target="_blank">채용정보 보기</a>
+    <p>{{ $t("[0].recruitinfo.p2") }}</p>
+    <a href="https://careers.roblox.com/jobs" target="_blank">{{
+      $t("[0].recruitinfo.a")
+    }}</a>
   </div>
 </template>
 

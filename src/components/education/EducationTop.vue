@@ -6,12 +6,8 @@
     />
     <div class="row">
       <div class="top__text">
-        <p>교수학습의 새로운 시대</p>
-        <span
-          >교육자들이 Roblox의 뛰어난 툴을 활용해 창의성, 협동 정신, 비판적
-          사고를 촉진하는 몰입형 학습 체험을 창조할 수 있도록 돕고자
-          합니다.</span
-        >
+        <p>{{ $t("[1].educationtop.p") }}</p>
+        <span>{{ $t("[1].educationtop.span") }}</span>
       </div>
     </div>
   </div>

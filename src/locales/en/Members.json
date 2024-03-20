@@ -1,5 +1,103 @@
 {
-  "blog": {
-    "h1": "1"
+  "ceo": {
+    "span": "FOUNDER AND CEO",
+    "h3": "DAVID BAZUCKI",
+    "h4": "",
+    "p": "\"For 16 years, we’ve been making immersive shared experiences a reality. Roblox is the next phase of human interaction and a new economy that everyone can be a part of.\""
+  },
+  "detailmanager": {
+    "close": "닫기",
+
+    "first-positon": "FOUNDER + CHIEF EXECUTIVE OFFICER",
+    "first-name": "David Baszucki",
+    "first-content": "David Baszucki is the founder and CEO of Roblox. His vision is to build a platform that enables shared experiences among billions of users.",
+    "first-detail1": "The company has been widely recognized for its innovation and vision under Baszucki’s leadership. TIME named Roblox one of the “100 Most Influential Companies,” and it has been recognized by Fast Company for innovation on their “Most Innovative Companies” and “Most Innovative Companies in Gaming” lists. Roblox was also recognized as an innovative workplace on Fast Company’s “Best Workplaces for Innovators” list and for its technical innovations on Fast Company’s “Innovation by Design” list.",
+    "first-detail2": "Previously, David founded Knowledge Revolution, where he and his brother Greg created “Interactive Physics,” a leader in educational physics and mechanical design simulation software. David graduated from Stanford University as a General Motors Scholar in Electrical Engineering.",
+
+    "second-positon": "CHIEF PRODUCT OFFICER",
+    "second-name": "Manuel Bronstein",
+    "second-content": "Manuel Bronstein serves as Chief Product Officer at Roblox, leading our Product, Design, and Data Science organizations.",
+    "second-detail1": "Manuel has spent over 20 years as a product leader in the consumer and entertainment spaces, most recently serving as Vice President of Product at Google, leading Google Assistant. Prior to that, Manuel was Vice President of Product at YouTube, overseeing the company’s mobile, desktop, and living room applications, as well as live streaming, growth, and community. He also led efforts to launch YouTube Kids, YouTube Music, and YouTube Games. Before YouTube, Manuel started his career in gaming holding several senior leadership positions at Zynga and Xbox.",
+    "second-detail2": "Manuel holds a BS in Electronics Engineering from Universidad Simón Bolívar and an MBA from UC Berkeley’s Haas School of Business.",
+
+    "third-positon": "CHIEF FINANCIAL OFFICER",
+    "third-name": "Mike Guthrie",
+    "third-content": "Mike Guthrie serves as Chief Financial Officer at Roblox. He is scaling our business on a global level, defining our overall financial strategy; driving sustained, profitable growth; and securing new business opportunities. Mike leads Roblox’s finance, accounting, business & corporate development functions.",
+    "third-detail1": "Prior to joining Roblox, he was the Chief Financial Officer of TrueCar, Inc. where he led the company through multiple rounds of private financing and spearheaded its initial public offering in 2014. Previously, he was a private equity investor at TPG and Garnett and Helfrich Capital where he focused on growth equity investing and middle market buyouts.",
+    "third-detail2": "Mike graduated with an MBA from Stanford University Graduate School of Business and a BA in Economics from the University of Virginia.",
+
+    "fourth-positon": "CHIEF SAFETY OFFICER",
+    "fourth-name": "Matt Kaufman",
+    "fourth-content": "Matt Kaufman serves as Chief Safety Officer at Roblox. He leads our Safety & Civility efforts, driving product, operational, and policy innovations that ensure Roblox is a safe platform for everyone, and bringing our vision of civil virtual spaces to life.",
+    "fourth-detail1": "Matt has over 20 years of executive leadership experience, building highly successful marketplace platforms, enterprise SaaS applications, and large-scale multiplayer games for companies including Crunchbase, Oodle, edgeio, and There.com.",
+    "fourth-detail2": "Matt earned a BS in Mechanical and Aeronautical Engineering from UC Davis and an MS in Aerospace Engineering from Virginia Tech.",
+
+    "fifth-positon": "CHIEF PEOPLE & SYSTEMS OFFICER",
+    "fifth-name": "Arvind KC",
+    "fifth-content": "As the Chief People and Systems Officer of Roblox, Arvind KC leads the organization that is chartered with evolving our processes, systems, experiences and culture so that our people and our teams flourish, grow and reach their highest potential.",
+    "fifth-detail1": "KC has over 25 years of executive leadership experience focused on leading internal product development teams. The first half of his career was focused on building supply chain systems in Semiconductor companies. At Facebook, he went deep in understanding what enables exceptional performance in organizations and teams and how technology can accelerate it. Then as CIO and head of People Ops at Palantir and most recently as the VP of Engineering at Google, his teams built products that shape People processes and culture.",
+    "fifth-detail2": "KC holds a BS in Chemical Engineering from Institute of Chemical Technology, Mumbai and holds an MBA from Santa Clara University.",
+
+    "sixth-positon": "GENERAL COUNSEL",
+    "sixth-name": "Mark Reinstra",
+    "sixth-content": "As General Counsel for Roblox, Mark Reinstra leads a team that enables and supports Roblox’s global growth including its international expansion, privacy and data security, and care and safety efforts.",
+    "sixth-detail1": "Prior to joining Roblox, Mark was a partner at Wilson Sonsini Goodrich & Rosati, where he practiced corporate and securities law for 25 years. Mark began working with Roblox as its outside counsel in 2005. Mark currently teaches New Venture Finance at UC Berkeley School of Law. He also taught at Stanford Law School and lectured at the Haas Business School at the University of California, Berkeley as well as Stanford’s Graduate School of Business.",
+    "sixth-detail2": "Mark received his JD from Stanford Law School and a BS in Industrial Engineering from the University of Wisconsin-Madison.",
+
+    "seventh-positon": "CHIEF TECHNOLOGY OFFICER",
+    "seventh-name": "Daniel Sturman",
+    "seventh-content": "As Chief Technology Officer at Roblox, Dan Sturman heads up a world-class team of engineering leaders in our App, Engine, Developer, International, Economy, Safety, and Platform Engineering groups.",
+    "seventh-detail1": "Prior to joining Roblox, Dan served as Vice President of Engineering & Support at Cloudera, where he led a team of 600+ engineers and oversaw all software development and customer support. He previously served as Vice President of Engineering at Google, where he led the development of cloud products including Google Compute Engine, Google App Engine, and Kubernetes, as well as the internal cluster management systems that manage Google’s fleet of servers.",
+    "seventh-detail2": "Dan holds a Ph.D. and MS in Computer Science from the University of Illinois at Urbana-Champaign and a BS in Computer Science from Cornell University.",
+
+    "eighth-positon": "CHIEF PARTNERSHIPS OFFICER",
+    "eighth-name": "Christina Wootton",
+    "eighth-content": "Christina serves as Chief Partnerships Officer at Roblox, leading brand partnerships, business development and education. Christina’s teams are focused on creating new ecosystems for people to express themselves through digital fashion and beauty, learn together, and experience entertainment, music and sports with their favorite brands and talent on the platform.",
+    "eighth-detail1": "With more than 15 years of partnerships and digital advertising experience, Christina has been instrumental in revolutionizing how brands connect, engage and communicate with people all over the world in immersive spaces. She has spearheaded innovation and creative partnerships with Fortune 500 companies and top brands and talent including Gucci, Nike, Netflix, Disney, Warner Bros, NFL, Karlie Kloss, Elton John, among many others. Prior to Roblox, Christina led entertainment innovation and digital advertising at Stardoll Media partnering with brands  to create engaging content that allowed users to customize their avatars, shop for digital fashion items and interact with the brands’ virtual characters and products.",
+    "eighth-detail2": "Christina graduated from California State University, Long Beach.",
+
+    "ninth-positon": "VP & CHIEF INFORMATION OFFICER",
+    "ninth-name": "Shobhana Ahluwalia",
+    "ninth-content": "As Chief Information Officer at Roblox, Shobhana (Shobz) Ahluwalia is responsible for delivering a frictionless, consumer-grade technology experience to unlock the highest level of productivity and innovation for the global Roblox workforce.",
+    "ninth-detail1": "Prior to Roblox, Shobhana was the Chief Information Officer for Peloton, an on-demand Fitness company where she led enterprise digital transformation to positively impact customer lifetime value and enterprise cyber security posture. Before that, she served as the Chief Information Officer at Uber Technologies, an on-demand logistics and transportation company, and was responsible for global IT operations and services. Prior to Uber, Shobhana served in leadership Information Technology roles at Rocket Fuel, CNET and CBS Corporation.",
+    "ninth-detail2": "Shobhana is an active investor and advisor in the technology startup ecosystem. She is a passionate supporter of underrepresented communities technology and leadership. She holds a Masters of Business Administration with a double major in Strategy and Finance from the University of Pennsylvania’s Wharton School of Business and a Bachelor of Computer Science in Engineering from Bangalore, India.",
+
+    "tenth-positon": "VP & CHIEF INFORMATION SECURITY OFFICER",
+    "tenth-name": "Brooks Evans",
+    "tenth-content": "As the VP and Chief Information Security Officer at Roblox, Brooks is responsible for all facets of ensuring Roblox as a company and a platform are secure.",
+    "tenth-detail1": "Prior to Roblox, Brooks served as the Director of Information Security at Netflix, where he led an organization of engineers focused on enterprise security including the company's corporate and studio information security, identity and access management, governance, risk, and compliance, threat intelligence, detection and response, and user-focused security UX teams. Before Netflix, Brooks led Incident Response at Apple, was Chief Security Officer at the Arkansas Department of Human Services, was an engineer for the National Security Agency, and held security and engineering positions at Alltel and Pinnacle Labs.",
+    "tenth-detail2": "Brooks holds an MS in Information Assurance from the University of Advanced Technology in Arizona and a BS in Computer Science from the University of Arkansas at Little Rock.",
+
+    "eleventh-positon": "VP & CHIEF SCIENTIST",
+    "eleventh-name": "Morgan McGuire",
+    "eleventh-content": "Prof. McGuire accelerates innovation across Roblox by coordinating all of the research groups and directly managing Roblox Research as well as the engineering development of the Game Engine product.",
+    "eleventh-detail1": "Morgan has co-authored hundreds of papers and patents, spanning many areas of computer science from networking and compilers to 3D graphics, as well as several textbooks including Computer Graphics: Principles & Practice 3rd Edition, The Graphics Codex, and Creating Games. Morgan co-founded the Journal of Computer Graphics Techniques and chaired ACM SIGGRAPH NPAR, I3D, HPG, and several other conferences. Morgan’s product contributions include NVIDIA RTXGI and Reflex SDKs and RTX GPUs; the Skylanders®,  Call of Duty®, Marvel: Ultimate Alliance®, and Titan Quest® video games series; the Unity game engine; the E Ink display used in the Amazon Kindle®; and the open source G3D Innovation Engine and Markdeep document system.",
+    "eleventh-detail2": "Morgan holds current faculty appointments at the University of Waterloo and McGill University, was a full professor at Williams College, and received a PhD and MS in computer science from Brown University and an MEng and BS in electrical engineering from MIT.",
+
+    "twelfth-positon": "VP & CHIEF ACCOUNTING OFFICER",
+    "twelfth-name": "Amy Rawlings",
+    "twelfth-content": "As Chief Accounting Officer at Roblox, Amy Rawlings is responsible for overseeing all areas of global accounting, including general accounting, revenue, SEC reporting, technical accounting, international accounting, payroll, DevEx and AP operations.",
+    "twelfth-detail1": "Before Roblox, Amy served as the Chief Accounting Officer at Zynga and spent twelve years in various leadership roles across the accounting and finance organizations. Prior to that, Amy spent four years in the audit practice at Ernst & Young serving high-profile technology clients in the Bay Area.",
+    "twelfth-detail2": "Amy holds a BA in Business Economics with an emphasis in Accounting from the University of California, Santa Barbara and is a Certified Public Accountant in the state of California."
+  },
+  "manager": {
+    "leadership": "Leadership",
+    "readmore": "READ MORE"
+  },
+  "memberstile": {
+    "h3": "OUR PEOPLE",
+    "h4": "Building the Future together",
+    "p": "Roblox is home to over 2,000 employees dedicated to reimagining the way people come together through immersive 3D digital experiences."
+  },
+  "valueofroblox": {
+    "h2": "Our values",
+    "first-h3": "Respect the community",
+    "first-p": "We consider our impact on the world, strive to respect everyone's best interets, and communicate authentically. We prioritize community before company, company before team, and team before individual",
+    "second-h3": "We are responsible",
+    "second-p": "We are responsible for both the intended and unintended consequences of our actions.",
+    "third-h3": "Take the long view",
+    "third-p": "We set a long-term vision, even when making short-term decisions. We challenge the status quo, thimk big, and look for innovation in everything we do.",
+    "fourth-h3": "Get stuff done",
+    "fourth-p": "We drive execution by taking initiative and relentlessly iterating towards the long-term goal."
   }
 }

@@ -2,8 +2,8 @@
   <div class="education__news" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="title">
-        <h2>Roblox 에듀케이션 관련 뉴스</h2>
-        <p>교육 이니셔티브에 대한 최신 뉴스를 읽어 보세요.</p>
+        <h2>{{ $t("[1].educationnews.h2") }}</h2>
+        <p>{{ $t("[1].educationnews.p") }}</p>
       </div>
       <swiper class="card__wrapper" :options="swiperOption">
         <swiper-slide
@@ -14,7 +14,7 @@
         >
           <div class="card__left">
             <div class="text">
-              <a :href="item.link" target="_blank">{{ item.text }}</a>
+              <a :href="item.link" target="_blank">{{ $t(item.text) }}</a>
             </div>
           </div>
           <div class="card__right">
@@ -50,7 +50,7 @@ export default {
             "src/assets/images/education-news/Roblox_High_School-scaled.jpg",
           imgUrl2:
             "src/assets/images/education-news/Roblox_Logo_Gray_new_small.svg",
-          text: "Roblox 커뮤니티 펀드 소개",
+          text: "[1].educationnews.text1",
           link: "https://blog.roblox.com/2021/11/introducing-roblox-community-fund/",
         },
         {
@@ -58,19 +58,19 @@ export default {
             "src/assets/images/education-news/Community_Space-scaled.jpg",
           imgUrl2:
             "src/assets/images/education-news/Roblox_Logo_Gray_new_small.svg",
-          text: "Roblox 교수 학습의 새로운 도약",
+          text: "[1].educationnews.text2",
           link: "https://blog.roblox.com/2021/11/next-chapter-of-teaching-and-learning-on-roblox/",
         },
         {
           imgUrl1: "src/assets/images/education-news/RobloxPitchArt1.jpg",
           imgUrl2: "src/assets/images/education-news/WSJ_Logo.svg",
-          text: "Roblox, 학교에 교육용 비디오 게임 도입",
+          text: "[1].educationnews.text3",
           link: "https://www.wsj.com/articles/roblox-looks-to-bring-educational-videogames-to-schools-11636988400",
         },
         {
           imgUrl1: "src/assets/images/education-news/iStock-1312439265.jpg",
           imgUrl2: "src/assets/images/education-news/Education_week.svg",
-          text: "STEM 관련 기관을 대상으로 한 수백만 달러의 새로운 자금으로...",
+          text: "[1].educationnews.text4",
           link: "https://www.edweek.org/teaching-learning/teaching-in-the-metaverse-roblox-looks-to-make-it-a-reality/2021/11",
         },
       ],

@@ -2,20 +2,16 @@
   <div class="community__fund" :class="{ dark: changeDarkMode }">
     <div class="row">
       <div class="text">
-        <h2>Roblox 커뮤니티 펀드</h2>
+        <h2>{{ $t("[1].community.h2") }}</h2>
         <p>
-          Roblox 커뮤니티 펀드(RCF)는 Roblox에 대한 영향력 있는 이니셔티브를
-          지원하기 위해 1000만 달러의 초기 자금을 지원하는 공익 유한 책임
-          회사입니다. 주요 교육 기관 및 개발자에 대한 자금 지원을 통해,
-          2030년까지 1억 명의 학생에게 Roblox에서의 학습 기회를 제공하는 것을
-          목표로 하고 있습니다.
+          {{ $t("[1].community.p") }}
         </p>
         <a
           href="https://blog.roblox.com/2021/11/introducing-roblox-community-fund/"
           target="_blank"
           :class="{ dark: changeDarkMode }"
         >
-          <span>자세히 보기</span>
+          <span>{{ $t("[1].community.span") }}</span>
           <i class="fa-solid fa-arrow-right-long"></i>
         </a>
       </div>

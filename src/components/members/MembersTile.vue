@@ -2,11 +2,10 @@
   <section>
     <div class="row">
       <div class="textBox" :class="{ dark: changeDarkMode }">
-        <h3>Roblox 사람들</h3>
-        <h4>함께 만드는 미래</h4>
+        <h3>{{ $t("[5].memberstile.h3") }}</h3>
+        <h4>{{ $t("[5].memberstile.h4") }}</h4>
         <p>
-          2,000여 명의 Roblox 임직원들이 몰입형 3D 디지털 체험을 통해 사람들이
-          모이는 방식을 재창조하는 데 전념하고 있습니다.
+          {{ $t("[5].memberstile.p") }}
         </p>
       </div>
       <div class="tileBox" :class="{ dark: changeDarkMode }">
