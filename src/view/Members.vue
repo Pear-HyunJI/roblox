@@ -48,18 +48,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.detailManager {
+#detailView {
   position: fixed;
   right: 0;
   top: 15px;
   z-index: 9999;
   color: #121110;
   transform: translateX(800px);
-  opacity: 0;
   transition: all 0.5s;
   &.active {
     transform: translateX(0px);
-    opacity: 1;
   }
 }
 

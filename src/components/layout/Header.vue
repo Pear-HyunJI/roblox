@@ -70,12 +70,15 @@ export default {
       } else {
         this.activeMenu = index;
       }
+      if (this.activeMenu === 1) {
+      }
     },
     onOff() {
       this.$store.commit("on__ChangeDark");
     },
     changeLanguage(locale) {
       this.$i18n.locale = locale; // 언어 변경
+      this.$store.commit("on__Click", locale);
     },
   },
   computed: {

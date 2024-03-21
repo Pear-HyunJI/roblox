@@ -2,7 +2,7 @@
   <div class="news__main">
     <div class="row">
       <div class="news__main__wrapper">
-        <h3 :class="{ dark: changeDarkMode }">최신 뉴스</h3>
+        <h3 :class="{ dark: changeDarkMode }">{{ $t("[6].latestnews") }}</h3>
         <div class="header__news">
           <div class="header__news__left">
             <h3>{{ headerNews[currentPage - 1][0]?.title }}</h3>
@@ -26,7 +26,7 @@
               <img :src="getImg(item.urlToImage)" :alt="item.source.name" />
             </div>
             <h3>{{ item.title }}</h3>
-            <a :href="item.url" target="_blank">계속 읽기</a>
+            <a :href="item.url" target="_blank">{{ $t("[6].readmore") }}</a>
           </div>
         </div>
       </div>

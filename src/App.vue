@@ -1,8 +1,8 @@
 <template>
   <div :class="{ dark: changeDarkMode }">
-    <Header></Header>
+    <Header @onClick="onClick"></Header>
     <div id="app__contents">
-      <router-view></router-view>
+      <router-view :locale="locale"></router-view>
     </div>
     <Footer></Footer>
   </div>
@@ -17,9 +17,19 @@ export default {
     Header,
     Footer,
   },
+  data() {
+    return {
+      locale: "ko",
+    };
+  },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;
+    },
+  },
+  methods: {
+    onClick(locale) {
+      this.locale = locale;
     },
   },
 };

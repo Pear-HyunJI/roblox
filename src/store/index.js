@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     current: 1,
     dark: false,
+    locale: "ko",
   },
   mutations: {
     on__UpdateCurrent(state, payload) {
@@ -15,6 +16,9 @@ export default new Vuex.Store({
     on__ChangeDark(state) {
       state.dark = !state.dark;
     },
+    on__Click(state, payload) {
+      state.locale = payload;
+    },
   },
   getters: {
     fnGetCurrent(state) {
@@ -22,6 +26,9 @@ export default new Vuex.Store({
     },
     fnGetDark(state) {
       return state.dark;
+    },
+    fnGetLocale(state) {
+      return state.locale;
     },
   },
 });
