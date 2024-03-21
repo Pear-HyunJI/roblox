@@ -9,13 +9,9 @@
       </div>
       <div class="textBox" :class="{ dark: changeDarkMode }">
         <div class="text__wrapper">
-          <span>데이비드 바주키(DAVID BAZUCKI) 진행</span>
-          <h3>Tech Talks 팟캐스트</h3>
-          <p>
-            CEO 데이비드 바주키 및 인간 상호 작용의 미래를 구축해 가는 사람들의
-            대화를 통해, 현재의 기술적 과제 및 획기적인 아이디어, 혁신에 대해
-            자세히 알아보세요.
-          </p>
+          <span>{{ $t("[7].host.span") }}</span>
+          <h3>{{ $t("[7].host.h3") }}</h3>
+          <p>{{ $t("[7].host.p") }}</p>
           <ul class="iconBox">
             <li>
               <a

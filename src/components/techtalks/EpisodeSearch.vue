@@ -1,14 +1,16 @@
 <template>
   <section class="episode__search">
-    <h2 :class="{ dark: changeDarkMode }">에피소드</h2>
+    <h2 :class="{ dark: changeDarkMode }">{{ $t("[7].search.h2") }}</h2>
     <div class="tech__search">
       <input
         ref="inputRef"
         type="search"
-        placeholder="검색어를 입력하세요."
+        :placeholder="$t('[7].search.placeholder')"
         @keypress="onKeyPress"
       />
-      <button type="button" @click="onClick">검색하기</button>
+      <button type="button" @click="onClick">
+        {{ $t("[7].search.button") }}
+      </button>
     </div>
   </section>
 </template>

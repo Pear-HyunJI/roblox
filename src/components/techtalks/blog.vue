@@ -1,9 +1,9 @@
 <template>
   <section id="blog">
     <div class="content__container">
-      <h4>Roblox가 구현해 낸 오늘날의 기술 혁신에 대해 자세히 알아보세요.</h4>
+      <h4>{{ $t("[7].blog.h4") }}</h4>
       <a href="https://blog.roblox.com" target="_blank">
-        <button>테크 블로그로 이동</button>
+        <button>{{ $t("[7].blog.button") }}</button>
       </a>
     </div>
   </section>

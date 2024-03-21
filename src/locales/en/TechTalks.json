@@ -1,5 +1,126 @@
 {
   "blog": {
-    "h1": "1"
+    "h4": "Learn more about the latest technological breakthroughs from Roblox.",
+    "button": "GO TO TECH BLOG"
+  },
+  "search": {
+    "h2": "Episode",
+    "placeholder": "Please enter a search term",
+    "button": "SEARCH"
+  },
+  "section": {
+    "span": "EPISODE",
+    "h4": "GUEST",
+    "leadmore": "LEAD MORE",
+
+    "first-num": "1",
+    "first-topic": "Public Policy",
+    "first-guest": " Nicky Jackson Colaco",
+    "first-content": "Head of Public Policy Nicky Jackson Colaco joins CEO David Baszucki to discuss our approach to policy at Roblox, the communities we interact with and serve with that approach, and the symbiotic relationship between technical innovation, our vision, and our public policy strategy.",
+
+    "second-num": "2",
+    "second-topic": "The Evolution of Roblox Avatars",
+    "second-guest": "Kiran Bhat, Senior Director of Engineering, Mahesh Ramasubramanian, Senior Director of Product, and Effie Goenawan, Principal Product Manager",
+    "second-content": "Senior Director of Engineering Kiran Bhat, Senior Director of Product Mahesh Ramasubramanian, and Principal Product Manager Effie Goenawan join CEO David Baszucki for a look into the future of immersive communication through avatars and the technical challenges we’re solving to power it. They’ll discuss in depth how expressive avatars not only allow us to express ourselves digitally, but also communicate more immersively through voice, facial expressions, and body language.",
+
+    "third-num": "3",
+    "third-topic": "International",
+    "third-guest": "Zhen Fang, Head of International",
+    "third-content": "Head of International Zhen Fang joins CEO David Baszucki to discuss how we’re working to deliver a truly localized experience to every Roblox user around the world. From language translation to payment options to culturally relevant content, they’ll explore how our platform is adapting to our increasingly international community.",
+
+    "fourth-num": "4",
+    "fourth-topic": "Active/Active and Data Storage",
+    "fourth-guest": "Jan Berktold, Principal Software Engineer, Infrastructure",
+    "fourth-content": "Principal Software Engineer Jan Berktold joins CEO David Baszucki to discuss how we’re ensuring our infrastructure is fast and reliable all around the world. They’ll explore our vision for active/active architecture and the challenges we’re solving to enhance our data storage platform.",
+
+    "fifth-num": "5",
+    "fifth-topic": "Growth Engineering",
+    "fifth-guest": "Anupam Singh, VP of Engineering, Growth",
+    "fifth-content": "Anupam Singh, our VP of Engineering for the Growth team, joins CEO Dave Baszucki to talk about the technical challenges we’re solving to enhance search and discovery for hundreds of millions of creators and users. They’ll explore how our approach to growth has developed in accordance with our values to deliver the best possible experience for our community.",
+
+    "sixth-num": "6",
+    "sixth-topic": "Safery &amp; Civility Vision",
+    "sixth-guest": "Matt Kaufman, Roblox’s Chief Systems Officer and Head of Safety Product, Policy, & Operations, and Naren Koneru, VP of Trust & Safety Engineering",
+    "sixth-content": "Matt Kaufman, Roblox’s Chief Systems Officer and Head of Safety Product, Policy, & Operations, and Naren Koneru, VP of Trust & Safety Engineering, join CEO Dave Baszucki to discuss our approach to safety and civility on the platform. Together they’ll explore the technical challenges that come along with keeping virtual environments safe at scale, our vision for civil online communities, and how we’re working to serve the needs of each individual who uses Roblox.",
+
+    "seventh-num": "7",
+    "seventh-topic": "Education &amp; Verticalization",
+    "seventh-guest": "Rebecca Kantar, VP of Education Partnerships",
+    "seventh-content": "Vice President of Education Partnerships Rebecca Kantar joins CEO Dave Baszucki to talk about the future of verticalization on Roblox, with a deep dive on our education vertical. They’ll start out by discussing Rebecca’s past experience starting a company called Imbellus, then discuss our overall plans around verticalization and our vision of evolving education on Roblox to better serve students and educators.",
+
+    "eighth-num": "8",
+    "eighth-topic": "Economy",
+    "eighth-guest": "Enrico D’Angelo, VP of Product, Economy",
+    "eighth-content": "VP of Product, Economy Enrico D’Angelo joins CEO Dave Baszucki to discuss their vision for the Roblox economy. In this episode, they’ll discuss how virtual economies can mirror the real world, the opportunities ahead for Roblox, and some of the technical challenges we’ll need to solve to get there.",
+
+    "ninth-num": "9",
+    "ninth-topic": "Communication",
+    "ninth-guest": "Garima Sinha, Senior Director of Product",
+    "ninth-content": "Senior Director of Product for the Social Team, Garima Sinha, joins CEO Dave Baszucki to talk about the future of communication on Roblox. In this episode, they’ll discuss how we’ve been working to make communication more natural and expressive on the platform – including avatar facial animation, spatial audio, and more.",
+
+    "tenth-num": "10",
+    "tenth-topic": "Brand Partnerships",
+    "tenth-guest": "Christina Wootton, VP of Global Partnerships",
+    "tenth-content": "VP of Global Partnerships Christina Wootton sits down with CEO and host Dave Baszucki to talk about the incredible ways that brands have developed a presence on our platform. In this episode, they’ll share how we think about our relationship with other brands, what successful integrations look like, and how the foundation of our technology makes it all possible.",
+
+    "eleventh-num": "11",
+    "eleventh-topic": "Creator Innovation",
+    "eleventh-guest": "Nick Tornow, VP of Creator Engineering",
+    "eleventh-content": "VP of Creator Engineering Nick Tornow joins CEO and host Dave Baszucki to talk about the global creator community that builds the immersive experiences on Roblox and how we support their success. In this episode, they’ll discuss the ways we’re evolving creation across the three pillars of the Creator group: Roblox Studio, our content cloud, and the services that enrich our platform.",
+
+    "twelfth-num": "12",
+    "twelfth-topic": "Infrastructure",
+    "twelfth-guest": "Max Ross, VP of Engineering",
+    "twelfth-content": "Max Ross, VP of Engineering, Infrastructure sits down with Dave to discuss the unique challenges of our global infrastructure at Roblox. In this episode, they discuss how we’re building our multi-region architecture, what it means to think of infrastructure like a product, and what we’ve learned as we’ve scaled to support over 50 million daily active users.",
+
+    "thirteenth-num": "13",
+    "thirteenth-topic": "Programming",
+    "thirteenth-guest": "Arseny Kapoulkine, Technical Fellow",
+    "thirteenth-content": "Technical Fellow Arseny Kapoulkine is back with CEO and host Dave Baszucki to kick off our second season of the podcast. In this episode, they discuss Luau, the programming language that powers the Roblox engine, as well as the advancements we've made to make it more performant and even better to use.",
+
+    "fourteenth-num": "14",
+    "fourteenth-topic": "Data science and analytics",
+    "fourteenth-guest": "With Todd Rudak, Director of Data Science & Analytics",
+    "fourteenth-content": "Todd Rudak, Director of Data Science & Analytics joins CEO and host Dave Baszucki to discuss the unique qualities of the team at Roblox and the work they do to support innovation at scale. Tune in to find out how the team works to increase the speed, frequency, and acumen of our decision making in building the Roblox platform.",
+
+    "fifteenth-num": "15",
+    "fifteenth-topic": "Open cloud",
+    "fifteenth-guest": "Antoni Choudhuri, Senior Engineering Director",
+    "fifteenth-content": "The Roblox platform would not be where it is today without the creativity and innovation of our developer community. In this episode, CEO and host Dave Baszucki chats with Senior Engineering Director Antoni Choudhuri to discuss Open Cloud, the exciting new ecosystem that empowers developers to maximize their productivity and take their experiences to the next level.",
+
+    "sixteenth-num": "16",
+    "sixteenth-topic": "Roblox research",
+    "sixteenth-guest": "Morgan McGuire, Chief Scientist",
+    "sixteenth-content": "Morgan McGuire, Chief Scientist at Roblox, joins CEO and host Dave Baszucki to chat about all things research at Roblox. The Research Team helps to accelerate innovation by combining computer science with social science and academic ideas with industry know-how. Tune in to learn more about how we're shaping the forefront of metaverse research",
+
+    "seventeenth-num": "17",
+    "seventeenth-topic": "The Roblox engine",
+    "seventeenth-guest": "Arseny Kapoulkine, Technical Fellow",
+    "seventeenth-content": "In this episode, Dave continues his conversation with Arseny Kapoulkine, Technical Fellow, to discuss the Roblox Engine. In this highly technical deep-dive, they tackle the foundational pieces of the Roblox Engine, including object modeling, rendering, physics, and networking. Listen in for a comprehensive overview of the core technologies that power the Roblox platform.",
+
+    "eighteenth-num": "18",
+    "eighteenth-topic": "Roblox technology",
+    "eighteenth-guest": "Arseny Kapoulkine, Technical Fellow",
+    "eighteenth-content": "In this episode of Tech Talks, Dave is joined by Arseny Kapoulkine, Technical Fellow, to discuss what differentiates Roblox technologyfrom other online platforms. They reflect on the rich history of technological innovation at Roblox, from iterating on the platform to preserving the fidelity of experiences across all devices. Tune in to learn more about the technological foundations of the metaverse and how Roblox has evolved and scaled to where we are today.",
+
+    "nineteenth-num": "19",
+    "nineteenth-topic": "Avatars and facial animation",
+    "nineteenth-guest": "Kiran Bhat, Senior Director of Engineering, Avatar",
+    "nineteenth-content": "In the metaverse, avatars are an expression of one's identity. In this episode of Tech Talks, Dave and Kiran Bhat, Senior Director of Engineering, discuss the future of avatars on Roblox. Kiran shares his path to Roblox, from graduate school to the visual effects industry to start-up Loom.ai, which Roblox acquired in December 2020. Find out how Roblox is building upon the foundation of Loom.ai's technology to further personalize avatars with facial animation.",
+
+    "twentieth-num": "20",
+    "twentieth-topic": "Step into the metaverse",
+    "twentieth-guest": "Daniel Sturman, Roblox CTO",
+    "twentieth-content": "Setting the stage for a new category of human interaction. In this episode, Dave sits down with Daniel Sturman, Chief Technology Officer at Roblox, to dive into the five key tenets of the metaverse app and what this utility holds for our future."
+  },
+  "tag": {
+    "podcast": "podcast",
+    "spotify": " spotify",
+    "youtube": "youtube"
+  },
+  "host": {
+    "span": "HOSTED BY DAVID BASZUCKI",
+    "h3": "Tech Talks Podcast",
+    "p": "Join us as CEO Dave Baszucki talks with the people building and shaping the future of human interaction as we explore the technical challenges, breakthrough ideas, and innovations in-depth."
   }
 }

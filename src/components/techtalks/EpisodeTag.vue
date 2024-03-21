@@ -7,7 +7,7 @@
         @click="onClick(item.class)"
       >
         <i :class="item.class"></i>
-        <p>{{ item.name }}</p>
+        <p>{{ $t(item.name) }}</p>
       </button>
     </div>
   </section>
@@ -20,9 +20,9 @@ export default {
     return {
       activeName: "",
       mediaTag: [
-        { name: "팟캐스트", class: "fa-solid fa-podcast" },
-        { name: "스포티파이", class: "fa-brands fa-spotify" },
-        { name: "유튜브", class: "fa-brands fa-youtube" },
+        { name: "[7].tag.podcast", class: "fa-solid fa-podcast" },
+        { name: "[7].tag.spotify", class: "fa-brands fa-spotify" },
+        { name: "[7].tag.youtube", class: "fa-brands fa-youtube" },
       ],
     };
   },
