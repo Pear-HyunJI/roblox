@@ -211,7 +211,6 @@ export default {
   computed: {
     loadItem() {
       this.currentPage = this.$store.getters.fnGetCurrent;
-      console.log(this.keyword, this.$t(this.episodes[0].topic));
 
       if (!this.keyword) {
         this.loadItemPage = this.episodes.filter(

@@ -59,5 +59,12 @@ export default {
       box-shadow: 0 0 1rem rgba(99, 71, 255, 0.25);
     }
   }
+  @media screen and (max-width: 390px) {
+    margin: 50px 20px;
+    .play__btn {
+      padding: 10px 14px 10px 16px;
+      font-size: 18px;
+    }
+  }
 }
 </style>

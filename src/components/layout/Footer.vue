@@ -47,14 +47,14 @@
               <a
                 href="https://en.help.roblox.com/hc/en-us/articles/115004647846-Roblox-Terms-of-Use"
                 target="_blank"
-                >{{ $t("[2].Terms") }}</a
+                >{{ $t("[2].terms") }}</a
               >
             </li>
             <li>
               <a
                 href="https://en.help.roblox.com/hc/en-us/articles/115004630823-Roblox-Privacy-and-Cookie-Policy"
                 target="_blank"
-                >{{ $t("[2].Privacy") }}</a
+                >{{ $t("[2].privacy") }}</a
               >
             </li>
           </ul>

@@ -179,7 +179,6 @@ export default {
       color: #121110;
     }
   }
-
   .tileBox {
     display: flex;
     position: relative;
@@ -250,6 +249,24 @@ export default {
           }
           img:hover {
             transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
+    .tileBox {
+      height: 150px;
+      .imgContainer {
+        .imgBox1 {
+          margin: 0 4px;
+          .imgBox2 {
+            margin: 4px 0;
           }
         }
       }

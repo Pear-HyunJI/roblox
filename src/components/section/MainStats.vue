@@ -49,7 +49,7 @@ export default {
   methods: {
     handleScroll() {
       let scrollY = window.scrollY;
-      if (scrollY === 4900) {
+      if (scrollY === 4900 || scrollY === 2642) {
         for (let i in this.statsData) {
           if (this.statsData[i].num == 0) {
             this.statsData[i].num = 0;
@@ -123,6 +123,25 @@ export default {
       }
       p {
         font-size: 1.125rem;
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .main__stats__wrapper {
+      max-width: 300px;
+      flex-wrap: wrap;
+      .main__stats__stat {
+        flex: 1 1 51%;
+        &::after {
+          right: 50%;
+          top: 0;
+        }
+        &:nth-child(1)::after {
+          display: none;
+        }
+        &:nth-child(4)::after {
+          display: block;
+        }
       }
     }
   }

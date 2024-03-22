@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <tile-view />
     <video-1 />
     <sticky-info />
@@ -35,4 +35,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.home {
+  // opacity: 0.2;
+}
+</style>

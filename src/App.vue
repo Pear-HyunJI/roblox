@@ -1,7 +1,8 @@
 <template>
   <div :class="{ dark: changeDarkMode }">
-    <Header @onClick="onClick"></Header>
-    <div id="app__contents">
+    <Header @onClick="onClick" class="header" @openNav="openNav"></Header>
+
+    <div id="app__contents" :class="{ on: boolData }">
       <router-view :locale="locale"></router-view>
     </div>
     <Footer></Footer>
@@ -20,6 +21,7 @@ export default {
   data() {
     return {
       locale: "ko",
+      boolData: "",
     };
   },
   computed: {
@@ -31,6 +33,9 @@ export default {
     onClick(locale) {
       this.locale = locale;
     },
+    openNav(bool) {
+      this.boolData = bool;
+    },
   },
 };
 </script>
@@ -38,6 +43,12 @@ export default {
 <style lang="scss" scoped>
 #app__contents {
   padding-top: 165px;
+  &.on {
+    opacity: 0.2;
+  }
+  @media screen and (max-width: 390px) {
+    padding-top: 50px;
+  }
 }
 .dark {
   background: radial-gradient(circle, #dfdfdf 1px, transparent 1px), white;

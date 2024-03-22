@@ -65,3 +65,11 @@ legend {
   background: #dee2e6;
   color: #121110;
 }
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-indent: -99999px;
+}

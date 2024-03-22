@@ -68,5 +68,14 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    .row {
+      margin: 50px 20px;
+      .play__btn {
+        padding: 12px 18px 12px 20px;
+        font-size: 18px;
+      }
+    }
+  }
 }
 </style>

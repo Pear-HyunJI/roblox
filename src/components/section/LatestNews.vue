@@ -70,19 +70,22 @@ export default {
         },
       ],
       swiperOption: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
+        slidesPerView: 1,
         slidesPerGroup: 1,
         centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
         speed: 800,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          391: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            centeredSlides: true,
+          },
         },
       },
     };
@@ -199,6 +202,40 @@ export default {
         p {
           opacity: 0;
           transition: all 0.5s;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    .row {
+      .text__wrapper {
+        align-items: center;
+        h2 {
+          font-size: 1.5rem;
+        }
+        a {
+          padding: 0.5rem;
+        }
+      }
+      .card__wrapper {
+        .card {
+          padding: 0.5rem 3rem 1.5rem;
+          height: 400px;
+          text-align: center;
+          &.swiper-slide-active {
+            height: 400px;
+          }
+          a {
+            bottom: 3rem;
+            left: 50%;
+            transform: translate(-50%);
+            &::before {
+              max-width: 100%;
+            }
+          }
+          p {
+            display: none;
+          }
         }
       }
     }

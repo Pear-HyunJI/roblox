@@ -78,6 +78,12 @@ export default {
         data[1].imgOpacityValue = 0;
         data[2].imgOpacityValue = 0;
       }
+      if (window.scrollY < 1700) {
+        data[0].imgOpacityValue = 1;
+        data[1].imgOpacityValue = 1;
+        data[2].imgOpacityValue = 1;
+      }
+      console.log(window.scrollY);
     },
   },
 };
@@ -86,45 +92,72 @@ export default {
 <style lang="scss" scoped>
 #section {
   margin: 200px 0 200px;
-}
-#info__wrapper {
-  display: flex;
-  padding: 50px 0;
-  margin: 300px auto;
-  color: rgba(255, 255, 255, 0.8);
-  height: 842px;
-  .text {
+  #info__wrapper {
     display: flex;
-    flex: 40%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    margin: 0 2rem 0 0;
-    text-align: right;
-    transition: all 0.3s;
-    word-break: keep-all;
-    &.dark {
-      color: #121110;
-    }
-    h3 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+    padding: 50px 0;
+    margin: 300px auto;
+    color: rgba(255, 255, 255, 0.8);
+    height: 842px;
+    .text {
+      display: flex;
+      flex: 40%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      margin: 0 2rem 0 0;
+      text-align: right;
+      transition: all 0.3s;
       word-break: keep-all;
+      &.dark {
+        color: #121110;
+      }
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        word-break: keep-all;
+      }
+      p {
+        max-width: 400px;
+        font-size: 1rem;
+        word-break: keep-all;
+      }
     }
-    p {
-      max-width: 400px;
-      font-size: 1rem;
-      word-break: keep-all;
+    .sticky__img {
+      flex: 40%;
+      transition: opacity 0.3s ease;
+      img {
+        position: sticky;
+        top: 40vh;
+        height: 350px;
+        border-radius: 5px;
+      }
     }
   }
-  .sticky__img {
-    flex: 40%;
-    transition: opacity 0.3s ease;
-    img {
-      position: sticky;
-      top: 40vh;
+  @media screen and (max-width: 390px) {
+    margin: 0;
+    #info__wrapper {
+      display: block;
+      margin: 0 auto;
+      padding: 25px 0;
       height: 350px;
-      border-radius: 5px;
+      .text {
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+        p {
+          display: none;
+        }
+      }
+      .sticky__img {
+        img {
+          top: 80vh;
+          height: 100%;
+        }
+      }
     }
   }
 }

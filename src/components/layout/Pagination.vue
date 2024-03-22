@@ -37,7 +37,6 @@ export default {
   },
   computed: {
     pageCount() {
-      console.log(Math.ceil(this.totalItems / this.itemPerPage));
       return Math.ceil(this.totalItems / this.itemPerPage);
     },
     displayedPages() {

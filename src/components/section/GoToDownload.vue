@@ -169,5 +169,28 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    padding: 3rem 0;
+    .row {
+      .row__wrapper {
+        .row__wrapper__link1 {
+          display: block;
+          margin: 2.75rem auto 0;
+          a {
+            width: 80%;
+            margin-bottom: 20px;
+          }
+        }
+        .row__wrapper__link2 {
+          display: block;
+          margin: 0 auto;
+          a {
+            width: 80%;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
 }
 </style>

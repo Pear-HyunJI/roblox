@@ -72,5 +72,21 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    .job__posting__wrapper {
+      padding: 3rem 1.5rem;
+      .wrapper__inner {
+        .inner__h5 {
+          font-size: 2rem;
+        }
+        .inner__btn {
+          a {
+            padding: 0.7rem;
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
