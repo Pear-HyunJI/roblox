@@ -156,6 +156,7 @@ export default {
           topic: "[7].section.fifteenth-topic",
           guest: "[7].section.fifteenth-guest",
           content: "[7].section.fifteenth-content",
+          iconClass: "fa-solid fa-podcast",
           href: "https://www.youtube.com/watch?v=Uq0UlIw8B8M",
         },
         {
@@ -163,6 +164,7 @@ export default {
           topic: "[7].section.sixteenth-topic",
           guest: "[7].section.sixteenth-guest",
           content: "[7].section.sixteenth-content",
+          iconClass: "fa-brands fa-youtube",
           href: "https://open.spotify.com/show/6MEbDMxt2IXoTRvQegwmVf",
         },
         {
@@ -209,6 +211,7 @@ export default {
   computed: {
     loadItem() {
       this.currentPage = this.$store.getters.fnGetCurrent;
+      console.log(this.keyword, this.$t(this.episodes[0].topic));
 
       if (!this.keyword) {
         this.loadItemPage = this.episodes.filter(
@@ -217,9 +220,9 @@ export default {
       } else {
         let items = this.episodes.filter(
           (item) =>
-            item.topic.indexOf(this.keyword) > -1 ||
-            item.content.indexOf(this.keyword) > -1 ||
-            item.guest.indexOf(this.keyword) > -1 ||
+            this.$t(item.topic).indexOf(this.keyword) > -1 ||
+            this.$t(item.content).indexOf(this.keyword) > -1 ||
+            this.$t(item.guest).indexOf(this.keyword) > -1 ||
             item.iconClass.indexOf(this.keyword) > -1
         );
         this.loadItemPage = items.filter(
