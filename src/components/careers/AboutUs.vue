@@ -183,6 +183,88 @@ export default {
           }
         }
       }
+      @media screen and (max-width: 390px) {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(n) {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .text {
+          flex: 0 0 40%;
+          padding: 20px 2rem 0;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          color: #f2f4f3;
+          word-break: keep-all;
+          gap: 1.5rem;
+          &.dark {
+            color: #121110;
+          }
+          h3 {
+            font-size: 2rem;
+            line-height: 2.5rem;
+          }
+          p {
+            font-size: 18px;
+            margin: 10px 0;
+          }
+          a {
+            width: 140px;
+            text-align: center;
+            font-size: 1rem;
+            padding: 1rem;
+            border: 2px solid rgba(242, 244, 243, 0.75);
+            border-radius: 8px;
+            transition: all 0.5s;
+            &:hover {
+              border-color: rgba(99, 71, 255, 0.25);
+              box-shadow: 0 0 1rem rgba(99, 71, 255, 0.25);
+              background: conic-gradient(
+                from 95.27deg at 51.3% 51.96%,
+                #150d44 -0.95deg,
+                #121110 62.41deg,
+                #0f0c1c 134.15deg,
+                #0a042e 181.84deg,
+                #0f0d1a 237.07deg,
+                #121110 317.05deg,
+                #150d44 359.05deg,
+                #121110 422.41deg
+              );
+            }
+          }
+        }
+        .photo__card {
+          flex: 0 0 28.8%;
+          padding: 0 1rem;
+          .photo__card__img {
+            width: 360px;
+            img {
+              border-radius: 1rem 1rem 0 0;
+            }
+          }
+          .photo__card__text {
+            width: 360px;
+            color: #dee2e6;
+            word-break: keep-all;
+            padding: 1rem;
+            background: #222;
+            border-radius: 0 0 1rem 0;
+            .p1 {
+              font-size: 1.125rem;
+            }
+            .p2 {
+              margin-top: 1.5rem;
+              font-size: 1.125rem;
+            }
+            .p3 {
+              font-size: 12px;
+            }
+          }
+        }
+      }
     }
   }
 }

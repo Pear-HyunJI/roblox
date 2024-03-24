@@ -89,6 +89,13 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+          391: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            centeredSlides: true,
+          },
+        },
       },
     };
   },
@@ -109,6 +116,9 @@ h2 {
   &.dark {
     color: #121110;
   }
+  @media screen and (max-width: 390px) {
+    font-size: 35px;
+  }
 }
 
 .slide__outer {
@@ -116,10 +126,16 @@ h2 {
   width: 1200px;
   margin: 0 auto;
   height: 700px;
+  @media screen and (max-width: 390px) {
+    width: 370px;
+  }
 }
 
 .slide__inner {
   width: 1600px;
+  @media screen and (max-width: 390px) {
+    width: 370px;
+  }
 }
 
 .slideBox1.swiper-slide {

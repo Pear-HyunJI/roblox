@@ -324,6 +324,10 @@
   bottom: -325px;
   /* top: 0px; */
   margin: 20px;
+  @media screen and (max-width: 390px) {
+    margin: 0;
+    left: 5px;
+  }
 }
 
 .swiper-button-prev,
@@ -353,6 +357,10 @@
   right: auto;
   bottom: -325px;
   margin: 20px;
+  @media screen and (max-width: 390px) {
+    margin: 0;
+    left: 345px;
+  }
 }
 
 .swiper-button-next,
@@ -425,6 +433,10 @@
   left: 50px;
   /* width: 100%; */
   width: auto;
+  @media screen and (max-width: 390px) {
+    left: 25px;
+    bottom: -52px;
+  }
 }
 
 /* Bullets */

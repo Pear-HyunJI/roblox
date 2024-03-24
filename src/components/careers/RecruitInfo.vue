@@ -76,5 +76,21 @@ export default {
       );
     }
   }
+  @media screen and (max-width: 390px) {
+    margin: 0 10px;
+    h2 {
+      font-size: 35px;
+      padding-bottom: 40px;
+      &:before {
+        margin: 20px auto;
+      }
+    }
+    p {
+      font-size: 15px;
+    }
+    a {
+      margin-top: 50px;
+    }
+  }
 }
 </style>
