@@ -135,6 +135,9 @@ h2 {
   &.dark {
     color: #121110;
   }
+  @media screen and (max-width: 390px) {
+    margin: 10px;
+  }
 }
 .card__wrapper {
   color: #162227;
@@ -241,6 +244,33 @@ h2 {
     &:hover button {
       opacity: 1;
       max-height: 2em;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    display: flex;
+    margin: auto;
+
+    .card {
+      margin: 10px 10%;
+      flex: 0 0 80%;
+      max-width: 360px;
+      height: 500px;
+      transition: all 250ms ease-in;
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      h3 {
+        font-size: 24px;
+        padding: 20px 0 15px;
+      }
+      p {
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        display: -webkit-box !important;
+      }
     }
   }
 }

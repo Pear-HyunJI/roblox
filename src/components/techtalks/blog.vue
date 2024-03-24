@@ -68,5 +68,22 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    display: block;
+    background: linear-gradient(
+      180deg,
+      #6347ff 0%,
+      #6347ff 30%,
+      rgba(99, 71, 255, 0) 100%
+    );
+    padding: 2rem 2rem;
+    text-align: center;
+    h4 {
+      font-size: 1.5rem;
+    }
+    a {
+      padding: 20px 0;
+    }
+  }
 }
 </style>

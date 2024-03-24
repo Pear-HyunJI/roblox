@@ -340,5 +340,71 @@ export default {
       );
     }
   }
+  @media screen and (max-width: 390px) {
+    margin: 10px;
+    .card {
+      margin: 10px 0;
+      height: 500px;
+      //     background: #dee2e6;
+      //     border-radius: 8px 8px 8px 0;
+      padding: 20px;
+      //     position: relative;
+
+      .span__wrap {
+        writing-mode: horizontal-tb;
+        transform: rotate(0);
+        text-align: center;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.08em;
+        padding-left: 0rem;
+      }
+    }
+    .flexBox {
+      height: 100%;
+      display: block;
+      flex-direction: column;
+
+      .image {
+        position: static;
+        width: 50%;
+        margin: auto;
+        img {
+          border-radius: 8px 8px 8px 0;
+        }
+      }
+      .text {
+        padding: 5px;
+        .topicRow {
+          display: flex;
+          justify-content: space-between;
+          font-size: 20px;
+          align-items: center;
+          a {
+            padding-left: 50px;
+            font-size: 35px;
+            &:hover {
+              color: #6347ff;
+            }
+          }
+        }
+        h4 {
+          padding: 10px 0 16px 0;
+        }
+        p {
+          font-size: 1rem;
+          overflow: hidden;
+          transition: all 250ms ease-in;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+          display: -webkit-box !important;
+        }
+      }
+    }
+  }
 }
 </style>

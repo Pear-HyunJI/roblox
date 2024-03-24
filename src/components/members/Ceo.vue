@@ -84,5 +84,26 @@ export default {
       );
     }
   }
+  @media screen and (max-width: 390px) {
+    display: block;
+    .textBox {
+      padding: 50px;
+      flex: 50%;
+      color: #dee2e6;
+      word-break: keep-all;
+      &.dark {
+        color: #121110;
+      }
+      font-size: 15px;
+      h3 {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 10px 0 42px 0;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
 }
 </style>

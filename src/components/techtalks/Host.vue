@@ -124,5 +124,25 @@ export default {
       );
     }
   }
+  @media screen and (max-width: 390px) {
+    display: block;
+    .textBox {
+      .text__wrapper {
+        font-size: 16px;
+        h3 {
+          font-size: 40px;
+
+          padding: 10px 0 30px 0;
+        }
+        p {
+          font-size: 16px;
+        }
+        .iconBox {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 </style>

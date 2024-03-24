@@ -57,6 +57,9 @@ h2 {
   &.dark {
     color: #121110;
   }
+  @media screen and (max-width: 390px) {
+    padding-left: 10px;
+  }
 }
 .tech__search {
   text-align: center;

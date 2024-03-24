@@ -74,6 +74,13 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+          391: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            centeredSlides: true,
+          },
+        },
       },
     };
   },
@@ -98,16 +105,25 @@ h2 {
 
 #valueOfRoblox {
   padding: 80px 0;
+  @media screen and (max-width: 390px) {
+    padding: 80px 10px;
+  }
 }
 .slide__outer {
   overflow: hidden;
   width: 1200px;
   margin: 0 auto;
   height: 400px;
+  @media screen and (max-width: 390px) {
+    width: 1000px;
+  }
 }
 
 .slide__inner {
   width: 1600px;
+  @media screen and (max-width: 390px) {
+    width: 1000px;
+  }
 }
 
 .slideBox1.swiper-slide {
@@ -131,6 +147,12 @@ h2 {
     }
     p {
       font-size: 16px;
+    }
+    @media screen and (max-width: 390px) {
+      padding: 1.5rem;
+      h3 {
+        margin-bottom: 25px;
+      }
     }
   }
 }

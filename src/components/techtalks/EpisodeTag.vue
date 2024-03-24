@@ -97,5 +97,22 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    .tag__list {
+      padding: 0 10px;
+      button {
+        background: none;
+        color: #dee2e6;
+        border: 2px solid #dee2e6;
+        border-radius: 8px 8px 8px 0;
+        padding: 0.9rem 1.2rem;
+        transition: all 0.5s;
+        i {
+          font-size: 40px;
+          padding: 5px;
+        }
+      }
+    }
+  }
 }
 </style>

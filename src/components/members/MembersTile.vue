@@ -234,5 +234,64 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    display: block;
+    .textBox {
+      padding: 0px 0;
+      margin: 20px;
+      h3 {
+        font-size: 15px;
+        font-weight: 400;
+      }
+      h4 {
+        font-size: 48px;
+        font-weight: 500;
+        padding: 30px 0 16px 0;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+    }
+    .tileBox {
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+      .tileBoxHidden {
+        position: absolute;
+        top: -150px;
+        right: 10px;
+        left: 10px;
+        display: flex;
+
+        align-items: center;
+        overflow: hidden;
+
+        .imgContainer {
+          display: flex;
+          flex-direction: column;
+          transform: rotate(15deg);
+          width: 100%;
+          height: 100%;
+
+          .imgBox1 {
+            // margin: 0 7px;
+            margin: 0 4%;
+            .imgBox2 {
+              margin: 7px 0;
+              img {
+                border-radius: 10px;
+                transition: all 0.3s;
+              }
+              img:hover {
+                transform: scale(1.05);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>
