@@ -51,13 +51,20 @@ export default {
 #detailView {
   position: fixed;
   right: 0;
-  top: 15px;
+  top: 100px;
   z-index: 9999;
   color: #121110;
   transform: translateX(800px);
   transition: all 0.5s;
   &.active {
     transform: translateX(0px);
+  }
+  @media screen and (max-width: 390px) {
+    top: 0px;
+    transform: translateX(390px);
+    &.active {
+      transform: translateX(0px);
+    }
   }
 }
 

@@ -145,7 +145,7 @@ export default {
     .detail__card {
       overflow-y: scroll;
       max-width: 800px;
-      height: calc(100vh - 2rem);
+      height: calc(100vh - 7rem);
       padding: 4rem 0.5rem 6rem 4rem;
       background: #c5c7c6;
       border-radius: 8px 8px 8px 0;
@@ -191,6 +191,16 @@ export default {
           &::after {
             background-color: #6347ff;
           }
+        }
+      }
+      @media screen and (max-width: 390px) {
+        width: 390px;
+        height: calc(100vh);
+        padding: 3rem 3rem 6rem 3rem;
+        button {
+          top: 10px;
+          right: 15px;
+          font-size: 15px;
         }
       }
     }

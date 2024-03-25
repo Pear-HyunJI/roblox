@@ -57,7 +57,7 @@ export default {
         },
       ],
       swiperOption: {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         slidesPerGroup: 1,
         freemode: true,
@@ -115,14 +115,14 @@ h2 {
   margin: 0 auto;
   height: 400px;
   @media screen and (max-width: 390px) {
-    width: 1000px;
+    width: 370px;
   }
 }
 
 .slide__inner {
   width: 1600px;
   @media screen and (max-width: 390px) {
-    width: 1000px;
+    width: 370px;
   }
 }
 
