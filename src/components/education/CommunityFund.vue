@@ -76,5 +76,20 @@ export default {
       padding-left: 60px;
     }
   }
+  @media screen and (max-width: 390px) {
+    .row {
+      flex-direction: column;
+      flex-direction: column-reverse;
+      .img {
+        padding: 0;
+      }
+      .text {
+        padding: 30px 20px;
+        h2 {
+          font-size: 38px;
+        }
+      }
+    }
+  }
 }
 </style>

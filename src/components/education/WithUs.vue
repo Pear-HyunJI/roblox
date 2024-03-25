@@ -102,6 +102,18 @@ export default {
         }
       }
     }
+    @media screen and (max-width: 390px) {
+      .card__wrapper {
+        display: block;
+        .img {
+          padding: 0 0;
+        }
+        .text {
+          width: 390px;
+          padding: 30px 30px 40px;
+        }
+      }
+    }
   }
 }
 </style>

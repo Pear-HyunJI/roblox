@@ -54,5 +54,22 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    img {
+      object-fit: cover;
+    }
+    .row {
+      padding: 0 40px;
+      .top__text {
+        p {
+          font-size: 38px;
+          word-break: keep-all;
+        }
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
 </style>

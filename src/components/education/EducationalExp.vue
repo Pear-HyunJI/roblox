@@ -99,6 +99,14 @@ export default {
           transform: translateY(-3px);
         }
       }
+      @media screen and (max-width: 390px) {
+        display: block;
+        padding-left: 20px;
+        margin-bottom: 60px;
+        h3 {
+          padding-bottom: 30px;
+        }
+      }
     }
     .card__wrapper {
       display: flex;
@@ -127,6 +135,12 @@ export default {
           p {
             padding: 0 20px 32px;
           }
+        }
+      }
+      @media screen and (max-width: 390px) {
+        display: block;
+        .card {
+          margin: 0 30px 30px;
         }
       }
     }

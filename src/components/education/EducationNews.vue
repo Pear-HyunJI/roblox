@@ -117,6 +117,13 @@ export default {
       p {
         font-size: 14px;
       }
+      @media screen and (max-width: 390px) {
+        padding: 0 10px;
+        h2 {
+          font-size: 38px;
+          margin-bottom: 7px;
+        }
+      }
     }
     .card__wrapper {
       .card {
@@ -167,6 +174,10 @@ export default {
               }
             }
           }
+        }
+        @media screen and (max-width: 390px) {
+          display: block;
+          height: 100%;
         }
       }
     }
