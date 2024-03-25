@@ -235,8 +235,11 @@ export default {
     }
   }
   @media screen and (max-width: 390px) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     .textBox {
+      flex: 1 1 100%;
+      order: 2;
       padding: 0px 0;
       margin: 20px;
       h3 {
@@ -255,6 +258,8 @@ export default {
       }
     }
     .tileBox {
+      flex: 1;
+      order: 1;
       position: relative;
       overflow: hidden;
       height: 300px;
