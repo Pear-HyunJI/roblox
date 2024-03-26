@@ -72,7 +72,7 @@ export default {
         },
       ],
       swiperOption: {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         slidesPerGroup: 1,
         freemode: true,
@@ -90,8 +90,8 @@ export default {
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-          391: {
-            slidesPerView: 1,
+          393: {
+            slidesPerView: 3,
             slidesPerGroup: 1,
             centeredSlides: true,
           },

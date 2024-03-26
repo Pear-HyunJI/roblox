@@ -23,9 +23,11 @@ export default {
     },
     fnLogin(state, payload) {
       let { email, pw } = payload;
+      let name = state.oUser.filter((item) => item.email === email)[0].name;
+      console.log(name);
       state.oUser.map((item) => {
         if (item.email == email && item.pw == pw) {
-          state.logined = { email, pw };
+          state.logined = { email, name, pw };
         }
       });
     },

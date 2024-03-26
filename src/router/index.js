@@ -8,6 +8,9 @@ import News from "../view/News.vue";
 import TechTalks from "../view/TechTalks.vue";
 import JoinView from "../view/JoinView.vue";
 import LoginView from "../view/LoginView.vue";
+import QnAList from "../view/QnAList.vue";
+import QnADetail from "../view/QnADetail.vue";
+import QnAWrite from "../view/QnAWrite.vue";
 
 Vue.use(Router);
 
@@ -22,6 +25,9 @@ export default new Router({
     { path: "/techtalks", name: "techtalks", component: TechTalks },
     { path: "/joinView", name: "joinView", component: JoinView },
     { path: "/loginView", name: "loginView", component: LoginView },
+    { path: "/qna", name: "qna", component: QnAList },
+    { path: "/qnadetail/:id", name: "qnadetail", component: QnADetail },
+    { path: "/qnawrite", name: "qnawrite", component: QnAWrite },
   ],
   scrollBehavior() {
     return {

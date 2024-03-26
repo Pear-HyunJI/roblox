@@ -64,8 +64,9 @@ export default {
         { name: "[3].name1", to: "/members" },
         { name: "[3].name2", to: "/news" },
         { name: "[3].name3", to: "/techtalks" },
-        { name: "[3].name4", to: "education" },
-        { name: "[3].name5", to: "careers" },
+        { name: "[3].name4", to: "/education" },
+        { name: "[3].name5", to: "/careers" },
+        { name: "[3].name6", to: "/qna" },
         {
           name: "globe",
           submenus: [
@@ -322,6 +323,9 @@ export default {
   }
   @media screen and (max-width: 390px) {
     position: static;
+    .member {
+      width: 390px;
+    }
     #header__nav {
       position: relative;
       display: block;
