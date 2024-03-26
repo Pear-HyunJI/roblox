@@ -6,8 +6,17 @@
       </h2>
       <div class="info__wrapper">
         <nav>
-          <h4>{{ $t("[2].company") }}</h4>
-          <ul class="info__wrapper__company">
+          <h4 @click="companyClick">
+            {{ $t("[2].company") }}
+            <i
+              class="fa-solid fa-angle-down"
+              :class="{ 'fa-solid fa-angle-up': companyUpDown }"
+            ></i>
+          </h4>
+          <ul
+            class="info__wrapper__company"
+            :class="{ company__on: companyUpDown }"
+          >
             <li>
               <router-link to="/careers">{{ $t("[2].careers") }}</router-link>
             </li>
@@ -26,8 +35,17 @@
           </ul>
         </nav>
         <nav>
-          <h4>{{ $t("[2].resources") }}</h4>
-          <ul class="info__wrapper__resources">
+          <h4 @click="resourcesClick">
+            {{ $t("[2].resources") }}
+            <i
+              class="fa-solid fa-angle-down"
+              :class="{ 'fa-solid fa-angle-up': resourcesUpDown }"
+            ></i>
+          </h4>
+          <ul
+            class="info__wrapper__resources"
+            :class="{ resources__on: resourcesUpDown }"
+          >
             <li>
               <router-link to="/education">{{
                 $t("[2].education")
@@ -91,9 +109,23 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+    return {
+      companyUpDown: false,
+      resourcesUpDown: false,
+    };
+  },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;
+    },
+  },
+  methods: {
+    companyClick() {
+      this.companyUpDown = !this.companyUpDown;
+    },
+    resourcesClick() {
+      this.resourcesUpDown = !this.resourcesUpDown;
     },
   },
 };
@@ -132,6 +164,11 @@ export default {
           h4 {
             padding: 1rem 0 0.5rem;
             font-size: 1.25rem;
+          }
+          span {
+            i {
+              color: white;
+            }
           }
           .info__wrapper__company {
             display: flex;
@@ -193,6 +230,50 @@ export default {
       }
     }
   }
+  @media screen and (max-width: 390px) {
+    footer {
+      text-align: center;
+      padding: 0;
+      margin-top: 7rem;
+      .row {
+        h2 {
+          img {
+            width: 160px;
+          }
+        }
+        .info__wrapper {
+          display: block;
+          nav {
+            .info__wrapper__company {
+              display: none;
+              &.company__on {
+                display: block;
+              }
+            }
+            .info__wrapper__resources {
+              display: none;
+              &.resources__on {
+                display: block;
+              }
+            }
+            .notice {
+              justify-content: center;
+              font-size: 0.7rem;
+              a {
+                padding: 0 1rem;
+              }
+            }
+          }
+          span {
+            bottom: 4rem;
+            right: 0;
+            left: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 li {
@@ -201,6 +282,9 @@ li {
 
 li:not(:last-child) {
   padding-right: 2.25rem;
+  @media screen and (max-width: 390px) {
+    padding-right: 0;
+  }
 }
 
 a:hover {

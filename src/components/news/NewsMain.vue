@@ -4,12 +4,20 @@
       <div class="news__main__wrapper">
         <h3 :class="{ dark: changeDarkMode }">{{ $t("[6].latestnews") }}</h3>
         <div class="header__news">
+          <div class="header__news__right" :class="{ on: !windowWidth }">
+            <img
+              :src="getImg(headerNews[currentPage - 1][0]?.urlToImage)"
+              :alt="headerNews[currentPage - 1][0]?.source.name"
+            />
+          </div>
           <div class="header__news__left">
             <h3>{{ headerNews[currentPage - 1][0]?.title }}</h3>
             <p>{{ headerNews[currentPage - 1][0]?.description }}</p>
-            <a href="#" target="_blank">계속 읽기</a>
+            <a :href="headerNews[currentPage - 1][0]?.url" target="_blank"
+              >계속 읽기</a
+            >
           </div>
-          <div class="header__news__right">
+          <div class="header__news__right" :class="{ on: windowWidth }">
             <img
               :src="getImg(headerNews[currentPage - 1][0]?.urlToImage)"
               :alt="headerNews[currentPage - 1][0]?.source.name"
@@ -41,11 +49,18 @@ export default {
   data() {
     return {
       placeholder: "src/assets/images/cardnews-1/TechTalks_evergreen_2x.jpg",
+      winWidth: 0,
     };
+  },
+  created() {
+    this.winWidth = window.innerWidth;
   },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;
+    },
+    windowWidth() {
+      return window.innerWidth > 390 ? true : false;
     },
   },
   methods: {
@@ -83,7 +98,7 @@ export default {
         }
         .header__news__left {
           flex: 1 1 55%;
-          margin-right: 30px;
+          margin-left: 30px;
           h3 {
             margin-bottom: 2.25rem;
             word-break: keep-all;
@@ -115,6 +130,9 @@ export default {
         }
         .header__news__right {
           flex: 0 1 40%;
+          &.on {
+            display: none;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -171,6 +189,37 @@ export default {
               transition: 0.25s all ease-out;
               background-color: currentColor;
               max-width: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    color: #f2f4f3;
+    .row {
+      .news__main__wrapper {
+        & > h3 {
+          text-align: center;
+        }
+        .header__news {
+          display: block;
+          .header__news__left {
+            margin-left: 0px;
+            h3 {
+              margin-bottom: 2rem;
+              font-size: 1.5rem;
+            }
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+        .news__wrapper {
+          display: block;
+          .news__card {
+            h3 {
+              margin-bottom: 0;
             }
           }
         }

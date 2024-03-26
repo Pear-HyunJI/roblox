@@ -75,8 +75,7 @@ export default {
         },
       ],
       swiperOption: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+        slidesPerView: 1,
         loop: true,
         slidesPerGroup: 1,
         speed: 800,
@@ -87,6 +86,12 @@ export default {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          391: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
         },
       },
     };
@@ -175,12 +180,19 @@ export default {
             }
           }
         }
-        @media screen and (max-width: 390px) {
-          display: block;
-          height: 100%;
+      }
+      @media screen and (max-width: 390px) {
+        .card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 550px;
         }
       }
     }
+  }
+  @media screen and (max-width: 390px) {
+    margin-top: 100px;
   }
 }
 img {
