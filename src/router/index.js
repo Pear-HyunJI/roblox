@@ -6,6 +6,8 @@ import Education from "../view/Education.vue";
 import Memebers from "../view/Members.vue";
 import News from "../view/News.vue";
 import TechTalks from "../view/TechTalks.vue";
+import JoinView from "../view/JoinView.vue";
+import LoginView from "../view/LoginView.vue";
 
 Vue.use(Router);
 
@@ -18,6 +20,8 @@ export default new Router({
     { path: "/members", name: "members", component: Memebers },
     { path: "/news", name: "news", component: News },
     { path: "/techtalks", name: "techtalks", component: TechTalks },
+    { path: "/joinView", name: "joinView", component: JoinView },
+    { path: "/loginView", name: "loginView", component: LoginView },
   ],
   scrollBehavior() {
     return {

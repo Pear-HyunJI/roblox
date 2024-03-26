@@ -1,5 +1,14 @@
 <template>
   <header id="header">
+    <div class="member" v-if="token">
+      <a href="#" @click.prevent="logOut"
+        >로그아웃&nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i
+      ></a>
+    </div>
+    <div class="member" v-else>
+      <router-link to="/loginView">로그인</router-link>
+      <router-link to="/joinView">회원가입</router-link>
+    </div>
     <nav id="header__nav">
       <h1 class="header__logo">
         <router-link to="/"
@@ -111,10 +120,22 @@ export default {
       if (this.activeMenu === 1) {
       }
     },
+    logOut() {
+      this.token = false;
+      this.$store.commit("fnLogout");
+      this.$router.push("/");
+    },
   },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;
+    },
+    token() {
+      if (this.$store.getters.fnGetLogined) {
+        return true;
+      } else {
+        return false;
+      }
     },
   },
 };
@@ -127,6 +148,16 @@ export default {
   top: 10px;
   left: 0;
   z-index: 9999999;
+  .member {
+    width: 960px;
+    margin: 0 auto;
+
+    text-align: right;
+    color: #fff;
+    a {
+      padding: 10px;
+    }
+  }
   #header__nav {
     margin: 0 auto;
     max-width: 960px;

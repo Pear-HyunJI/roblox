@@ -1,34 +1,21 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import VuexPersistence from "vuex-persist";
+import modTechTalks from "@/store/techtalks";
+import modNews from "@/store/news";
+import modDark from "@/store/dark";
+import modAccount from "@/store/account";
+
+Vue.use(Vuex);
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    current: 1,
-    dark: false,
-    locale: "ko",
+  modules: {
+    modTechTalks,
+    modNews,
+    modDark,
+    modAccount,
   },
-  mutations: {
-    on__UpdateCurrent(state, payload) {
-      state.current = payload;
-    },
-    on__ChangeDark(state) {
-      state.dark = !state.dark;
-    },
-    on__Click(state, payload) {
-      state.locale = payload;
-    },
-  },
-  getters: {
-    fnGetCurrent(state) {
-      return state.current;
-    },
-    fnGetDark(state) {
-      return state.dark;
-    },
-    fnGetLocale(state) {
-      return state.locale;
-    },
-  },
+  plugins: [new VuexPersistence({ storage: window.localStorage }).plugin],
 });
