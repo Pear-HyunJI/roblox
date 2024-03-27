@@ -42,19 +42,19 @@ export default {
     return {
       data: [
         {
-          imgUrl: "src/assets/images/education-exp/Edu_Hub_Home_Desktop_05.jpg",
+          imgUrl: "./assets/images/education-exp/Edu_Hub_Home_Desktop_05.jpg",
           imgSource: "[1].educationalexp.first-imgsource",
           text1: "[1].educationalexp.first-text1",
           text2: "[1].educationalexp.first-text2",
         },
         {
-          imgUrl: "src/assets/images/education-exp/Edu_Hub_Home_Desktop_06.jpg",
+          imgUrl: "./assets/images/education-exp/Edu_Hub_Home_Desktop_06.jpg",
           imgSource: "[1].educationalexp.second-imgsource",
           text1: "[1].educationalexp.second-text1",
           text2: "[1].educationalexp.second-text2",
         },
         {
-          imgUrl: "src/assets/images/education-exp/Edu_Hub_Home_Desktop_07.jpg",
+          imgUrl: "./assets/images/education-exp/Edu_Hub_Home_Desktop_07.jpg",
           imgSource: "[1].educationalexp.third-imgsource",
           text1: "[1].educationalexp.third-text1",
           text2: "[1].educationalexp.third-text2",

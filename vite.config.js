@@ -7,5 +7,6 @@ export default defineConfig({
     alias: {
       "@": "/src",
     },
+    publicPath: "/buildRoblox",
   },
 });

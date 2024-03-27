@@ -27,21 +27,21 @@ export default {
       data: [
         {
           imgUrl:
-            "src/assets/images/education-with-us/Edu_Hub_Home_Desktop_02.jpg",
+            "./assets/images/education-with-us/Edu_Hub_Home_Desktop_02.jpg",
           text1: "[1].withus.first-text1",
           text2: "[1].withus.first-text2",
           link: "https://education.roblox.com/ko/%ED%8C%8C%ED%8A%B8%EB%84%88/",
         },
         {
           imgUrl:
-            "src/assets/images/education-with-us/Edu_Hub_Home_Mobile_03.jpg",
+            "./assets/images/education-with-us/Edu_Hub_Home_Mobile_03.jpg",
           text1: "[1].withus.second-text1",
           text2: "[1].withus.second-text2",
           link: "https://education.roblox.com/ko/%EA%B5%90%EC%9C%A1%EC%9E%90/",
         },
         {
           imgUrl:
-            "src/assets/images/education-with-us/Edu_Hub_Home_Desktop_04.jpg",
+            "./assets/images/education-with-us/Edu_Hub_Home_Desktop_04.jpg",
           text1: "[1].withus.third-text1",
           text2: "[1].withus.third-text2",
           link: "https://education.roblox.com/ko/%ED%95%99%EC%83%9D-%EB%B0%8F-%EA%B0%80%EC%A1%B1/",

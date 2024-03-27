@@ -41,28 +41,28 @@ export default {
     return {
       cardData: [
         {
-          img: "src/assets/images/cardnews-1/self_expression_avatar.png",
+          img: "./assets/images/cardnews-1/self_expression_avatar.png",
           title: "[4].latestnews.script-title1",
           contents: "[4].latestnews.script-contents1",
           newsPage:
             "https://blog.roblox.com/2023/10/reimagining-bringing-people-together-communication-connection-expression/",
         },
         {
-          img: "src/assets/images/cardnews-1/avatar_tech.png",
+          img: "./assets/images/cardnews-1/avatar_tech.png",
           title: "[4].latestnews.script-title2",
           contents: "[4].latestnews.script-contents2",
           newsPage:
             "https://blog.roblox.com/2023/10/how-roblox-avatar-tech-is-evolving/",
         },
         {
-          img: "src/assets/images/cardnews-1/ai_creation.png",
+          img: "./assets/images/cardnews-1/ai_creation.png",
           title: "[4].latestnews.script-title3",
           contents: "[4].latestnews.script-contents3",
           newsPage:
             "https://blog.roblox.com/2023/09/revolutionizing-creation-roblox/",
         },
         {
-          img: "src/assets/images/cardnews-1/rdc_2023.png",
+          img: "./assets/images/cardnews-1/rdc_2023.png",
           title: "[4].latestnews.script-title4",
           contents: "[4].latestnews.script-contents4",
           newsPage:

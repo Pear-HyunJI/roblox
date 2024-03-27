@@ -17,7 +17,7 @@
       </div>
       <div class="img">
         <img
-          src="@/assets/images/education-fund/Edu_Hub_Home_Mobile_08.jpg"
+          src="/assets/images/education-fund/Edu_Hub_Home_Mobile_08.jpg"
           alt="fund_image"
         />
       </div>

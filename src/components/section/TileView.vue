@@ -32,15 +32,15 @@ export default {
         {
           col: [
             {
-              image1: "./images/tile-1/header_1_Thumbnail.jpg",
+              image1: "./assets/images/tile-1/header_1_Thumbnail.jpg",
               alt: "타일 이미지1",
             },
             {
-              image1: "./images/tile-1/header_2_Thumbnail.jpg",
+              image1: "./assets/images/tile-1/header_2_Thumbnail.jpg",
               alt: "타일 이미지2",
             },
             {
-              image1: "./images/tile-1/experience_2_Thumbnail.jpg",
+              image1: "./assets/images/tile-1/experience_2_Thumbnail.jpg",
               alt: "타일 이미지3",
             },
           ],
@@ -48,19 +48,19 @@ export default {
         {
           col: [
             {
-              image1: "./images/tile-2/experience_5_Thumbnail.jpg",
+              image1: "./assets/images/tile-2/experience_5_Thumbnail.jpg",
               alt: "타일 이미지4",
             },
             {
-              image1: "./images/tile-2/header_5_Thumbnail.jpg",
+              image1: "./assets/images/tile-2/header_5_Thumbnail.jpg",
               alt: "타일 이미지5",
             },
             {
-              image1: "./images/tile-2/header_6_Thumbnail.jpg",
+              image1: "./assets/images/tile-2/header_6_Thumbnail.jpg",
               alt: "타일 이미지6",
             },
             {
-              image1: "./images/tile-2/temp_1_Thumbnail.jpg",
+              image1: "./assets/images/tile-2/temp_1_Thumbnail.jpg",
               alt: "타일 이미지7",
             },
           ],
@@ -68,19 +68,19 @@ export default {
         {
           col: [
             {
-              image1: "./images/tile-3/header_8_Thumbnail.jpg",
+              image1: "./assets/images/tile-3/header_8_Thumbnail.jpg",
               alt: "타일 이미지4",
             },
             {
-              image1: "./images/tile-3/header_9_Thumbnail.jpg",
+              image1: "./assets/images/tile-3/header_9_Thumbnail.jpg",
               alt: "타일 이미지5",
             },
             {
-              image1: "./images/tile-3/header_10_2_Thumbnail.jpg",
+              image1: "./assets/images/tile-3/header_10_2_Thumbnail.jpg",
               alt: "타일 이미지6",
             },
             {
-              image1: "./images/tile-3/header_11_Thumbnail.jpg",
+              image1: "./assets/images/tile-3/header_11_Thumbnail.jpg",
               alt: "타일 이미지7",
             },
           ],
@@ -88,15 +88,15 @@ export default {
         {
           col: [
             {
-              image1: "./images/tile-4/header_11_Thumbnail (1).jpg",
+              image1: "./assets/images/tile-4/header_11_Thumbnail (1).jpg",
               alt: "타일 이미지8",
             },
             {
-              image1: "./images/tile-4/header_14_Thumbnail.jpg",
+              image1: "./assets/images/tile-4/header_14_Thumbnail.jpg",
               alt: "타일 이미지9",
             },
             {
-              image1: "./images/tile-4/header_20_Thumbnail.jpg",
+              image1: "./assets/images/tile-4/header_20_Thumbnail.jpg",
               alt: "타일 이미지10",
             },
           ],
@@ -104,19 +104,19 @@ export default {
         {
           col: [
             {
-              image1: "./images/tile-5/header_15_Thumbnail.jpg",
+              image1: "./assets/images/tile-5/header_15_Thumbnail.jpg",
               alt: "타일 이미지11",
             },
             {
-              image1: "./images/tile-5/header_16_Thumbnail.jpg",
+              image1: "./assets/images/tile-5/header_16_Thumbnail.jpg",
               alt: "타일 이미지12",
             },
             {
-              image1: "./images/tile-5/header_18_Thumbnail.jpg",
+              image1: "./assets/images/tile-5/header_18_Thumbnail.jpg",
               alt: "타일 이미지13",
             },
             {
-              image1: "./images/tile-5/temp_2_Thumbnail.jpg",
+              image1: "./assets/images/tile-5/temp_2_Thumbnail.jpg",
               alt: "타일 이미지14",
             },
           ],
@@ -124,19 +124,19 @@ export default {
         {
           col: [
             {
-              image1: "./images/tile-6/experience_1_Thumbnail.jpg",
+              image1: "./assets/images/tile-6/experience_1_Thumbnail.jpg",
               alt: "타일 이미지15",
             },
             {
-              image1: "./images/tile-6/experience_3_Thumbnail.jpg",
+              image1: "./assets/images/tile-6/experience_3_Thumbnail.jpg",
               alt: "타일 이미지16",
             },
             {
-              image1: "./images/tile-6/header_3_2_Thumbnail.jpg",
+              image1: "./assets/images/tile-6/header_3_2_Thumbnail.jpg",
               alt: "타일 이미지17",
             },
             {
-              image1: "./images/tile-6/header_12_Thumbnail.jpg",
+              image1: "./assets/images/tile-6/header_12_Thumbnail.jpg",
               alt: "타일 이미지18",
             },
           ],
@@ -144,15 +144,15 @@ export default {
         {
           col: [
             {
-              image1: "./images/tile-7/experience_9_Thumbnail.jpg",
+              image1: "./assets/images/tile-7/experience_9_Thumbnail.jpg",
               alt: "타일 이미지19",
             },
             {
-              image1: "./images/tile-7/header_24_Thumbnail.jpg",
+              image1: "./assets/images/tile-7/header_24_Thumbnail.jpg",
               alt: "타일 이미지20",
             },
             {
-              image1: "./images/tile-7/temp_4_Thumbnail.jpg",
+              image1: "./assets/images/tile-7/temp_4_Thumbnail.jpg",
               alt: "타일 이미지21",
             },
           ],

@@ -10,7 +10,7 @@
       </div>
       <div class="ceoImg">
         <img
-          src="../../assets/images/members-1/ceo/Dave_TechTalks_Comp_cropped_Large.jpg"
+          src="/assets/images/members-1/ceo/Dave_TechTalks_Comp_cropped_Large.jpg"
           alt="CEO image"
         />
       </div>

@@ -47,29 +47,28 @@ export default {
       data: [
         {
           imgUrl1:
-            "src/assets/images/education-news/Roblox_High_School-scaled.jpg",
+            "./assets/images/education-news/Roblox_High_School-scaled.jpg",
           imgUrl2:
-            "src/assets/images/education-news/Roblox_Logo_Gray_new_small.svg",
+            "./assets/images/education-news/Roblox_Logo_Gray_new_small.svg",
           text: "[1].educationnews.text1",
           link: "https://blog.roblox.com/2021/11/introducing-roblox-community-fund/",
         },
         {
-          imgUrl1:
-            "src/assets/images/education-news/Community_Space-scaled.jpg",
+          imgUrl1: "./assets/images/education-news/Community_Space-scaled.jpg",
           imgUrl2:
-            "src/assets/images/education-news/Roblox_Logo_Gray_new_small.svg",
+            "./assets/images/education-news/Roblox_Logo_Gray_new_small.svg",
           text: "[1].educationnews.text2",
           link: "https://blog.roblox.com/2021/11/next-chapter-of-teaching-and-learning-on-roblox/",
         },
         {
-          imgUrl1: "src/assets/images/education-news/RobloxPitchArt1.jpg",
-          imgUrl2: "src/assets/images/education-news/WSJ_Logo.svg",
+          imgUrl1: "./assets/images/education-news/RobloxPitchArt1.jpg",
+          imgUrl2: "./assets/images/education-news/WSJ_Logo.svg",
           text: "[1].educationnews.text3",
           link: "https://www.wsj.com/articles/roblox-looks-to-bring-educational-videogames-to-schools-11636988400",
         },
         {
-          imgUrl1: "src/assets/images/education-news/iStock-1312439265.jpg",
-          imgUrl2: "src/assets/images/education-news/Education_week.svg",
+          imgUrl1: "./assets/images/education-news/iStock-1312439265.jpg",
+          imgUrl2: "./assets/images/education-news/Education_week.svg",
           text: "[1].educationnews.text4",
           link: "https://www.edweek.org/teaching-learning/teaching-in-the-metaverse-roblox-looks-to-make-it-a-reality/2021/11",
         },

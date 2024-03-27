@@ -12,7 +12,9 @@
     <nav id="header__nav">
       <h1 class="header__logo">
         <router-link to="/"
-          ><img src="/images/roblox_logo_white_new.svg" alt="roblox logo"
+          ><img
+            src="/assets/images/roblox_logo_white_new.svg"
+            alt="roblox logo"
         /></router-link>
       </h1>
       <div class="menu__open" @click="menuOpen">

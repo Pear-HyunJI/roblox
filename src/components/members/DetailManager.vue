@@ -32,7 +32,7 @@ export default {
     return {
       detailCardData: [
         {
-          img: "src/assets/images/members-1/managers/Dave_Baszucki_Thumbnail_Large.jpg",
+          img: "./assets/images/members-1/managers/Dave_Baszucki_Thumbnail_Large.jpg",
           position: "[5].detailmanager.first-position",
           name: "[5].detailmanager.first-name",
           content: "[5].detailmanager.first-content",
@@ -40,7 +40,7 @@ export default {
           detail2: "[5].detailmanager.first-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Manuel_Bronstein_Thumbnail_Large.jpg",
+          img: "./assets/images/members-1/managers/Manuel_Bronstein_Thumbnail_Large.jpg",
           position: "[5].detailmanager.second-position",
           name: "[5].detailmanager.second-name",
           content: "[5].detailmanager.second-content",
@@ -48,7 +48,7 @@ export default {
           detail2: "[5].detailmanager.second-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Mike_Guthrie_Thumbnail_Large.jpg",
+          img: "./assets/images/members-1/managers/Mike_Guthrie_Thumbnail_Large.jpg",
           position: "[5].detailmanager.third-position",
           name: "[5].detailmanager.third-name",
           content: "[5].detailmanager.third-content",
@@ -56,7 +56,7 @@ export default {
           detail2: "[5].detailmanager.third-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Matt_Kaufman_Thumbnail_Large.jpg",
+          img: "./assets/images/members-1/managers/Matt_Kaufman_Thumbnail_Large.jpg",
           position: "[5].detailmanager.fourth-position",
           name: "[5].detailmanager.fourth-name",
           content: "[5].detailmanager.fourth-content",
@@ -64,7 +64,7 @@ export default {
           detail2: "[5].detailmanager.fourth-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Arvind_KC2.jpg",
+          img: "./assets/images/members-1/managers/Arvind_KC2.jpg",
           position: "[5].detailmanager.fifth-position",
           name: "[5].detailmanager.fifth-name",
           content: "[5].detailmanager.fifth-content",
@@ -72,7 +72,7 @@ export default {
           detail2: "[5].detailmanager.fifth-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Manuel_Bronstein_Thumbnail_Large.jpg",
+          img: "./assets/images/members-1/managers/Manuel_Bronstein_Thumbnail_Large.jpg",
           position: "[5].detailmanager.sixth-position",
           name: "[5].detailmanager.sixth-name",
           content: "[5].detailmanager.sixth-content",
@@ -80,7 +80,7 @@ export default {
           detail2: "[5].detailmanager.sixth-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Mark_Reinstra_Thumbnail_Large.jpg",
+          img: "./assets/images/members-1/managers/Mark_Reinstra_Thumbnail_Large.jpg",
           position: "[5].detailmanager.seventh-position",
           name: "[5].detailmanager.seventh-name",
           content: "[5].detailmanager.seventh-content",
@@ -88,7 +88,7 @@ export default {
           detail2: "[5].detailmanager.seventh-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Dan_Sturman_Thumbnail_Large.jpg",
+          img: "./assets/images/members-1/managers/Dan_Sturman_Thumbnail_Large.jpg",
           position: "[5].detailmanager.eighth-position",
           name: "[5].detailmanager.eighth-name",
           content: "[5].detailmanager.eighth-content",
@@ -96,7 +96,7 @@ export default {
           detail2: "[5].detailmanager.eighth-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Christina_Wootton.png",
+          img: "./assets/images/members-1/managers/Christina_Wootton.png",
           position: "[5].detailmanager.ninth-position",
           name: "[5].detailmanager.ninth-name",
           content: "[5].detailmanager.ninth-content",
@@ -104,7 +104,7 @@ export default {
           detail2: "[5].detailmanager.ninth-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Shobhana_Ahluwalia.jpg",
+          img: "./assets/images/members-1/managers/Shobhana_Ahluwalia.jpg",
           position: "[5].detailmanager.tenth-position",
           name: "[5].detailmanager.tenth-name",
           content: "[5].detailmanager.tenth-content",
@@ -112,7 +112,7 @@ export default {
           detail2: "[5].detailmanager.tenth-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Brooks_Evans.png",
+          img: "./assets/images/members-1/managers/Brooks_Evans.png",
           position: "[5].detailmanager.eleventh-position",
           name: "[5].detailmanager.eleventh-name",
           content: "[5].detailmanager.eleventh-content",
@@ -120,7 +120,7 @@ export default {
           detail2: "[5].detailmanager.eleventh-detail2",
         },
         {
-          img: "src/assets/images/members-1/managers/Morgan_McGuire.png",
+          img: "./assets/images/members-1/managers/Morgan_McGuire.png",
           position: "[5].detailmanager.twelfth-position",
           name: "[5].detailmanager.twelfth-name",
           content: "[5].detailmanager.twelfth-content",

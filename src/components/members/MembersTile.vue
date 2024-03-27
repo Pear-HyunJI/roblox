@@ -34,19 +34,19 @@ export default {
         {
           col: [
             {
-              image: "./images/members-1/people_1_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_1_Thumbnail.jpg",
               alt: "멤버 이미지1",
             },
             {
-              image: "./images/members-1/people_2_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_2_Thumbnail.jpg",
               alt: "멤버 이미지2",
             },
             {
-              image: "./images/members-1/people_3_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_3_Thumbnail.jpg",
               alt: "멤버 이미지3",
             },
             {
-              image: "./images/members-1/people_4_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_4_Thumbnail.jpg",
               alt: "멤버 이미지4",
             },
           ],
@@ -54,23 +54,23 @@ export default {
         {
           col: [
             {
-              image: "./images/members-1/people_5_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_5_Thumbnail.jpg",
               alt: "멤버 이미지5",
             },
             {
-              image: "./images/members-1/people_6_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_6_Thumbnail.jpg",
               alt: "멤버 이미지6",
             },
             {
-              image: "./images/members-1/people_7_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_7_Thumbnail.jpg",
               alt: "멤버 이미지7",
             },
             {
-              image: "./images/members-1/people_8_1_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_8_1_Thumbnail.jpg",
               alt: "멤버 이미지8",
             },
             {
-              image: "./images/members-1/people_9_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_9_Thumbnail.jpg",
               alt: "멤버 이미지9",
             },
           ],
@@ -78,19 +78,19 @@ export default {
         {
           col: [
             {
-              image: "./images/members-1/people_10_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_10_Thumbnail.jpg",
               alt: "멤버 이미지10",
             },
             {
-              image: "./images/members-1/people_11_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_11_Thumbnail.jpg",
               alt: "멤버 이미지11",
             },
             {
-              image: "./images/members-1/people_12_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_12_Thumbnail.jpg",
               alt: "멤버 이미지12",
             },
             {
-              image: "./images/members-1/people_13_Thumbnail.jpg",
+              image: "./assets/images/members-1/people_13_Thumbnail.jpg",
               alt: "멤버 이미지13",
             },
           ],

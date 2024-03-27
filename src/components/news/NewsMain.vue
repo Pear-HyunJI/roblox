@@ -48,7 +48,7 @@ export default {
   props: ["newsData", "headerNews", "pageNews", "currentPage"],
   data() {
     return {
-      placeholder: "src/assets/images/cardnews-1/TechTalks_evergreen_2x.jpg",
+      placeholder: "./assets/images/cardnews-1/TechTalks_evergreen_2x.jpg",
       winWidth: 0,
     };
   },

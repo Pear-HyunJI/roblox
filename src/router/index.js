@@ -16,6 +16,7 @@ Vue.use(Router);
 
 export default new Router({
   mode: "history",
+  base: "/buildRoblox",
   routes: [
     { path: "/", name: "home", component: Home },
     { path: "/careers", name: "careers", component: Careers },

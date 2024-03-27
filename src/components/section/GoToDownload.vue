@@ -39,33 +39,33 @@ export default {
     return {
       imgLink1: [
         {
-          img: "src/assets/images/download-1/app-store-no-border.svg",
+          img: "./assets/images/download-1/app-store-no-border.svg",
           link: "https://apps.apple.com/us/app/roblox/id431946152",
         },
         {
-          img: "src/assets/images/download-1/google-play-badge-no-border.svg",
+          img: "./assets/images/download-1/google-play-badge-no-border.svg",
           link: "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en",
         },
         {
-          img: "src/assets/images/download-1/amazon-badge-no-border.svg",
+          img: "./assets/images/download-1/amazon-badge-no-border.svg",
           link: "https://www.amazon.com/Roblox-Corporation-ROBLOX/dp/B00NUF4YOA",
         },
       ],
       imgLink2: [
         {
-          img: "src/assets/images/download-2/Xbox_2019_horizontal_White_RGB-cropped.png",
+          img: "./assets/images/download-2/Xbox_2019_horizontal_White_RGB-cropped.png",
           link: "https://www.microsoft.com/en-us/store/p/roblox/bq1tn1t79v9k",
         },
         {
-          img: "src/assets/images/download-2/microsoft-store-no-border.svg",
+          img: "./assets/images/download-2/microsoft-store-no-border.svg",
           link: "https://www.xbox.com/en-us/games/store/roblox/9nblgggzm6wm",
         },
         {
-          img: "src/assets/images/download-2/Meta_Quest.svg",
+          img: "./assets/images/download-2/Meta_Quest.svg",
           link: "https://www.meta.com/ko-kr/experiences/5804350719675181/",
         },
         {
-          img: "src/assets/images/download-2/playstation.svg",
+          img: "./assets/images/download-2/playstation.svg",
           link: "https://store.playstation.com/en-us/product/UP1821-CUSA06122_00-0000040810600000",
         },
       ],

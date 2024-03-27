@@ -9,10 +9,7 @@
             >
           </div>
           <div class="image">
-            <img
-              src="../../assets/images/techtalks/ep1.jpg"
-              alt="techtalks image"
-            />
+            <img src="/assets/images/techtalks/ep1.jpg" alt="techtalks image" />
           </div>
           <div class="text">
             <div class="topicRow">

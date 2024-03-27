@@ -33,7 +33,7 @@ export default {
     return {
       data: [
         {
-          img: "src/assets/images/careers-about-us/com_ (2).jpg",
+          img: "./assets/images/careers-about-us/com_ (2).jpg",
           h3Text: "[0].aboutus.h3text1",
           pText: "[0].aboutus.ptext1",
           aText: "[0].aboutus.atext",
@@ -43,7 +43,7 @@ export default {
           cardP3: "",
         },
         {
-          img: "src/assets/images/careers-about-us/com_.jpg",
+          img: "./assets/images/careers-about-us/com_.jpg",
           h3Text: "[0].aboutus.h3text2",
           pText: "[0].aboutus.ptext2",
           aText: "",
@@ -53,7 +53,7 @@ export default {
           cardP3: "[0].aboutus.second-cardp3",
         },
         {
-          img: "src/assets/images/careers-about-us/com_ (4).jpg",
+          img: "./assets/images/careers-about-us/com_ (4).jpg",
           h3Text: "[0].aboutus.h3text3",
           pText: "[0].aboutus.ptext3",
           aText: "",
@@ -63,7 +63,7 @@ export default {
           cardP3: "[0].aboutus.third-cardp3",
         },
         {
-          img: "src/assets/images/careers-about-us/com_ (1).jpg",
+          img: "./assets/images/careers-about-us/com_ (1).jpg",
           h3Text: "[0].aboutus.h3text4",
           pText: "[0].aboutus.ptext4",
           aText: "",
@@ -73,7 +73,7 @@ export default {
           cardP3: "[0].aboutus.fourth-cardp3",
         },
         {
-          img: "src/assets/images/careers-about-us/com_ (3).jpg",
+          img: "./assets/images/careers-about-us/com_ (3).jpg",
           h3Text: "[0].aboutus.h3text5",
           pText: "[0].aboutus.ptext5",
           aText: "",

@@ -1,7 +1,7 @@
 <template>
   <div class="education__top">
     <img
-      src="@/assets/images/education-top-image/Edu_Hub_Home_Desktop_01-scaled.jpg"
+      src="/assets/images/education-top-image/Edu_Hub_Home_Desktop_01-scaled.jpg"
       alt="topImage"
     />
     <div class="row">

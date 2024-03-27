@@ -2,10 +2,7 @@
   <div class="video__1">
     <div class="row">
       <div class="img__box">
-        <img
-          src="@/assets/images/video1/brand_video_poster.jpg"
-          alt="비디오1"
-        />
+        <img src="/assets/images/video1/brand_video_poster.jpg" alt="비디오1" />
         <a
           href="https://www.youtube.com/watch?v=HDow_siGsI4"
           target="_blank"

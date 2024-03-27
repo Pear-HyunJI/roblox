@@ -25,21 +25,21 @@ export default {
     return {
       infoData: [
         {
-          image: "src/assets/images/sticky-1/RBLX_Carousel_1.jpg",
+          image: "./assets/images/sticky-1/RBLX_Carousel_1.jpg",
           title: "[4].stickyinfo.script-title1",
           content: "[4].stickyinfo.script-content1",
           imgOpacityValue: 0,
           textOpacityValue: 0.1,
         },
         {
-          image: "src/assets/images/sticky-1/Edu_Hub_Home_Desktop_06.jpg",
+          image: "./assets/images/sticky-1/Edu_Hub_Home_Desktop_06.jpg",
           title: "[4].stickyinfo.script-title2",
           content: "[4].stickyinfo.script-content2",
           imgOpacityValue: 0,
           textOpacityValue: 0.1,
         },
         {
-          image: "src/assets/images/sticky-1/RBLX_Carousel_3.jpg",
+          image: "./assets/images/sticky-1/RBLX_Carousel_3.jpg",
           title: "[4].stickyinfo.script-title3",
           content: "[4].stickyinfo.script-content3",
           imgOpacityValue: 0,

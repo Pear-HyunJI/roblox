@@ -31,7 +31,7 @@ export default {
     max-width: calc(1280px - 9rem);
     border-radius: 8px 8px 8px 0;
     background: #000
-      url("@/assets/images/job-posting/hero_bg.5b75e4dbb11c6353.jpg") center /
+      url("./assets/images/job-posting/hero_bg.5b75e4dbb11c6353.jpg") center /
       cover no-repeat;
     padding: 6rem 1.5rem;
     margin: 0 auto;
