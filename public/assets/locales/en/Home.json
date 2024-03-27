@@ -1,0 +1,46 @@
+{
+  "gotodownload": {
+    "h2": "Roblox on your device",
+    "h5": "YOU CAN ACCESS ROBLOX ON ANY DEVICE.",
+    "p": "PC, Mac, iOS, Android, Amazon devices, Xbox consoles, Playstation consoles, Meta Quest, and HTC Vive"
+  },
+  "jobposting": {
+    "p": "Look around job postings",
+    "h5": "Join us in shaping the future"
+  },
+  "latestnews": {
+    "h2": "The latest at Roblox",
+    "a": "ALL NEWS",
+    "readmore": "READ MORE",
+    "script-title1": "Reimagining How People Come Together",
+    "script-title2": "How Roblox Avatar Tech is Evolving",
+    "script-title3": "Revolutionizing Creation on Roblox with Generative AI ",
+    "script-title4": "RDC 2023: Where Roblox is Going Next",
+    "script-contents1": "Learn more about our vision of enabling everyone to connect with others, communicate, and express themselves however they like on Roblox.",
+    "script-contents2": "At Roblox, we want each of users to have an avatar that they feel truly represents them—not only how they look, but also how they express themselves to others in real time. Here’s how we’re doing it.",
+    "script-contents3": "As AI tools evolve across the industry, read about the progress we’ve made, the road ahead to democratize generative AI creation, and why we think generative AI is a critical element for where Roblox is going.",
+    "script-contents4": "Every year, RDC brings the most innovative creators from across our global community together to connect with one another and learn about our newest features and products. Here’s what we shared at this year’s conference."
+  },
+  "mainstats": {
+    "script-text1": "MILLION",
+    "script-text2": "BILLION",
+    "script-text3": "MILLION",
+    "script-text4": "MILLION",
+    "script-text11": "DAILY ACTIVE USERS*",
+    "script-text22": "ENGAGEMENT HOURS*",
+    "script-text33": "DEVELOPERS*",
+    "script-text44": "ACTIVE EXPERIENCES*"
+  },
+  "stickyinfo": {
+    "script-title1": "Let's make a world together.",
+    "script-title2": "You make Roblox.",
+    "script-title3": "Connecting millions of people.",
+    "script-content1": "Roblox builds the tools and platform that empower people to create their own immersive experiences, so that they any world they can imagine can be brought to life. Our vision is to reimagine the wqy people come together to create, play, explore, learn, and connect with one another.",
+    "script-content2": "Roblox is built by a global community of millions of developers and creators who are always making new experiences for users to explore. Using Roblox tools and technology, our community is creating new ways for people to connect every day",
+    "script-content3": "Every day, people come to Roblox to connect, create, and explore with old and new friends. With tens of millions of daily active users, we are moving closer toward our mission of connecting a billion people with optimism and civilty"
+  },
+  "tileview": {
+    "h2-1": "Reimagining the way",
+    "h2-2": "people come together."
+  }
+}

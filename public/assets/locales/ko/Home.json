@@ -1,0 +1,46 @@
+{
+  "gotodownload": {
+    "h2": "다양한 기기로 Roblox를 즐기세요",
+    "h5": "ROBLOX는 모드 기기를 지원합니다.",
+    "p": "PC, Mac, iOS, Android, Amazon 기기, Xbox 콘솔, PlayStation 콘솔, Meta Quest, HTC Vive"
+  },
+  "jobposting": {
+    "p": "인재 채용",
+    "h5": "채용 공고 둘러보기"
+  },
+  "latestnews": {
+    "h2": "Roblox 관련 최신 뉴스",
+    "a": "전체 뉴스",
+    "readmore": "계속 읽기",
+    "script-title1": "사람들을 한자리에 모으는 새로운 방법",
+    "script-title2": "Roblox 아바타 기술의 진화 양상",
+    "script-title3": "생성형 AI를 통한 Roblox 작품 제작 혁신",
+    "script-title4": "RDC 2023: Roblox의 다음 행로",
+    "script-contents1": "사람들이 서로 연결되어 소통하고, 자신을 원하는 방식으로 표현할 수 있도록 하려는 Roblox의 비전에 대해 자세히 알아보세요.",
+    "script-contents2": "Roblox는 각 사용자가 아바타를 통해 자신의 모습을 표현함은 물론, 실시간으로 다른 사람에게 자신을 표현하는 방식까지 자신을 대표하는 아바타를 가질 수 있기를 원합니다. 다음에서 자세히 알아보세요.",
+    "script-contents3": "업계 전반에 걸친 AI 툴의 발전에 따라 Roblox가 이룬 진전, 생성형 AI 제작 과정을 민주화하기 위해 앞으로 나아갈 길, 생성형 AI가 Roblox의 향후 방향성에 있어 중요한 요소가 되는 이유에 대해 알아보세요.",
+    "script-contents4": "RDC에서는 매년 글로벌 커뮤니티의 가장 혁신적인 크리에이터들이 모여 서로 소통하며 최신 기능과 제품에 대한 정보를 교환합니다. 올해 회의에서 Roblox가 공유한 내용은 다음과 같습니다."
+  },
+  "mainstats": {
+    "script-text1": "백만",
+    "script-text2": "십억",
+    "script-text3": "백만",
+    "script-text4": "백만",
+    "script-text11": "일일 활성 사용자",
+    "script-text22": "참여 시간*",
+    "script-text33": "개발자*",
+    "script-text44": "활성 체험"
+  },
+  "stickyinfo": {
+    "script-title1": "함께 세상을 만들어 가요.",
+    "script-title2": "여러분이 로블록스를 만듭니다.",
+    "script-title3": "수천만의 사람들을 연결합니다.",
+    "script-content1": "Roblox는 자신만의 몰입형 체험을 제작할 수 있는 툴 및 플랫폼을 제공해, 각자가 꿈꾸는 세상을 생생히 구현할 수 있도록 지원합니다. Roblox의 비전은 사람들이 함께 만들고, 놀고, 탐험하고, 배우며, 서로 소통하는 방식을 재창조하는 것입니다.",
+    "script-content2": "수천만 명의 개발자 및 크리에이터가 활동 중인 Roblox의 글로벌 커뮤니티는 지금 이 시간에도 끊임없이 사용자를 위한 새로운 체험을 제작하고 있습니다. 이들은 Roblox가 제공하는 툴 및 기술을 사용해 사람들이 매일 소통할 수 있는 새로운 방법을 창조해 나가고 있습니다.",
+    "script-content3": "Roblox에서는 매일 수천만 명의 사람들이 기존의 친구 및 새 친구들과 함께 소통하고 만들며 탐험을 즐기고 있습니다. 지금 이 시간에도 Roblox는 수억 명의 사람들을 긍정적이고 매너 있는 방식으로 연결한다는 미션을 향해 더 가까이 나아가고 있습니다."
+  },
+  "tileview": {
+    "h2-1": "사람들을 한자리에 모으는",
+    "h2-2": "새로운 방법"
+  }
+}

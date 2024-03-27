@@ -12,9 +12,7 @@
     <nav id="header__nav">
       <h1 class="header__logo">
         <router-link to="/"
-          ><img
-            src="/assets/images/roblox_logo_white_new.svg"
-            alt="roblox logo"
+          ><img :src="imgUrl" alt="roblox logo"
         /></router-link>
       </h1>
       <div class="menu__open" @click="menuOpen">
@@ -81,6 +79,7 @@ export default {
       a: false,
       openClass: "fa-solid fa-bars",
       openNav: false,
+      imgUrl: "./assets/images/roblox_logo_white_new.svg",
     };
   },
   methods: {

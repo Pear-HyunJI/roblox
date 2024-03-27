@@ -16,10 +16,7 @@
         </a>
       </div>
       <div class="img">
-        <img
-          src="/assets/images/education-fund/Edu_Hub_Home_Mobile_08.jpg"
-          alt="fund_image"
-        />
+        <img :src="imgUrl" alt="fund_image" />
       </div>
     </div>
   </div>
@@ -28,6 +25,11 @@
 <script>
 export default {
   name: "CommunityFund",
+  data() {
+    return {
+      imgUrl: "./assets/images/education-fund/Edu_Hub_Home_Mobile_08.jpg",
+    };
+  },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;

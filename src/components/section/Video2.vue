@@ -2,7 +2,7 @@
   <section>
     <div class="row">
       <div class="img__box">
-        <img src="/assets/images/video2/anthem_poster.jpg" alt="비디오2" />
+        <img :src="imgUrl" alt="비디오2" />
         <a
           href="https://www.youtube.com/watch?v=U5DsnsLqTm4&embeds_referring_euri=https%3A%2F%2Fcorp.roblox.com%2F&feature=emb_title"
           target="_blank"
@@ -19,6 +19,11 @@
 <script>
 export default {
   name: "Video2",
+  data() {
+    return {
+      imgUrl: "./assets/images/video2/anthem_poster.jpg",
+    };
+  },
 };
 </script>
 

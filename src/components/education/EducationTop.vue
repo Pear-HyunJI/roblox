@@ -1,9 +1,6 @@
 <template>
   <div class="education__top">
-    <img
-      src="/assets/images/education-top-image/Edu_Hub_Home_Desktop_01-scaled.jpg"
-      alt="topImage"
-    />
+    <img :src="imgUrl" alt="topImage" />
     <div class="row">
       <div class="top__text">
         <p>{{ $t("[1].educationtop.p") }}</p>
@@ -16,6 +13,12 @@
 <script>
 export default {
   name: "EducationTop",
+  data() {
+    return {
+      imgUrl:
+        "./assets/images/education-top-image/Edu_Hub_Home_Desktop_01-scaled.jpg",
+    };
+  },
 };
 </script>
 

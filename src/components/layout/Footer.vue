@@ -2,7 +2,7 @@
   <footer :class="{ dark: changeDarkMode }">
     <div class="row">
       <h2>
-        <img src="/assets/images/roblox_logo_white_new.svg" alt="1" />
+        <img :src="imgUrl" alt="1" />
       </h2>
       <div class="info__wrapper">
         <nav>
@@ -113,6 +113,7 @@ export default {
     return {
       companyUpDown: false,
       resourcesUpDown: false,
+      imgUrl: "./assets/images/roblox_logo_white_new.svg",
     };
   },
   computed: {

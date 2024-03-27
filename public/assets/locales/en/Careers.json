@@ -1,0 +1,40 @@
+{
+  "aboutus": {
+    "h3text1": "Work at Roblox",
+    "h3text2": "Be part of a values-driven company",
+    "h3text3": "Join our culture of continuous learning",
+    "h3text4": "Do career-defining work",
+    "h3text5": "Focus on your well-being",
+    "ptext1": "We organize ourselves into groups that align with the different areas of innovation on the platform. Each group tackles unique technical challenges that require out-of-the-box thinking. Regardless of where you sit, you’ll have the opportunity to make an outsized impact.",
+    "ptext2": "Our values are critical to how we operate day-to-day, how we find and grow our people, how we work together, and what success looks like at Roblox. We empower our people to respect the community, take the long view, be responsible, and get stuff done.",
+    "ptext3": "We believe a culture where people are open to feedback and always looking to learn enables us to accelerate innovation.",
+    "ptext4": "From real-time communication to massive data processing to generative AI – the breadth of opportunities to work on will ensure that you are constantly making an impact and accelerating your career.",
+    "ptext5": "The well-being of our people is our top priority. To provide our people with the resources they need to thrive in every aspect of their lives, we offer a robust and comprehensive program of healthcare, mental health, financial, and lifestyle benefits. In addition, we have flexible time-off and a generous donation matching program.",
+    "atext": "LEARN MORE",
+    "second-cardp1": "“Every employee at Roblox drives innovation, including our interns. Each year, hundreds of students in our program tackle some of the greatest challenges in technology. ”",
+    "second-cardp2": "Claus Moberg",
+    "second-cardp3": "VP, ENGINEERING",
+    "third-cardp1": "“Every employee at Roblox drives innovation, including our interns. Each year, hundreds of students in our program tackle some of the greatest challenges in technology. ”",
+    "third-cardp2": "The Roblox Intern Experience",
+    "third-cardp3": "THREE PART DOCUSERIES",
+    "fourth-cardp1": "“What excites me most is our rapid growth. We continue to support a community of millions of players, developers, and creators. I’m part of the beginning phase and it’s just really exciting.”",
+    "fourth-cardp2": "Ying Dai",
+    "fourth-cardp3": "PRINCIPAL SOFTWARE ENGINEER, OBSERVABILITY"
+  },
+  "recruitinfo": {
+    "h2": "Reimagine the way people come together",
+    "p1": "Every day, Roblox employees tackle complex questions and drive incredible innovation.",
+    "p2": "Join us in building the future of human connection and communication.",
+    "a": "VIEW JOBS"
+  },
+  "story": {
+    "h2": "Stories from across Roblox",
+    "a": "READ MORE",
+    "first-h3": "2023Year in Review - A Letter From Our CEO",
+    "second-h3": "RDC 2023 : Where Roblox is going next",
+    "third-h3": "Revolutionzing Creation on Roblox with Generative AI",
+    "fourth-h3": "Introducing the Roblox Career Center",
+    "fifth-h3": "Roblox Grows Up",
+    "sixth-h3": "Our Vision for All Ages"
+  }
+}

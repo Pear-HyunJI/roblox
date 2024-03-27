@@ -9,10 +9,7 @@
         </p>
       </div>
       <div class="ceoImg">
-        <img
-          src="/assets/images/members-1/ceo/Dave_TechTalks_Comp_cropped_Large.jpg"
-          alt="CEO image"
-        />
+        <img :src="imgUrl" alt="CEO image" />
       </div>
     </div>
   </section>
@@ -21,6 +18,12 @@
 <script>
 export default {
   name: "Ceo",
+  data() {
+    return {
+      imgUrl:
+        "./assets/images/members-1/ceo/Dave_TechTalks_Comp_cropped_Large.jpg",
+    };
+  },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;

@@ -2,10 +2,7 @@
   <section id="ceo" class="row">
     <div class="ceo__wrap">
       <div class="ceoImg">
-        <img
-          src="/assets/images/members-1/ceo/Dave_TechTalks_Comp_cropped_Large.jpg"
-          alt="CEO image"
-        />
+        <img :src="imgUrl" alt="CEO image" />
       </div>
       <div class="textBox" :class="{ dark: changeDarkMode }">
         <div class="text__wrapper">
@@ -44,6 +41,12 @@
 <script>
 export default {
   name: "Host",
+  data() {
+    return {
+      imgUrl:
+        "./assets/images/members-1/ceo/Dave_TechTalks_Comp_cropped_Large.jpg",
+    };
+  },
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;

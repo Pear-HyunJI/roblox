@@ -87,35 +87,31 @@ export default {
     },
   },
   methods: {
-    fnRegisterUser(e) {
+    fnRegisterUser() {
       if (!this.dEmail) {
         this.$refs.email.focus();
         alert("이메일을 입력하세요.");
-        e.preventDefault();
+        return false;
       } else if (this.dEmail.indexOf("@") < 0) {
         this.$refs.email.focus();
         alert("올바른 형식의 이메일을 입력해주세요.");
-        e.preventDefault();
+        return false;
       } else if (!this.dName) {
         this.$refs.name.focus();
         alert("이름을 입력하세요.");
-        e.preventDefault();
+        return false;
       } else if (!this.dPassword) {
         this.$refs.pw.focus();
         alert("비밀번호를 입력하세요.");
-        e.preventDefault();
+        return false;
       } else if (!this.dPasswordOk) {
         this.$refs.pwOk.focus();
         alert("비밀번호를 입력하세요.");
-        e.preventDefault();
+        return false;
       } else if (this.dPassword !== this.dPasswordOk) {
         this.$refs.pwOk.focus();
         alert("비밀번호가 일치하지 않습니다.");
-        e.preventDefault();
-      } else if (this.existEmailClass) {
-        this.$refs.email.focus();
-        alert("중복된 이메일입니다.");
-        e.preventDefault();
+        return false;
       }
       this.$store.commit("fnRegisterUser", {
         email: this.dEmail,
@@ -127,8 +123,10 @@ export default {
         this.dName = "";
         this.dPassword = "";
         this.dPasswordOk = "";
-        window.location.href = "/loginView";
+        this.$router.push("/loginView");
         alert("회원가입이 완료되었습니다.");
+      } else {
+        alert("중복된이메일입니다.");
       }
     },
     inputEmail(e) {

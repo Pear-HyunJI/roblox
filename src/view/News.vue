@@ -17,7 +17,6 @@
 <script>
 import NewsMain from "@/components/news/NewsMain.vue";
 import Pagination from "@/components/layout/Pagination.vue";
-import { onMounted, watchEffect } from "vue";
 export default {
   name: "News",
   data() {
@@ -38,6 +37,7 @@ export default {
   computed: {
     countryCode() {
       return this.$store.getters.fnGetLocale == "ko" ? "kr" : "us";
+      // return window.locale == "ko" ? "kr" : "us";
     },
   },
 
