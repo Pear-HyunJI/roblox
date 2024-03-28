@@ -173,6 +173,10 @@ export default {
     padding: 3rem 0;
     .row {
       .row__wrapper {
+        h2 {
+          font-size: 2.5rem;
+          margin-bottom: 2.25rem;
+        }
         .row__wrapper__link1 {
           display: block;
           margin: 2.75rem auto 0;

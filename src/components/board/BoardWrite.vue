@@ -54,6 +54,7 @@ export default {
         subject: this.subject,
         content: this.content,
         date: this.date,
+        status: false,
       });
       this.$router.push("/qna");
     },
@@ -116,6 +117,16 @@ export default {
       border: 1px solid #dee2e6;
       &:hover {
         border: 1px solid #bebebe;
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    margin: 0 10px;
+    .write__title {
+      font-size: 20px;
+      text-align: center;
+      h2 {
+        margin-bottom: 80px;
       }
     }
   }

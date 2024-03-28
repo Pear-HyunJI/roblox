@@ -256,9 +256,10 @@ export default {
   }
   @media screen and (max-width: 390px) {
     h2 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 2rem;
       padding: 0 1rem;
+      margin: 1.5rem 0 4rem 0;
     }
     .tileBox {
       height: 150px;

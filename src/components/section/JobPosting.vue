@@ -73,6 +73,7 @@ export default {
     }
   }
   @media screen and (max-width: 390px) {
+    padding: 48px 0;
     .job__posting__wrapper {
       padding: 3rem 1.5rem;
       .wrapper__inner {

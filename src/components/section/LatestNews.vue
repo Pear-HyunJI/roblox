@@ -101,7 +101,7 @@ export default {
 <style lang="scss" scoped>
 #latest__news {
   color: #dee2e6;
-  height: 700px;
+  height: 600px;
   margin-bottom: 30px;
   .row {
     .text__wrapper {
@@ -207,6 +207,8 @@ export default {
     }
   }
   @media screen and (max-width: 390px) {
+    margin-top: 100px;
+    margin-bottom: 0px;
     .row {
       .text__wrapper {
         align-items: center;

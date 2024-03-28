@@ -1,5 +1,8 @@
 <template>
   <div class="board__detail">
+    <div class="detail__title">
+      <h2>Q&A</h2>
+    </div>
     <div class="go__to__list">
       <router-link to="/qna">목록</router-link>
     </div>
@@ -11,7 +14,8 @@
       <tbody>
         <tr>
           <td colspan="2">제목 {{ item.subject }}</td>
-          <td colspan="1">답변 기다리는 중</td>
+          <td colspan="1" v-if="!answerList">답변 대기중</td>
+          <td colspan="1" v-else>답변 완료</td>
         </tr>
         <tr>
           <td>작성자: {{ item.writer }}</td>
@@ -19,28 +23,38 @@
           <td>조회수: {{ item.hit }}</td>
         </tr>
         <tr>
-          <td colspan="3">{{ item.content }}</td>
+          <td colspan="3" class="content">
+            <pre>{{ item.content }}</pre>
+          </td>
         </tr>
       </tbody>
     </table>
 
-    <table border="1" v-if="answerList">
+    <table v-if="answerList" class="answer__list">
       <tbody>
         <tr>
-          <td>답변입니다.</td>
+          <td class="answer__top">
+            <p>답변입니다.</p>
+            <p>작성일: {{ answerList?.date }}</p>
+          </td>
         </tr>
         <tr>
-          <td>작성일: {{ answerList?.date }}</td>
-        </tr>
-        <tr>
-          <td>내용{{ answerList?.answer }}</td>
+          <td>
+            <pre>{{ answerList?.answer }}</pre>
+          </td>
         </tr>
       </tbody>
     </table>
-    <form @submit.prevent="answerPost" v-if="show && !answerList">
+    <form
+      @submit.prevent="answerPost"
+      v-if="show && !answerList"
+      class="answer__post"
+    >
       <p>'{{ item.subject }}'에 답변달기</p>
       <textarea v-model="answer"></textarea>
-      <button type="submit">답변 올리기</button>
+      <div class="answer__btn">
+        <button type="submit">답변 올리기</button>
+      </div>
     </form>
   </div>
 </template>
@@ -57,6 +71,7 @@ export default {
     };
   },
   created() {
+    this.$store.commit("hit__Update", this.$route.params.id);
     this.item = this.$store.getters.fnGetBoardList.find(
       (item) => item.id === this.$route.params.id
     );
@@ -67,7 +82,7 @@ export default {
   },
   computed: {
     show() {
-      if (this.managerEamil === "manger@gmail.com") {
+      if (this.managerEamil === "manager@gmail.com") {
         return true;
       } else {
         return false;
@@ -91,22 +106,103 @@ export default {
 
 <style lang="scss" scoped>
 .board__detail {
-  color: #fff;
-  max-width: 1000px;
+  color: #dee2e6;
+  max-width: 900px;
   margin: 0 auto 50px;
+  .detail__title {
+    font-size: 30px;
+    text-align: center;
+  }
+  table {
+    .content {
+      color: #000;
+      height: 300px;
+      vertical-align: top;
+      background: #dbdee0;
+      padding: 10px;
+    }
+    td {
+      padding: 10px;
+    }
+  }
   .go__to__list {
     text-align: right;
-    margin-bottom: 20px;
+    margin: 30px 0 20px;
     a {
-      border: 1px solid #fff;
+      transition: all 0.3s;
+      border: 1px solid #dee2e6;
       border-radius: 8px;
       padding: 10px;
+      &:hover {
+        transform: translateY(-3px);
+      }
     }
   }
   textarea {
     width: 100%;
     height: 400px;
     background: #fff;
+  }
+  .answer__list {
+    .answer__top {
+      padding: 20px 10px;
+      &:nth-child(1) {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      &:nth-child(2) {
+        font-size: 13px;
+      }
+    }
+  }
+  .answer__post {
+    margin-top: 20px;
+    p {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    textarea {
+      height: 250px;
+    }
+    .answer__btn {
+      text-align: right;
+      margin-top: 10px;
+      button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        background: #dee2e6;
+        font-size: 14px;
+        color: #121110;
+        font-weight: bold;
+        border: 1px solid #dee2e6;
+        &:hover {
+          border: 1px solid #bebebe;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 390px) {
+    margin: 0 10px;
+    .detail__title {
+      font-size: 20px;
+      text-align: center;
+    }
+    table {
+      tr {
+        font-size: 13px;
+        td {
+          &:nth-child(1) {
+            width: 275px;
+          }
+          &:nth-child(2) {
+            width: auto;
+          }
+          &:nth-child(3) {
+            width: 20px;
+          }
+        }
+      }
+    }
   }
 }
 </style>
