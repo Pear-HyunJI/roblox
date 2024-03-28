@@ -144,14 +144,18 @@ export default {
     background: #fff;
   }
   .answer__list {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
     .answer__top {
       padding: 20px 10px;
-      &:nth-child(1) {
-        font-weight: bold;
-        font-size: 20px;
-      }
-      &:nth-child(2) {
-        font-size: 13px;
+      p {
+        &:nth-child(1) {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        &:nth-child(2) {
+          font-size: 13px;
+        }
       }
     }
   }

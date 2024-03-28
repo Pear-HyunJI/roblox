@@ -1,9 +1,9 @@
 <template>
   <footer :class="{ dark: changeDarkMode }">
     <div class="row">
-      <h2>
+      <router-link to="/">
         <img :src="imgUrl" alt="1" />
-      </h2>
+      </router-link>
       <div class="info__wrapper">
         <nav>
           <h4 @click="companyClick">
@@ -145,7 +145,7 @@ export default {
     }
     .row {
       max-width: calc(1280px - 9rem);
-      h2 {
+      a {
         img {
           background: #121110;
           padding: 10px;
@@ -237,7 +237,7 @@ export default {
       padding: 0;
       margin-top: 7rem;
       .row {
-        h2 {
+        a {
           img {
             width: 160px;
           }

@@ -80,7 +80,7 @@ export default {
           img: "./assets/images/members-1/managers/Dan_Sturman_Thumbnail_Large.jpg",
           position: "[5].detailmanager.eighth-position",
           name: "[5].detailmanager.eighth-name",
-          content: "[5].detailmanager.eight-content",
+          content: "[5].detailmanager.eighth-content",
         },
         {
           img: "./assets/images/members-1/managers/Christina_Wootton.png",
@@ -92,7 +92,7 @@ export default {
           img: "./assets/images/members-1/managers/Shobhana_Ahluwalia.jpg",
           position: "[5].detailmanager.tenth-position",
           name: "[5].detailmanager.tenth-name",
-          content: "[5].detailmanager.ten-content",
+          content: "[5].detailmanager.tenth-content",
         },
         {
           img: "./assets/images/members-1/managers/Brooks_Evans.png",
@@ -148,6 +148,7 @@ h2 {
   justify-content: space-between;
 
   .card {
+    position: relative;
     margin: 30px 1%;
     flex: 0 0 29%;
     max-width: 360px;
@@ -257,19 +258,58 @@ h2 {
       height: 500px;
       transition: all 250ms ease-in;
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1);
       }
 
       h3 {
-        font-size: 24px;
+        font-size: 20px;
         padding: 20px 0 15px;
       }
       p {
+        opacity: 1;
+        max-height: 5em;
         text-overflow: ellipsis;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         white-space: normal;
         display: -webkit-box !important;
+      }
+
+      button {
+        font-size: 1rem;
+        opacity: 1;
+        overflow: hidden;
+        max-height: 2em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 20px;
+        background: none;
+        padding-bottom: 20px;
+        border: none;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 50%; /* 초기 너비 */
+          height: 2px;
+          background-color: #162227;
+          transition: width 250ms ease-in;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+            background-color: #6347ff;
+          }
+        }
+      }
+
+      &:hover button {
+        opacity: 1;
+        max-height: 2em;
       }
     }
   }

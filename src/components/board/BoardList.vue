@@ -28,11 +28,11 @@
         </thead>
         <tbody>
           <tr
-            v-for="(item, idx) in showList"
+            v-for="(item, idx) in qnaData[currentPage - 1]"
             :key="idx"
             style="border-bottom: 1px solid #d3d3d355"
           >
-            <td>{{ countMinus(idx) }}</td>
+            <td>{{ item.id }}</td>
             <td>
               <router-link
                 :to="{ name: 'qnadetail', params: { id: item.id } }"
@@ -48,7 +48,11 @@
       </table>
     </div>
     <div class="MboardList">
-      <div class="mobile__wrapper" v-for="(item, idx) in showList" :key="idx">
+      <div
+        class="mobile__wrapper"
+        v-for="(item, idx) in qnaData[currentPage - 1]"
+        :key="idx"
+      >
         <div class="board__left">
           <router-link :to="{ name: 'qnadetail', params: { id: item.id } }">{{
             item.subject
@@ -66,6 +70,7 @@
 
 <script>
 export default {
+  props: ["qnaData", "currentPage"],
   data() {
     return {
       name: "",
@@ -76,16 +81,17 @@ export default {
   },
   created() {
     this.logined = this.$store.getters.fnGetLogined;
+    this.count = this.$store.getters.fnGetBoardList.length;
+    console.log(this.qnaData[0]);
   },
-  computed: {
-    showList() {
-      this.count = this.$store.getters.fnGetBoardList.length;
-      return this.$store.getters.fnGetBoardList;
-    },
-    // matchedItem(id) {
-    //   return this.answerList.map(item=>item).includes(id);
-    // },
-  },
+  // computed: {
+  //   showList() {
+  //     return this.$store.getters.fnGetBoardList;
+  //   },
+  //   // matchedItem(id) {
+  //   //   return this.answerList.map(item=>item).includes(id);
+  //   // },
+  // },
   methods: {
     countMinus(index) {
       return this.count - index;
