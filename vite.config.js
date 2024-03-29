@@ -8,7 +8,7 @@ export default defineConfig({
       "@": "/src",
       // "./": "./",
     },
-    // publicPath: "/buildRoblox",
+    publicPath: "/buildRoblox",
     publicPath: "/",
   },
 });
