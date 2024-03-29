@@ -145,7 +145,7 @@ export default {
     .detail__card {
       overflow-y: scroll;
       max-width: 800px;
-      height: calc(100vh - 7rem);
+      height: calc(100vh - 9rem);
       padding: 4rem 0.5rem 6rem 4rem;
       background: #c5c7c6;
       border-radius: 8px 8px 8px 0;

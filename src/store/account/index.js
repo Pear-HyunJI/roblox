@@ -1,6 +1,9 @@
 export default {
   state: {
-    oUser: [], // [ {email:'', name: '', pw:''} ]
+    oUser: [
+      { email: "manager@gmail.com", name: "매니저", pw: "1234" },
+      { email: "user1@gmail.com", name: "user1", pw: "5678" },
+    ], // [ {email:'', name: '', pw:''} ]
     message: false,
     logined: null, // { email:"", name: '', pw:"" }
   },

@@ -102,7 +102,7 @@ export default {
 #latest__news {
   color: #dee2e6;
   height: 600px;
-  margin-bottom: 30px;
+  margin-bottom: 130px;
   .row {
     .text__wrapper {
       display: flex;

@@ -51,7 +51,7 @@ export default {
 #detailView {
   position: fixed;
   right: 0;
-  top: 100px;
+  top: 130px;
   z-index: 9999;
   color: #121110;
   transform: translateX(800px);
