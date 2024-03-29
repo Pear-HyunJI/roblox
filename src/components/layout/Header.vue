@@ -1,11 +1,11 @@
 <template>
   <header id="header">
-    <div class="member" v-if="token">
+    <div class="member" :class="{ dark: changeDarkMode }" v-if="token">
       <a href="#" @click.prevent="logOut"
         >로그아웃&nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i
       ></a>
     </div>
-    <div class="member" v-else>
+    <div class="member" :class="{ dark: changeDarkMode }" v-else>
       <router-link to="/loginView">로그인</router-link>
       <router-link to="/joinView">회원가입</router-link>
     </div>
@@ -155,7 +155,10 @@ export default {
     margin: 0 auto;
 
     text-align: right;
-    color: #fff;
+    color: #dee2e6;
+    &.dark {
+      color: #121110;
+    }
     a {
       padding: 10px;
     }
@@ -202,7 +205,6 @@ export default {
           padding: 0px 12px;
           line-height: 80px;
           color: #f2f3f4;
-
           &::before,
           &::after {
             content: "";

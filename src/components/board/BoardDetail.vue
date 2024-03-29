@@ -1,10 +1,12 @@
 <template>
-  <div class="board__detail">
+  <div class="board__detail" :class="{ dark: changeDarkMode }">
     <div class="detail__title">
       <h2>Q&A</h2>
     </div>
     <div class="go__to__list">
-      <router-link to="/qna">목록</router-link>
+      <router-link to="/qna" :class="{ dark: changeDarkMode }"
+        >목록</router-link
+      >
     </div>
     <table border="1">
       <colgroup>
@@ -30,7 +32,11 @@
       </tbody>
     </table>
 
-    <table v-if="answerList" class="answer__list">
+    <table
+      v-if="answerList"
+      class="answer__list"
+      :class="{ dark: changeDarkMode }"
+    >
       <tbody>
         <tr>
           <td class="answer__top">
@@ -88,6 +94,9 @@ export default {
         return false;
       }
     },
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
   },
   methods: {
     answerPost() {
@@ -109,6 +118,9 @@ export default {
   color: #dee2e6;
   max-width: 900px;
   margin: 0 auto 50px;
+  &.dark {
+    color: #121110;
+  }
   .detail__title {
     font-size: 30px;
     text-align: center;
@@ -120,6 +132,9 @@ export default {
       vertical-align: top;
       background: #dbdee0;
       padding: 10px;
+      pre {
+        white-space: pre-wrap;
+      }
     }
     td {
       padding: 10px;
@@ -136,6 +151,9 @@ export default {
       &:hover {
         transform: translateY(-3px);
       }
+      &.dark {
+        border-color: #121110;
+      }
     }
   }
   textarea {
@@ -146,6 +164,9 @@ export default {
   .answer__list {
     margin-top: 20px;
     border: 1px solid #dee2e6;
+    &.dark {
+      border-color: #121110;
+    }
     .answer__top {
       padding: 20px 10px;
       p {

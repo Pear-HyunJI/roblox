@@ -1,5 +1,5 @@
 <template>
-  <div class="boardWrite">
+  <div class="boardWrite" :class="{ dark: changeDarkMode }">
     <div class="write__title">
       <h2><i class="fa-regular fa-pen-to-square"></i>&nbsp;질문하기</h2>
     </div>
@@ -12,19 +12,43 @@
         <tbody>
           <tr>
             <td>작성자</td>
-            <td><input type="text" v-model="writer" disabled /></td>
-            <td><input type="text" v-model="date" disabled /></td>
+            <td>
+              <input
+                type="text"
+                v-model="writer"
+                disabled
+                :class="{ dark: changeDarkMode }"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                v-model="date"
+                disabled
+                :class="{ dark: changeDarkMode }"
+              />
+            </td>
           </tr>
           <tr>
             <td>제목</td>
 
             <td colspan="2">
-              <input type="text" v-model="subject" maxlength="55" />
+              <input
+                type="text"
+                v-model="subject"
+                maxlength="55"
+                :class="{ dark: changeDarkMode }"
+              />
             </td>
           </tr>
           <tr>
             <td>내용</td>
-            <td colspan="2"><textarea v-model="content"></textarea></td>
+            <td colspan="2">
+              <textarea
+                v-model="content"
+                :class="{ dark: changeDarkMode }"
+              ></textarea>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -63,6 +87,11 @@ export default {
     this.writer = this.$store.getters.fnGetLogined.name;
     this.date = dayjs().format("YYYY-MM-DD");
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -71,6 +100,9 @@ export default {
   color: #dee2e6;
   max-width: 900px;
   margin: 0 auto 50px;
+  &.dark {
+    color: #121110;
+  }
   .write__title {
     font-size: 30px;
     text-align: center;
@@ -93,12 +125,19 @@ export default {
         padding: 5px;
         color: #dee2e6;
         background: #121110;
+        &.dark {
+          color: #121110;
+          background: #dee2e6;
+        }
       }
       textarea {
         width: 100%;
         border: 1px solid #ddd;
         padding: 5px;
         height: 200px;
+        &.dark {
+          background: #dee2e6;
+        }
       }
     }
   }

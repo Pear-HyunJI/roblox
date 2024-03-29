@@ -1,14 +1,18 @@
 <template>
   <div>
-    <div class="board__title">
+    <div class="board__title" :class="{ dark: changeDarkMode }">
       <h2>Q&A</h2>
       <div class="write__wrapper">
-        <router-link to="/qnawrite" class="goToWrite" v-if="logined"
+        <router-link
+          to="/qnawrite"
+          class="goToWrite"
+          :class="{ dark: changeDarkMode }"
+          v-if="logined"
           >글쓰기</router-link
         >
       </div>
     </div>
-    <div class="boardList">
+    <div class="boardList" :class="{ dark: changeDarkMode }">
       <table>
         <colgroup>
           <col />
@@ -18,7 +22,7 @@
           <col />
         </colgroup>
         <thead>
-          <tr style="border-bottom: 2px solid #ddd">
+          <tr :class="{ dark: changeDarkMode }">
             <th>번호</th>
             <th>제목</th>
             <th>작성자</th>
@@ -30,7 +34,7 @@
           <tr
             v-for="(item, idx) in qnaData[currentPage - 1]"
             :key="idx"
-            style="border-bottom: 1px solid #d3d3d355"
+            :class="{ dark: changeDarkMode }"
           >
             <td>{{ item.id }}</td>
             <td>
@@ -47,9 +51,10 @@
         </tbody>
       </table>
     </div>
-    <div class="MboardList">
+    <div class="MboardList" :class="{ dark: changeDarkMode }">
       <div
         class="mobile__wrapper"
+        :class="{ dark: changeDarkMode }"
         v-for="(item, idx) in qnaData[currentPage - 1]"
         :key="idx"
       >
@@ -97,6 +102,11 @@ export default {
       return this.count - index;
     },
   },
+  computed: {
+    changeDarkMode() {
+      return this.$store.getters.fnGetDark;
+    },
+  },
 };
 </script>
 
@@ -105,6 +115,9 @@ export default {
   text-align: center;
   font-size: 30px;
   color: #dee2e6;
+  &.dark {
+    color: #121110;
+  }
   .write__wrapper {
     text-align: right;
     margin: 30px 0 20px;
@@ -119,6 +132,9 @@ export default {
       border: 1px solid #dee2e6;
       border-radius: 8px;
       padding: 10px;
+      &.dark {
+        border-color: #121110;
+      }
     }
   }
   @media screen and (max-width: 390px) {
@@ -127,6 +143,9 @@ export default {
 
     // padding-bottom: 30px;
     border-bottom: 1px solid #fff;
+    &.dark {
+      border-color: #121110;
+    }
     .write__wrapper {
       font-size: 13px;
     }
@@ -135,7 +154,9 @@ export default {
 .boardList {
   color: #dee2e6;
   margin: 0px 0 50px;
-
+  &.dark {
+    color: #121110;
+  }
   table {
     col:nth-child(1) {
       width: 50px;
@@ -166,6 +187,22 @@ export default {
         padding-left: 20px;
       }
     }
+    thead {
+      tr {
+        border-bottom: 2px solid #ddd;
+        &.dark {
+          border-color: #121110;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid #d3d3d355;
+        &.dark {
+          border-color: #121110;
+        }
+      }
+    }
   }
   // .btn {
   //   text-align: center;
@@ -186,15 +223,23 @@ export default {
     display: block;
     color: #dee2e6;
     margin: 0 10px;
+    &.dark {
+      color: #121110;
+    }
     .mobile__wrapper {
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid #ffffff50;
       padding: 15px 10px;
+      &.dark {
+        border-color: #12111055;
+      }
       .board__left {
         a {
+          width: 230px;
           margin-bottom: 10px;
           font-weight: bold;
+          word-break: keep-all;
         }
         p {
           font-size: 12px;
