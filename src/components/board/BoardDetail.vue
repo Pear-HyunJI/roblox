@@ -4,9 +4,9 @@
       <h2>Q&amp;A</h2>
     </div>
     <div class="go__to__list">
-      <router-link to="/qna" :class="{ dark: changeDarkMode }"
-        >목록</router-link
-      >
+      <router-link to="/qna" :class="{ dark: changeDarkMode }">{{
+        $t("[3].boarddetail.list")
+      }}</router-link>
     </div>
     <table border="1">
       <colgroup>
@@ -15,14 +15,18 @@
       </colgroup>
       <tbody>
         <tr>
-          <td colspan="2">제목 {{ item.subject }}</td>
-          <td colspan="1" v-if="!answerList">답변 대기중</td>
-          <td colspan="1" v-else>답변 완료</td>
+          <td colspan="2">
+            {{ $t("[3].boarddetail.title") }} {{ item.subject }}
+          </td>
+          <td colspan="1" v-if="!answerList">
+            {{ $t("[3].boarddetail.waiting") }}
+          </td>
+          <td colspan="1" v-else>{{ $t("[3].boarddetail.completed") }}</td>
         </tr>
         <tr>
-          <td>작성자: {{ item.writer }}</td>
-          <td>작성일: {{ item.date }}</td>
-          <td>조회수: {{ item.hit }}</td>
+          <td>{{ $t("[3].boarddetail.writer") }}: {{ item.writer }}</td>
+          <td>{{ $t("[3].boarddetail.date") }}: {{ item.date }}</td>
+          <td>{{ $t("[3].boarddetail.hit") }}: {{ item.hit }}</td>
         </tr>
         <tr>
           <td colspan="3" class="content">
@@ -40,8 +44,8 @@
       <tbody>
         <tr>
           <td class="answer__top">
-            <p>답변입니다.</p>
-            <p>작성일: {{ answerList?.date }}</p>
+            <p>{{ $t("[3].boarddetail.answer") }}</p>
+            <p>{{ $t("[3].boarddetail.date") }}: {{ answerList?.date }}</p>
           </td>
         </tr>
         <tr>
@@ -56,10 +60,10 @@
       v-if="show && !answerList"
       class="answer__post"
     >
-      <p>'{{ item.subject }}'에 답변달기</p>
+      <p>'{{ item.subject }}'{{ $t("[3].boarddetail.reply") }}</p>
       <textarea v-model="answer"></textarea>
       <div class="answer__btn">
-        <button type="submit">답변 올리기</button>
+        <button type="submit">{{ $t("[3].boarddetail.post") }}</button>
       </div>
     </form>
   </div>

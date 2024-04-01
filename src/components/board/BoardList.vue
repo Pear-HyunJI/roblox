@@ -8,7 +8,7 @@
           class="goToWrite"
           :class="{ dark: changeDarkMode }"
           v-if="logined"
-          >글쓰기</router-link
+          >{{ $t("[3].boarddetail.writig") }}</router-link
         >
       </div>
     </div>
@@ -23,11 +23,11 @@
         </colgroup>
         <thead>
           <tr :class="{ dark: changeDarkMode }">
-            <th>번호</th>
-            <th>제목</th>
-            <th>작성자</th>
-            <th>진행현황</th>
-            <th>조회수</th>
+            <th>{{ $t("[3].boarddetail.no") }}</th>
+            <th>{{ $t("[3].boarddetail.title") }}</th>
+            <th>{{ $t("[3].boarddetail.writer") }}</th>
+            <th>{{ $t("[3].boarddetail.progress") }}</th>
+            <th>{{ $t("[3].boarddetail.hit") }}</th>
           </tr>
         </thead>
         <tbody>
@@ -44,8 +44,8 @@
               >
             </td>
             <td>{{ item.writer }}</td>
-            <td v-if="!item.status">답변 대기중</td>
-            <td v-else>답변 완료</td>
+            <td v-if="!item.status">{{ $t("[3].boarddetail.waiting") }}</td>
+            <td v-else>{{ $t("[3].boarddetail.completed") }}</td>
             <td>{{ item.hit }}</td>
           </tr>
         </tbody>
@@ -65,8 +65,8 @@
           <p>{{ item.writer }}</p>
         </div>
         <div class="board__right">
-          <p v-if="!item.status">답변 대기중</p>
-          <p v-else>답변완료</p>
+          <p v-if="!item.status">{{ $t("[3].boarddetail.waiting") }}</p>
+          <p v-else>{{ $t("[3].boarddetail.completed") }}</p>
         </div>
       </div>
     </div>

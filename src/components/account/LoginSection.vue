@@ -3,14 +3,14 @@
     <form @submit.prevent="fnLogin">
       <div class="wrapper">
         <div class="wrapper__title" :class="{ dark: changeDarkMode }">
-          ROBLOX 로그인
+          {{ $t("[3].joinSection.RLogin") }}
         </div>
         <div class="wrapper__info">
           <i class="fa-solid fa-envelope" :class="{ dark: changeDarkMode }"></i>
           <input
             class="wrapper__input"
             :class="{ dark: changeDarkMode }"
-            placeholder="이메일을 입력해 주세요."
+            :placeholder="$t('[3].joinSection.emailPlaceholder')"
             v-model="dEmail"
             ref="email"
           />
@@ -21,7 +21,7 @@
             type="password"
             class="wrapper__input"
             :class="{ dark: changeDarkMode }"
-            placeholder="비밀번호를 입력해 주세요."
+            :placeholder="$t('[3].joinSection.pwPlaceholder')"
             v-model="dPassword"
             ref="pw"
           />
@@ -32,7 +32,7 @@
           :class="{ dark: changeDarkMode }"
           type="submit"
         >
-          로그인
+          {{ $t("[3].login") }}
         </button>
       </div>
     </form>
@@ -50,11 +50,11 @@ export default {
   methods: {
     fnLogin() {
       if (!this.dEmail) {
-        alert("이메일을 입력하세요.");
+        alert(this.$t("[3].joinSection.emailPlaceholder"));
         this.$refs.email.focus();
         return false;
       } else if (!this.dPassword) {
-        alert("비밀번호를 입력하세요.");
+        alert(this.$t("[3].joinSection.pwPlaceholder"));
         this.$refs.pw.focus();
         return false;
       }
@@ -65,7 +65,7 @@ export default {
       if (this.$store.getters.fnGetLogined) {
         this.$router.push("/");
       } else {
-        alert("회원이 아닙니다.");
+        alert(this.$t("[3].joinSection.notMember"));
       }
     },
   },

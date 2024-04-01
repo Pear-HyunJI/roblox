@@ -11,12 +11,33 @@
   "logout": "Logout",
   "joinSection": {
     "RJoin": "ROBLOX Sign up",
+    "RLogin": "ROBLOX Sign in",
     "emailPlaceholder": "Please enter your email.",
     "pwPlaceholder": "Please enter your password.",
     "pwConfirmPlaceholder": "Please confirm your password.",
     "namePlaceholder": "Please enter your name.",
     "errorExistEmail": "This is a duplicate email",
     "errorFormatEmail": "Please enter an email in the correct format.",
-    "errorMismatch": "The password does not match."
+    "errorMismatch": "The password does not match.",
+    "joinDone": "Membership registration is complete.",
+    "notMember": "Not a member."
+  },
+  "boarddetail": {
+    "content": "content",
+    "list": "list",
+    "title": "title",
+    "writer": "writer",
+    "date": "date",
+    "hit": "hit",
+    "waiting": "Waiting for answer",
+    "completed": "Answer completed",
+    "answer": "That's the answer.",
+    "reply": "Reply",
+    "post": "Posting an answer",
+    "no": "no",
+    "writig": "Writing",
+    "progress": "progress",
+    "writingout": "Writign Out",
+    "ask": "Ask Questions"
   }
 }

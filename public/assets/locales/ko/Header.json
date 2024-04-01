@@ -10,13 +10,34 @@
   "join": "회원가입",
   "logout": "로그아웃",
   "joinSection": {
-    "RJoin": "ROBLOX Sign up",
-    "emailPlaceholder": "Please enter your email.",
-    "pwPlaceholder": "Please enter your password.",
-    "pwConfirmPlaceholder": "Please confirm your password.",
-    "namePlaceholder": "Please enter your name.",
-    "errorExistEmail": "This is a duplicate email",
-    "errorFormatEmail": "Please enter an email in the correct format.",
-    "errorMismatch": "The password does not match."
+    "RJoin": "ROBLOX 회원가입",
+    "RLogin": "ROBLOX 로그인",
+    "emailPlaceholder": "이메일을 입력해 주세요.",
+    "pwPlaceholder": "비밀번호를 입력해 주세요.",
+    "pwConfirmPlaceholder": "비밀번호를 다시 입력해 주세요.",
+    "namePlaceholder": "이름을 입력해 주세요.",
+    "errorExistEmail": "중복된 이메일입니다.",
+    "errorFormatEmail": "올바른 형식의 이메일을 입력해주세요.",
+    "errorMismatch": "비밀번호가 일치하지 않습니다.",
+    "joinDone": "회원가입이 완료되었습니다.",
+    "notMember": "회원이 아닙니다."
+  },
+  "boarddetail": {
+    "content": "내용",
+    "list": "목록",
+    "title": "제목",
+    "writer": "작성자",
+    "date": "작성일",
+    "hit": "조회수",
+    "waiting": "답변 대기중",
+    "completed": "답변 완료",
+    "answer": "답변입니다.",
+    "reply": "에 답변달기",
+    "post": "답변 올리기",
+    "no": "번호",
+    "writig": "글쓰기",
+    "progress": "진행현황",
+    "writingout": "작성",
+    "ask": "질문하기"
   }
 }

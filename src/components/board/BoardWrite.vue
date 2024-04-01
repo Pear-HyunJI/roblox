@@ -1,7 +1,11 @@
 <template>
   <div class="boardWrite" :class="{ dark: changeDarkMode }">
     <div class="write__title">
-      <h2><i class="fa-regular fa-pen-to-square"></i>&nbsp;질문하기</h2>
+      <h2>
+        <i class="fa-regular fa-pen-to-square"></i>&nbsp;{{
+          $t("[3].boarddetail.ask")
+        }}
+      </h2>
     </div>
     <form @submit.prevent="onSubmit">
       <table border="1">
@@ -11,7 +15,7 @@
         </colgroup>
         <tbody>
           <tr>
-            <td>작성자</td>
+            <td>{{ $t("[3].boarddetail.writer") }}</td>
             <td>
               <input
                 type="text"
@@ -30,7 +34,7 @@
             </td>
           </tr>
           <tr>
-            <td>제목</td>
+            <td>{{ $t("[3].boarddetail.title") }}</td>
 
             <td colspan="2">
               <input
@@ -42,7 +46,7 @@
             </td>
           </tr>
           <tr>
-            <td>내용</td>
+            <td>{{ $t("[3].boarddetail.content") }}</td>
             <td colspan="2">
               <textarea
                 v-model="content"
@@ -53,8 +57,8 @@
         </tbody>
       </table>
       <div class="btn">
-        <button type="submit">작성</button>
-        <router-link to="/qna">목록</router-link>
+        <button type="submit">{{ $t("[3].boarddetail.writingout") }}</button>
+        <router-link to="/qna">{{ $t("[3].boarddetail.list") }}</router-link>
       </div>
     </form>
   </div>

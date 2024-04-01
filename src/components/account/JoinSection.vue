@@ -3,23 +3,23 @@
     <form @submit.prevent="fnRegisterUser">
       <div class="wrapper">
         <div class="wrapper__title" :class="{ dark: changeDarkMode }">
-          ROBLOX 회원가입
+          {{ $t("[3].joinSection.RJoin") }}
         </div>
         <div class="wrapper__info">
           <i class="fa-solid fa-envelope" :class="{ dark: changeDarkMode }"></i>
           <input
             class="wrapper__input"
             :class="{ dark: changeDarkMode }"
-            placeholder="이메일을 입력해 주세요."
+            :placeholder="$t('[3].joinSection.emailPlaceholder')"
             v-model="dEmail"
             ref="email"
             @input="inputEmail()"
           />
           <div class="error" :class="{ on: existEmailClass }">
-            중복된 이메일입니다.
+            {{ $t("[3].joinSection.errorExistEmail") }}
           </div>
           <div class="error" :class="{ on: emailClass }">
-            올바른 형식의 이메일을 입력해주세요.
+            {{ $t("[3].joinSection.errorFormatEmail") }}
           </div>
         </div>
         <div class="wrapper__info">
@@ -27,7 +27,7 @@
           <input
             class="wrapper__input"
             :class="{ dark: changeDarkMode }"
-            placeholder="이름을 입력해 주세요."
+            :placeholder="$t('[3].joinSection.namePlaceholder')"
             v-model="dName"
             ref="name"
           />
@@ -39,7 +39,7 @@
             type="password"
             class="wrapper__input"
             :class="{ dark: changeDarkMode }"
-            placeholder="비밀번호를 입력해 주세요."
+            :placeholder="$t('[3].joinSection.pwPlaceholder')"
             v-model="dPassword"
             ref="pw"
           />
@@ -51,18 +51,18 @@
             type="password"
             class="wrapper__input"
             :class="{ dark: changeDarkMode }"
-            placeholder="비밀번호를 다시 입력해 주세요."
+            :placeholder="$t('[3].joinSection.pwConfirmPlaceholder')"
             v-model="dPasswordOk"
             ref="pwOk"
             @input="inputPwOk"
           />
           <div class="error" :class="{ on: passwordMismatch }">
-            비밀번호가 일치하지 않습니다.
+            {{ $t("[3].joinSection.errorMismatch") }}
           </div>
         </div>
 
         <div class="divideLine" :class="{ dark: changeDarkMode }"></div>
-        <button class="registerBtn" type="submit">가입하기</button>
+        <button class="registerBtn" type="submit">{{ $t("[3].join") }}</button>
       </div>
     </form>
   </div>
@@ -99,27 +99,27 @@ export default {
     fnRegisterUser() {
       if (!this.dEmail) {
         this.$refs.email.focus();
-        alert("이메일을 입력하세요.");
+        alert(this.$t("[3].joinSection.emailPlaceholder"));
         return false;
       } else if (this.dEmail.indexOf("@") < 0) {
         this.$refs.email.focus();
-        alert("올바른 형식의 이메일을 입력해주세요.");
+        alert(this.$t("[3].joinSection.errorFormatEmail"));
         return false;
       } else if (!this.dName) {
         this.$refs.name.focus();
-        alert("이름을 입력하세요.");
+        alert(this.$t("[3].joinSection.namePlaceholder"));
         return false;
       } else if (!this.dPassword) {
         this.$refs.pw.focus();
-        alert("비밀번호를 입력하세요.");
+        alert(this.$t("[3].joinSection.pwPlaceholder"));
         return false;
       } else if (!this.dPasswordOk) {
         this.$refs.pwOk.focus();
-        alert("비밀번호를 입력하세요.");
+        alert(this.$t("[3].joinSection.pwPlaceholder"));
         return false;
       } else if (this.dPassword !== this.dPasswordOk) {
         this.$refs.pwOk.focus();
-        alert("비밀번호가 일치하지 않습니다.");
+        alert(this.$t("[3].joinSection.errorMismatch"));
         return false;
       }
       this.$store.commit("fnRegisterUser", {
@@ -133,9 +133,9 @@ export default {
         this.dPassword = "";
         this.dPasswordOk = "";
         this.$router.push("/loginView");
-        alert("회원가입이 완료되었습니다.");
+        alert(this.$t("[3].joinSection.joinDone"));
       } else {
-        alert("중복된이메일입니다.");
+        alert(this.$t("[3].joinSection.errorExistEmail"));
       }
     },
     inputEmail(e) {
