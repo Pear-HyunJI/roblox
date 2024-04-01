@@ -6,8 +6,8 @@
       ></a>
     </div>
     <div class="member" :class="{ dark: changeDarkMode }" v-else>
-      <router-link to="/loginView">로그인</router-link>
-      <router-link to="/joinView">회원가입</router-link>
+      <router-link to="/loginView">{{ $t("[3].login") }}</router-link>
+      <router-link to="/joinView">{{ $t("[3].join") }}</router-link>
     </div>
     <nav id="header__nav">
       <h1 class="header__logo">

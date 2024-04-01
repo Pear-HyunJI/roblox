@@ -179,6 +179,10 @@ export default {
         }
       }
     }
+    pre {
+      white-space: pre-wrap;
+      word-break: keep-all;
+    }
   }
   .answer__post {
     margin-top: 20px;

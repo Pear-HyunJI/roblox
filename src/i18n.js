@@ -31,6 +31,7 @@ let loadTranslation = async () => {
           } else {
             messages.en.push(res.data);
           }
+          console.log(messages.ko);
         })
         .catch((err) => {
           console.log(err);
