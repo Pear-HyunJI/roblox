@@ -139,12 +139,6 @@ export default {
       }
     },
     inputEmail(e) {
-      // if (!this.dEmail) {
-      //   this.emailEmpty = true;
-      // } else {
-      //   this.emailEmpty = false;
-      // }
-
       if (this.dEmail.indexOf("@") > -1) {
         this.isValidEmail = true;
       } else {
