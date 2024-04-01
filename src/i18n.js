@@ -18,6 +18,7 @@ let fileNames = [
   "Members",
   "News",
   "TechTalks",
+  "u",
 ];
 
 let loadTranslation = async () => {
@@ -28,6 +29,7 @@ let loadTranslation = async () => {
         .then((res) => {
           if (lang === "ko") {
             messages.ko.push(res.data);
+            console.log(messages);
           } else {
             messages.en.push(res.data);
           }

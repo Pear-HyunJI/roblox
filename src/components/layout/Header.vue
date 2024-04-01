@@ -2,7 +2,7 @@
   <header id="header">
     <div class="member" :class="{ dark: changeDarkMode }" v-if="token">
       <a href="#" @click.prevent="logOut"
-        >로그아웃&nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i
+        >Sign out&nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i
       ></a>
     </div>
     <div class="member" :class="{ dark: changeDarkMode }" v-else>

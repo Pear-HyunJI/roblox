@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="board__title" :class="{ dark: changeDarkMode }">
-      <h2>Q&A</h2>
+      <h2>Q&amp;A</h2>
       <div class="write__wrapper">
         <router-link
           to="/qnawrite"
