@@ -86,7 +86,6 @@ export default {
   },
   created() {
     this.logined = this.$store.getters.fnGetLogined;
-    this.count = this.$store.getters.fnGetBoardList.length;
     console.log(this.qnaData[0]);
   },
   // computed: {
@@ -97,11 +96,7 @@ export default {
   //   //   return this.answerList.map(item=>item).includes(id);
   //   // },
   // },
-  methods: {
-    countMinus(index) {
-      return this.count - index;
-    },
-  },
+
   computed: {
     changeDarkMode() {
       return this.$store.getters.fnGetDark;
