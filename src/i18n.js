@@ -18,7 +18,6 @@ let fileNames = [
   "Members",
   "News",
   "TechTalks",
-  "u",
 ];
 
 let loadTranslation = async () => {
@@ -33,7 +32,7 @@ let loadTranslation = async () => {
           } else {
             messages.en.push(res.data);
           }
-          console.log(messages.ko);
+          console.log(res.data);
         })
         .catch((err) => {
           console.log(err);
