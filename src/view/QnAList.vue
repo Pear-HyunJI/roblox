@@ -2,7 +2,7 @@
   <div class="qna__list">
     <board-list :qnaData="qnaData" :currentPage="currentPage" />
     <pagination
-      :totalItems="totalLength"
+      :totalItems="this.$store.getters.fnGetBoardList.length"
       :currentPage.sync="currentPage"
       :itemPerPage="itemPerPage"
     />
@@ -19,16 +19,23 @@ export default {
       currentPage: 1,
       itemPerPage: 10,
       qnaData: [],
-      totalLength: 0,
     };
   },
   components: { BoardList, Pagination },
   created() {
-    this.totalLength = this.$store.getters.fnGetBoardList.length;
-    this.totalItems = this.$store.getters.fnGetBoardList;
-    for (let i = 0; i < Math.ceil(this.totalLength / this.itemPerPage); i++) {
+    this.totalItems = JSON.parse(
+      JSON.stringify(this.$store.getters.fnGetBoardList)
+    );
+    for (
+      let i = 0;
+      i <
+      Math.ceil(this.$store.getters.fnGetBoardList.length / this.itemPerPage);
+      i++
+    ) {
       this.qnaData.push(this.totalItems.splice(0, 10));
     }
+    console.log(this.qnaData);
+    console.log(this.$store.getters.fnGetBoardList);
   },
 };
 </script>
