@@ -1,7 +1,7 @@
 <template>
   <div class="board__detail" :class="{ dark: changeDarkMode }">
     <div class="detail__title">
-      <h2>Q&A</h2>
+      <h2>Q&amp;A</h2>
     </div>
     <div class="go__to__list">
       <router-link to="/qna" :class="{ dark: changeDarkMode }"

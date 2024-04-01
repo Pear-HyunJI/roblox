@@ -2,12 +2,12 @@
   <header id="header">
     <div class="member" :class="{ dark: changeDarkMode }" v-if="token">
       <a href="#" @click.prevent="logOut"
-        >로그아웃&nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i
+        >Sign out&nbsp;&nbsp;<i class="fa-solid fa-right-from-bracket"></i
       ></a>
     </div>
     <div class="member" :class="{ dark: changeDarkMode }" v-else>
-      <router-link to="/loginView">로그인</router-link>
-      <router-link to="/joinView">회원가입</router-link>
+      <router-link to="/loginView">Sign in</router-link>
+      <router-link to="/joinView">Sign up</router-link>
     </div>
     <nav id="header__nav">
       <h1 class="header__logo">

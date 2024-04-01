@@ -5,5 +5,18 @@
   "name4": "에듀케이션",
   "name5": "인재채용",
   "name6": "Q&A",
-  "darkmode": "다크 모드"
+  "darkmode": "다크 모드",
+  "login": "로그인",
+  "join": "회원가입",
+  "logout": "로그아웃",
+  "joinSection": {
+    "RJoin": "ROBLOX Sign up",
+    "emailPlaceholder": "Please enter your email.",
+    "pwPlaceholder": "Please enter your password.",
+    "pwConfirmPlaceholder": "Please confirm your password.",
+    "namePlaceholder": "Please enter your name.",
+    "errorExistEmail": "This is a duplicate email",
+    "errorFormatEmail": "Please enter an email in the correct format.",
+    "errorMismatch": "The password does not match."
+  }
 }
