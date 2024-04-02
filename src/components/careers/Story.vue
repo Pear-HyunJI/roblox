@@ -40,33 +40,33 @@ export default {
       sliders: [
         {
           image:
-            "src/assets/images/career-story/RBLX_EOY_BlogHeader_Final-1024x576.webp",
+            "./assets/images/career-story/RBLX_EOY_BlogHeader_Final-1024x576.webp",
           h3: "[0].story.first-h3",
           link: "https://blog.roblox.com/2023/12/2023-year-review-letter-ceo/",
         },
         {
-          image: "src/assets/images/career-story/RBLX_RDC-Banner_-Blog-1.webp",
+          image: "./assets/images/career-story/RBLX_RDC-Banner_-Blog-1.webp",
           h3: "[0].story.second-h3",
           link: "https://blog.roblox.com/2023/09/rdc-2023-roblox-going-next/",
         },
         {
-          image: "src/assets/images/career-story/AI-Blog-Header.webp",
+          image: "./assets/images/career-story/AI-Blog-Header.webp",
           h3: "[0].story.third-h3",
           link: "https://blog.roblox.com/2023/09/revolutionizing-creation-roblox/",
         },
         {
           image:
-            "src/assets/images/career-story/_Roblox-Career-Center-Header._001-1.webp",
+            "./assets/images/career-story/_Roblox-Career-Center-Header._001-1.webp",
           h3: "[0].story.fourth-h3",
           link: "https://blog.roblox.com/2023/08/introducing-roblox-career-center/",
         },
         {
-          image: "src/assets/images/career-story/image 1.webp",
+          image: "./assets/images/career-story/image 1.webp",
           h3: "[0].story.fifth-h3",
           link: "https://www.fastcompany.com/90878692/roblox-grows-up",
         },
         {
-          image: "src/assets/images/career-story/image 2.webp",
+          image: "./assets/images/career-story/image 2.webp",
           h3: "[0].story.sixth-h3",
           link: "https://blog.roblox.com/2023/05/our-vision-for-all-ages/",
         },
