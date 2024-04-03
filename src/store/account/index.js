@@ -5,7 +5,8 @@ export default {
       { email: "user1@gmail.com", name: "user1", pw: "5678" },
     ], // [ {email:'', name: '', pw:''} ]
     message: false,
-    logined: null, // { email:"", name: '', pw:"" }
+    logined: null, // { email:"", name: '', pw:"" },
+    prevPath: null,
   },
   mutations: {
     fnRegisterUser(state, payload) {
@@ -34,6 +35,9 @@ export default {
         }
       });
     },
+    savePrevPath(state, payload) {
+      state.prevPath = payload;
+    },
     fnLogout(state) {
       state.logined = null;
     },
@@ -42,5 +46,6 @@ export default {
     fnGetOuser: (state) => state.oUser,
     fnGetMessage: (state) => state.message,
     fnGetLogined: (state) => state.logined,
+    fnGetPrevPath: (state) => state.prevPath,
   },
 };

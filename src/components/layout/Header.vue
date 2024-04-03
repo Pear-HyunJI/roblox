@@ -127,7 +127,8 @@ export default {
     logOut() {
       this.token = false;
       this.$store.commit("fnLogout");
-      this.$router.push("/");
+      // this.$router.push("/");
+      window.location.reload();
     },
   },
   computed: {

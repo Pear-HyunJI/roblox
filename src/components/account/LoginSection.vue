@@ -63,7 +63,8 @@ export default {
         pw: this.dPassword,
       });
       if (this.$store.getters.fnGetLogined) {
-        this.$router.push("/");
+        this.$router.push(this.$store.getters.fnGetPrevPath);
+        this.$store.state.prevPath = null; // 이전경로 초기화
       } else {
         alert(this.$t("[3].joinSection.notMember"));
       }
